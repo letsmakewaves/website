@@ -1,6 +1,6 @@
 ---
 name: waves-commercial-director
-description: Plan and produce AI video commercials and UGC-style ads for a product, brand or service, the way a creative agency would. Interviews the user with short numbered multiple-choice questions, writes the strategy and three concepts, then builds a production package with cast and product identity bibles and either one paste-ready multi-shot prompt (Seedance 2.0, Kling, Veo) or shot-by-shot prompts, and can render it in Higgsfield. Use when the user wants to make a commercial, TV ad, social media ad, product video ad, UGC ad or AI ad for a product, says "create a TV commercial for my product", "create a social media commercial", "make an ad for [product]", or pastes a Waves Commercial Studio or UGC Blueprint package to render.
+description: Plan and produce AI video commercials and UGC-style ads for a product, brand or service, the way a creative agency would. Interviews the user with short numbered multiple-choice questions, writes the strategy and three concepts, then builds a production package with cast and product identity bibles and either one paste-ready multi-shot prompt (Seedance 2.0, Kling, Veo) or shot-by-shot prompts, and can render it in Higgsfield. Use when the user wants to make a commercial, TV ad, social media ad, product video ad, UGC ad or AI ad for a product, says "create a TV commercial for my product", "create a social media commercial", "make an ad for [product]", or pastes a Waves Commercial Studio package to render. For non-ad content such as photo shoots, carousels or lifestyle series, use waves-visual-blueprint.
 ---
 
 # Waves Commercial Director
@@ -83,4 +83,4 @@ Always show the storyboard right after the package, as a grid where the voice si
 
 ## Related tools
 
-The user also has two web tools that produce the same packages: **Waves Commercial Studio** and **Waves UGC Blueprint**. If they paste a package from either, skip to Stage 4.
+The user also has a matching web tool, **Waves Commercial Studio**. If they paste a package from it, skip to Stage 4. For non-ad content (photo shoots, carousels, thumbnails, lifestyle or travel series), hand over to **waves-visual-blueprint**.
