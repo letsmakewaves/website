@@ -55,6 +55,14 @@ Write the package for the chosen concept using the templates in `references/temp
 
 Put each prompt in its own code block so it's easy to copy.
 
+## Stage 3b: Storyboard
+
+Always show the storyboard right after the package, as a grid where the voice sits under each frame:
+
+1. **Text storyboard in chat:** a table with one column per frame (4 frames per row for 9:16, 3 per row for 16:9). Row 1 is `SCENE n · NAME · time`, row 2 is a short picture description, row 3 is the voice line ("VO:" or "Says:"), row 4 is the on-screen text. Write "No voice" where there is none.
+2. **Storyboard sheet image (offer it; it's cheap):** offer to generate the whole storyboard as **one image** in Higgsfield, using the storyboard sheet template in `references/templates.md`. Use an image model that renders text well (e.g. GPT Image 2 or Nano Banana) and attach the cast and product references. State the credit cost first.
+3. **Approve before video:** ask the user to approve the storyboard or change frames before any video credits are spent. An approved sheet can also be cropped into per-shot start frames for shot-by-shot mode, and its look becomes the reference for the one-take generation.
+
 ## Stage 4: Produce in Higgsfield (only if the user asks)
 
 1. Get the reference images: the product photo, the cast headshots, and the logo if wanted. If the user attached them in chat, use the Higgsfield upload widget to bring them in. Never guess media IDs.

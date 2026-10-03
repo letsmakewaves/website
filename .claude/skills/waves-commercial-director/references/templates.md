@@ -28,6 +28,26 @@ AVOID: Text inside the shot, extra logos or products, changes to the product des
 - @CAST-2: approved headshot of the daughter
 - Logo on a plain background (optional)
 
+## Storyboard sheet (one image, all frames, captions underneath)
+
+```
+A professional film storyboard sheet titled "[BRAND] — [CONCEPT]". [N] panels in a neat grid of [4 for 9:16 | 3 for 16:9] columns. Each panel is a [9:16 | 16:9] photorealistic cinematic still with a thin black border, a small dark header bar above it with the scene number and name, and one short line of caption text printed underneath it. Dark plum background, clean white sans-serif text, generous spacing. Spell every caption exactly as written.
+Continuity: [continuity lock in one or two sentences, using the @tags]
+Panel 1 — header "SCENE 1 · [NAME]". Image: [what we see]. Caption under the panel: "VO: [line]" | "Says: [line]" | "On screen: [text]" | "No voice"
+Panel 2 — ...
+Keep the same people, faces, wardrobe, product, location, lighting and colour grade in every panel.
+```
+
+Keep captions short, under about 12 words, so the image model spells them correctly.
+
+**Text version for chat (9:16, 4 per row):**
+
+| SCENE 1 · HOOK · 0–3s | SCENE 2 · LATHER · 3–6s | SCENE 3 · SCRUB · 6–9s | SCENE 4 · LOTION · 9–13s |
+|---|---|---|---|
+| She holds the wash up by her face | Lather spreads on her shoulder | Scrub rubbed into her arm | Lotion smoothed on, robe on |
+| VO: "This is my everything shower." | VO: "Step one, a creamy wash." | No voice | VO: "Lock it in while damp." |
+| On screen: everything shower | On screen: 1. cleanse | On screen: 2. exfoliate | On screen: 3. lock in |
+
 ## Product identity bible
 
 ```

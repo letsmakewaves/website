@@ -98,6 +98,24 @@ button:disabled{opacity:.55;cursor:not-allowed}
 .history ol{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
 .history button{border:none;background:none;padding:0;color:var(--accent);text-align:left;text-decoration:underline;text-underline-offset:2px}
 footer{color:var(--muted);font-size:12px}
+/* Storyboard grid: frames on top, voice and supers underneath */
+.board-wrap{display:flex;flex-direction:column;gap:12px;border:1px solid var(--line);border-radius:10px;padding:16px}
+.board-head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px}
+.board-head h3{margin:0;font-family:var(--display);font-size:20px}
+.board{display:grid;grid-template-columns:repeat(auto-fill,minmax(var(--frame-w,150px),1fr));gap:16px 14px}
+.frame{display:flex;flex-direction:column;gap:6px;min-width:0}
+.pic{position:relative;aspect-ratio:var(--frame-ar,9/16);max-width:100%;border:1.5px solid var(--ink);border-radius:4px;background:var(--bg);overflow:hidden;display:flex;align-items:flex-end;padding:30px 8px 8px;font-size:12px;line-height:1.35;color:var(--muted)}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.pic .num,.pic .ptc{position:absolute;top:6px;font-family:var(--mono);font-size:10.5px;padding:1px 6px;border-radius:3px;z-index:1}
+.pic .num{left:6px;background:var(--ink);color:var(--bg)}
+.pic .ptc{right:6px;background:var(--panel);color:var(--ink);border:1px solid var(--line);font-variant-numeric:tabular-nums}
+.pic .sketch{position:relative}
+.frame .shot-label{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.frame .cap{font-size:13px;line-height:1.4}
+.frame .cap b{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;font-weight:500;color:var(--accent);margin-right:4px}
+.frame .cap.super{color:var(--muted)}
+.frame .add{font-family:var(--mono);font-size:11px;padding:3px 8px;align-self:flex-start}
+
 </style>
 
 <div class="wrap">
@@ -216,6 +234,45 @@ document.getElementById("style").addEventListener("change",showStyleHint); showS
 const $=id=>document.getElementById(id);
 const out=$("out"), statusEl=$("status"), go=$("go"), stopBtn=$("stop");
 
+/* ---------- Storyboard grid ---------- */
+function boardPrompt(frames, aspect, title, lock){
+  const cols = aspect==="16:9" ? 3 : 4;
+  const lines = frames.map(f=>`Panel ${f.n} — header "SCENE ${f.n} · ${(f.label||"").toUpperCase()}". Image: ${f.visual}. Caption under the panel: "${f.vo ? (f.voLabel==="Says"||f.voLabel==="Dialogue" ? "Says: " : "VO: ")+f.vo : (f.super ? "On screen: "+f.super : "No voice")}"`).join("\n");
+  return `A professional film storyboard sheet titled "${title}". ${frames.length} panels in a neat grid of ${cols} columns. Each panel is a ${aspect} photorealistic cinematic still with a thin black border, a small dark header bar above it with the scene number and name, and one short line of caption text printed underneath it. Dark plum background, clean white sans-serif text, generous spacing. Spell every caption exactly as written.
+${lock ? "Continuity: "+lock+"\n" : ""}${lines}
+Keep the same people, faces, wardrobe, product, location, lighting and colour grade in every panel.`;
+}
+function renderBoard(frames, aspect, title, lock){
+  const wrap=el("section","board-wrap");
+  const head=el("div","board-head");
+  const h=el("div"); h.append(el("span","eyebrow","Storyboard"), el("h3",null,`${frames.length} frames · ${aspect}`));
+  const tools=el("div","actions");
+  const gp=boardPrompt(frames,aspect,title,lock);
+  const b1=el("button",null,"Copy storyboard image prompt"); b1.type="button"; b1.onclick=()=>copyText(gp,b1);
+  const b2=el("button",null,"Copy as text"); b2.type="button";
+  b2.onclick=()=>copyText(frames.map(f=>`[${f.n}] ${f.time} — ${f.visual}${f.vo?`\n    ${f.voLabel}: "${f.vo}"`:""}${f.super?`\n    On screen: ${f.super}`:""}`).join("\n\n"),b2);
+  tools.append(b1,b2); head.append(h,tools); wrap.append(head);
+  const grid=el("div","board");
+  grid.style.setProperty("--frame-ar", aspect==="16:9"?"16/9":aspect==="4:5"?"4/5":"9/16");
+  grid.style.setProperty("--frame-w", aspect==="16:9"?"230px":"150px");
+  frames.forEach(f=>{
+    const fr=el("div","frame");
+    const pic=el("div","pic"); pic.append(el("span","num",String(f.n).padStart(2,"0")), el("span","ptc",f.time||""), el("span","sketch",f.visual||""));
+    if(f.label) fr.append(el("span","shot-label",f.label));
+    fr.prepend(pic);
+    if(f.vo){const c=el("div","cap"); c.append(el("b",null,(f.voLabel||"VO").toUpperCase()), "“"+f.vo+"”"); fr.append(c);}
+    if(f.super){const c=el("div","cap super"); c.append(el("b",null,"ON SCREEN"), f.super); fr.append(c);}
+    if(!f.vo && !f.super) fr.append(el("div","cap super","No voice"));
+    const inp=document.createElement("input"); inp.type="file"; inp.accept="image/*"; inp.hidden=true; inp.id="frame-img-"+f.n+"-"+Math.random().toString(36).slice(2,7);
+    const add=el("button","add","Add frame image"); add.type="button"; add.onclick=()=>inp.click();
+    inp.onchange=()=>{const file=inp.files&&inp.files[0]; if(!file) return; const r=new FileReader(); r.onload=()=>{pic.querySelector("img")?.remove(); const img=document.createElement("img"); img.alt="Frame "+f.n; img.src=r.result; pic.append(img); add.textContent="Replace image";}; r.readAsDataURL(file);};
+    fr.append(add,inp); grid.append(fr);
+  });
+  wrap.append(grid);
+  wrap.append(el("small","files","Add frame images to check the look before you spend video credits. They stay on this device only."));
+  return wrap;
+}
+
 const EXAMPLE = {
   title:"Lumen Glow-Down Shower Routine",
   concept:"A calm, luxurious end-of-day shower routine where one creator moves from cleanse to scrub to oil, ending on a hero line-up of the products.",
@@ -295,6 +352,10 @@ function render(bp, isExample){
   cols.append(block("Locked creator",kv(bp.creator)), block("Look & feel",kv(bp.style)), block("Continuity directive",list(bp.continuity)));
   sheet.append(cols);
 
+  const aspect = /4:5/.test(bp.platform||"") ? "4:5" : "9:16";
+  const vl = bp.audio==="Voiceover" ? "VO" : "Says";
+  sheet.append(renderBoard((bp.scenes||[]).map(s=>({n:s.n,time:s.time,visual:s.action,label:s.shot,vo:s.dialogue,voLabel:vl,super:s.onScreenText})), aspect, bp.title||"UGC ad", (bp.continuity||[]).join(" ")));
+  sheet.append(el("span","eyebrow","Scene details"));
   const sc=el("div","scenes");
   (bp.scenes||[]).forEach(s=>{
     const row=el("div","scene");
