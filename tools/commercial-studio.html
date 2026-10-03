@@ -1,0 +1,571 @@
+<title>Waves Commercial Studio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: agency workflow in three stages (brief → strategy & concepts → production package), shot list with timecode rail */
+:root{
+  --bg:#F1EEF0; --panel:#FFFFFF; --ink:#16121A; --muted:#655E6B; --line:#DCD5DB;
+  --accent:#A2236B; --accent-ink:#FFFFFF; --accent-soft:#F6E3EE; --rec:#D93A3A; --ok:#1F8A5B;
+  --display:"Bricolage Grotesque", "Helvetica Neue", Arial, sans-serif;
+  --body:"Instrument Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --mono:"JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#110E13; --panel:#1B171E; --ink:#F0EBF0; --muted:#A79EAC; --line:#322A36;
+  --accent:#F07AB8; --accent-ink:#110E13; --accent-soft:#3A1F31; --rec:#FF6B6B; --ok:#4CC38A; color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#110E13; --panel:#1B171E; --ink:#F0EBF0; --muted:#A79EAC; --line:#322A36;
+  --accent:#F07AB8; --accent-ink:#110E13; --accent-soft:#3A1F31; --rec:#FF6B6B; --ok:#4CC38A; color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.5;padding-inline:16px;padding-block:20px 48px}
+.wrap{max-width:1240px;margin:0 auto;display:flex;flex-direction:column;gap:20px}
+header.top{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:12px;border-bottom:2px solid var(--ink);padding-bottom:14px}
+.brand{display:flex;flex-direction:column;gap:2px}
+.brand h1{font-family:var(--display);font-weight:800;font-size:clamp(28px,4.4vw,44px);line-height:1;letter-spacing:-.02em;margin:0;text-wrap:balance}
+.brand p{margin:0;color:var(--muted);max-width:62ch}
+.rec{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;display:inline-flex;align-items:center;gap:8px;color:var(--muted)}
+.rec i{width:9px;height:9px;border-radius:50%;background:var(--rec);display:inline-block}
+.stages{display:flex;flex-wrap:wrap;gap:6px;font-family:var(--mono);font-size:12px}
+.stages span{padding:4px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted)}
+.stages span.on{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+
+.grid{display:grid;grid-template-columns:minmax(0,380px) minmax(0,1fr);gap:20px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:10px}
+form.brief{padding:18px;display:flex;flex-direction:column;gap:16px;position:sticky;top:calc(env(safe-area-inset-top,0px) + 12px)}
+@media (max-width:900px){form.brief{position:static}}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
+.field{display:flex;flex-direction:column;gap:6px;min-width:0}
+.field label,.field .lbl{font-weight:600;font-size:13px}
+.field small{color:var(--muted);font-size:12px}
+input[type=text],textarea,select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:9px 10px;width:100%}
+textarea{resize:vertical;min-height:64px}
+input:focus-visible,textarea:focus-visible,select:focus-visible,button:focus-visible,.chip input:focus-visible+span,.mode input:focus-visible+span{outline:2px solid var(--accent);outline-offset:2px}
+.modes{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.mode{position:relative}
+.mode input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.mode span{display:flex;flex-direction:column;gap:2px;padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--bg);cursor:pointer;height:100%}
+.mode span b{font-size:14px}
+.mode span small{color:var(--muted);font-size:12px}
+.mode input:checked+span{border-color:var(--accent);background:var(--accent-soft);box-shadow:inset 0 0 0 1px var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{position:relative}
+.chip input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.chip span{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;font-size:13px;background:var(--bg);cursor:pointer}
+.chip input:checked+span{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+button{font:inherit;cursor:pointer;border-radius:6px;border:1px solid var(--line);background:var(--panel);color:var(--ink);padding:8px 12px}
+button.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent);font-weight:600;padding:12px 14px;font-size:15px}
+button:disabled{opacity:.55;cursor:not-allowed}
+.actions{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.actions .primary{flex:1 1 auto}
+.status{font-size:13px;color:var(--muted);min-height:1.2em}
+.status.err{color:var(--rec)}
+.files{font-size:12px;color:var(--muted)}
+
+.out{display:flex;flex-direction:column;gap:16px;min-width:0}
+.sheet{padding:20px;display:flex;flex-direction:column;gap:18px;min-width:0}
+.sheet-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;align-items:flex-start}
+.sheet-head h2{font-family:var(--display);font-weight:700;font-size:clamp(22px,3vw,30px);line-height:1.1;margin:4px 0 6px;text-wrap:balance}
+.sheet-head p{margin:0;color:var(--muted);max-width:68ch}
+.badge{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;padding:3px 8px;border-radius:4px;background:var(--accent-soft);color:var(--ink)}
+.badge.example{background:var(--rec);color:#fff}
+.meta{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--mono);font-size:12px;color:var(--muted)}
+.meta b{color:var(--ink);font-weight:500}
+.msg{border-left:3px solid var(--accent);padding:4px 0 4px 12px;font-family:var(--display);font-size:20px;font-weight:500;line-height:1.3}
+.cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.block{border:1px solid var(--line);border-radius:8px;padding:14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.block h3{margin:0;font-size:13px;font-family:var(--mono);font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.block ul{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:3px}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:4px 12px;font-size:14px;margin:0}
+.kv dt{color:var(--muted)} .kv dd{margin:0}
+
+.concepts{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:14px}
+.concept{border:1px solid var(--line);border-radius:10px;padding:16px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.concept .letter{font-family:var(--display);font-weight:800;font-size:34px;line-height:1;color:var(--accent)}
+.concept h3{margin:0;font-family:var(--display);font-size:20px;line-height:1.15}
+.concept p{margin:0}
+.concept .why{color:var(--muted);font-size:14px}
+.concept button{margin-top:auto}
+
+.shots{display:flex;flex-direction:column;gap:12px}
+.shot{display:grid;grid-template-columns:92px minmax(0,1fr);border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.tc{background:var(--ink);color:var(--bg);padding:12px 10px;display:flex;flex-direction:column;gap:4px;font-family:var(--mono)}
+.tc .n{font-family:var(--display);font-weight:800;font-size:28px;line-height:1}
+.tc .t{font-size:12px;font-variant-numeric:tabular-nums}
+.tc .s{font-size:10px;letter-spacing:.08em;text-transform:uppercase;opacity:.75;margin-top:auto}
+.sh-body{padding:12px 14px;display:flex;flex-direction:column;gap:8px;min-width:0}
+.sh-body h4{margin:0;font-size:16px}
+.line{font-size:14px} .line em,.say em{font-style:normal;color:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin-right:6px}
+.say{font-size:15px;background:var(--accent-soft);border-radius:6px;padding:8px 10px}
+.prompt{background:var(--bg);border:1px dashed var(--line);border-radius:6px;padding:10px;font-family:var(--mono);font-size:12.5px;line-height:1.55;white-space:pre-wrap;word-break:break-word}
+.prompt .plabel{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:6px}
+.copy{font-family:var(--mono);font-size:11px;padding:3px 8px}
+@media (max-width:520px){.shot{grid-template-columns:minmax(0,1fr)}.tc{flex-direction:row;align-items:baseline;gap:10px}.tc .s{margin:0 0 0 auto}}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--line);vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);font-weight:500}
+
+.thinking{display:flex;align-items:center;gap:10px;padding:18px 20px;font-family:var(--mono);font-size:13px}
+.thinking i{width:10px;height:10px;border-radius:50%;background:var(--rec);animation:blink 1.1s infinite}
+@keyframes blink{50%{opacity:.2}}
+@media (prefers-reduced-motion:reduce){.thinking i{animation:none}}
+.history{padding:14px 16px;display:flex;flex-direction:column;gap:8px}
+.history ol{margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px}
+.history button{border:none;background:none;padding:0;color:var(--accent);text-align:left;text-decoration:underline;text-underline-offset:2px}
+footer{color:var(--muted);font-size:12px}
+</style>
+
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <span class="rec"><i></i>Waves studio · creative agency</span>
+      <h1>Commercial Studio</h1>
+      <p>Brief a product, brand or service. Get a strategy and three concepts, pick one, then get the full production package: storyboard, script, and photoreal image and video prompts.</p>
+    </div>
+    <div class="stages" id="stages"><span id="st1">1 · Brief</span><span id="st2">2 · Strategy & concepts</span><span id="st3">3 · Production package</span></div>
+  </header>
+
+  <div class="grid">
+    <form class="brief panel" id="brief" novalidate>
+      <span class="eyebrow">The brief</span>
+
+      <div class="field">
+        <span class="lbl">What are we making?</span>
+        <div class="modes">
+          <label class="mode"><input type="radio" name="mode" value="TV commercial" id="mode-tv" checked><span><b>TV commercial</b><small>16:9 · 30–60s · cinematic</small></span></label>
+          <label class="mode"><input type="radio" name="mode" value="Social media commercial" id="mode-sm"><span><b>Social commercial</b><small>9:16 · 15–30s · fast hook</small></span></label>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="brand">Brand and product</label>
+        <input type="text" id="brand" placeholder="e.g. Ember & Oak — Nitro Cold Brew can">
+      </div>
+      <div class="field">
+        <label for="what">What it is and why it's good</label>
+        <textarea id="what" placeholder="e.g. Ready-to-drink nitro cold brew. Smooth, low acid, creamy without milk. 200mg caffeine."></textarea>
+      </div>
+      <div class="field">
+        <label for="audience">Audience</label>
+        <input type="text" id="audience" placeholder="e.g. 22–35, city workers who need an afternoon lift">
+      </div>
+
+      <div class="field">
+        <span class="lbl">Goal</span>
+        <div class="chips" id="goal"></div>
+      </div>
+      <div class="field">
+        <span class="lbl">Brand personality</span>
+        <div class="chips" id="persona"></div>
+      </div>
+
+      <div class="field">
+        <label for="musts">Must include (optional)</label>
+        <input type="text" id="musts" placeholder="Tagline, offer, logo end card, launch date…">
+      </div>
+      <div class="field">
+        <label for="refs">References or vibe (optional)</label>
+        <input type="text" id="refs" placeholder="e.g. Apple product films, warm film grain, slow and confident">
+      </div>
+
+      <div class="field">
+        <span class="lbl">Cast</span>
+        <div class="modes">
+          <label class="mode"><input type="radio" name="castMode" value="Cast it for me" id="cast-auto" checked><span><b>Cast it for me</b><small>Describes ideal talent</small></span></label>
+          <label class="mode"><input type="radio" name="castMode" value="I'll provide headshots" id="cast-own"><span><b>I have headshots</b><small>Uses your photos as @CAST refs</small></span></label>
+        </div>
+        <textarea id="cast" placeholder="Optional. One person per line, e.g.&#10;Mother, early 30s&#10;Daughter, about 5, braids with pink bobbles"></textarea>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="model">Video model</label>
+          <select id="model"><option selected>Seedance 2.0</option><option>Kling</option><option>Veo</option><option>Any model</option></select>
+        </div>
+        <div class="field">
+          <label for="output">Output</label>
+          <select id="output"><option value="one-take" selected>One-take prompt</option><option value="shots">Shot by shot</option></select>
+        </div>
+      </div>
+      <small class="files" id="outputHint"></small>
+
+      <div class="row2">
+        <div class="field">
+          <label for="voice">Voice</label>
+          <select id="voice"><option selected>Voiceover</option><option>Dialogue on camera</option><option>No voice, music only</option></select>
+        </div>
+        <div class="field">
+          <label for="accent">Accent</label>
+          <select id="accent"><option selected>Nigerian</option><option>Ghanaian</option><option>South African</option><option>British</option><option>American</option><option>Jamaican</option><option>Neutral</option></select>
+        </div>
+      </div>
+
+      <div class="field" id="photoField" hidden>
+        <label for="photos">Product photos (optional)</label>
+        <input type="file" id="photos" accept="image/*" multiple>
+        <span class="files" id="photoNote"></span>
+      </div>
+
+      <div class="row2">
+        <div class="field">
+          <label for="runtime">Runtime</label>
+          <select id="runtime"><option>15</option><option>20</option><option selected>30</option><option>45</option><option>60</option></select>
+        </div>
+        <div class="field">
+          <label for="shotsN">Shots</label>
+          <select id="shotsN"><option>4</option><option>5</option><option selected>6</option><option>8</option><option>10</option></select>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button type="submit" class="primary" id="go">Develop strategy & concepts</button>
+        <button type="button" id="stop" hidden>Stop</button>
+      </div>
+      <div class="status" id="status" role="status" aria-live="polite"></div>
+    </form>
+
+    <section class="out" id="out" aria-live="polite"></section>
+  </div>
+  <footer>Concepts and prompts are drafts. Check product claims, music rights and talent likeness before anything airs, and label AI-generated content where platforms require it.</footer>
+</div>
+
+<script>
+const GOALS=["Launch","Awareness","Drive sales","Rebrand"];
+const PERSONAS=["Premium","Bold","Warm","Playful","Minimal","Edgy","Trustworthy"];
+function chipGroup(el,name,items,checked,multi){
+  items.forEach((v,i)=>{const lab=document.createElement("label"); lab.className="chip";
+    const inp=document.createElement("input"); inp.type=multi?"checkbox":"radio"; inp.name=name; inp.value=v; inp.id=name+"-"+i;
+    if((Array.isArray(checked)?checked:[checked]).includes(v)) inp.checked=true;
+    const sp=document.createElement("span"); sp.textContent=v; lab.append(inp,sp); el.append(lab);});
+}
+chipGroup(document.getElementById("goal"),"goal",GOALS,"Launch",false);
+chipGroup(document.getElementById("persona"),"persona",PERSONAS,["Premium","Warm"],true);
+
+const $=id=>document.getElementById(id);
+const out=$("out"), statusEl=$("status"), go=$("go"), stopBtn=$("stop");
+function el(tag,cls,text){const e=document.createElement(tag); if(cls) e.className=cls; if(text!=null) e.textContent=text; return e;}
+function list(items){const ul=el("ul"); (items||[]).forEach(t=>ul.append(el("li",null,String(t)))); return ul;}
+function kv(obj){const dl=el("dl","kv"); Object.entries(obj||{}).forEach(([k,v])=>{if(!v) return; dl.append(el("dt",null,k.charAt(0).toUpperCase()+k.slice(1).replace(/([A-Z])/g," $1").toLowerCase()), el("dd",null,String(v)));}); return dl;}
+function block(title,child){const b=el("div","block"); b.append(el("h3",null,title),child); return b;}
+function setStage(n){[1,2,3].forEach(i=>$("st"+i).classList.toggle("on",i===n));}
+async function copyText(text,btn){const prev=btn.textContent;
+  try{await navigator.clipboard.writeText(text); btn.textContent="Copied";}
+  catch{btn.textContent="Select & copy manually"; const p=btn.closest(".prompt"); if(p){const r=document.createRange(); r.selectNodeContents(p.querySelector(".ptext")||p); const s=getSelection(); s.removeAllRanges(); s.addRange(r);}}
+  setTimeout(()=>btn.textContent=prev,1600);}
+function promptBox(label,text){const p=el("div","prompt"); const h=el("div","plabel"); h.append(el("span",null,label));
+  const b=el("button","copy","Copy"); b.type="button"; b.onclick=()=>copyText(text,b); h.append(b); p.append(h,el("div","ptext",text)); return p;}
+
+/* ---------- Example (shown on load) ---------- */
+const EX_BRIEF={model:"Seedance 2.0",output:"one-take",voice:"Voiceover",accent:"Nigerian",castMode:"Cast it for me",mode:"TV commercial",brand:"Ember & Oak — Nitro Cold Brew can (fictional brand)",what:"Ready-to-drink nitro cold brew. Smooth, low acid, creamy without milk.",audience:"22–35 city workers who need an afternoon lift",goal:"Launch",persona:["Premium","Warm"],runtime:30,shots:6};
+const EX_STRATEGY={
+  insight:"The 3pm slump isn't about being tired. It's the moment the day stops feeling like yours.",
+  desiredResponse:"“That's exactly my 3pm. I want that ten minutes.”",
+  positioning:"Ember & Oak is the afternoon reset: a slow, smooth coffee that gives you ten minutes of your day back.",
+  message:"Take your afternoon back.",
+  audience:"Young city professionals who treat coffee as a small ritual, not just fuel.",
+  tone:"Warm, confident, unhurried. Golden-hour light, tactile close-ups, no shouting.",
+  concepts:[
+    {letter:"A",name:"The Cascade",logline:"In a busy office, one crack of the can makes the room slow down while the nitro cascade settles in the glass.",why:"Turns the product's most visual feature into the story. Works in 30s and cuts down cleanly to 6s.",look:"Warm tungsten office, slow motion, shallow depth of field",music:"Soft piano that drops to near-silence on the pour"},
+    {letter:"B",name:"Ten Minutes",logline:"A designer steps onto a rooftop at 3pm. The city keeps rushing; she doesn't.",why:"Owns the 'afternoon reset' idea through a character people recognise.",look:"Golden hour, wide city frames, handheld intimacy",music:"Warm lo-fi beat with city ambience"},
+    {letter:"C",name:"Made Slow",logline:"Macro journey from oak-barrel cold steep to the can, narrated like a craft documentary.",why:"Supports a premium price with process and craft.",look:"Dark wood, macro textures, amber grade",music:"Low strings, sparse percussion"}
+  ]
+};
+const EX_PACKAGE={
+  title:"Ember & Oak — The Cascade",concept:"A",logline:EX_STRATEGY.concepts[0].logline,
+  look:{lighting:"Warm tungsten practicals with soft window fill",palette:"Amber, deep brown, cream foam, black can",lens:"35mm and 85mm, shallow depth of field; 100mm macro for the pour",grade:"Warm, light film grain, rich blacks",setting:"Modern open-plan office, late afternoon"},
+  cast:"Woman, early 30s, creative director, natural look, oatmeal knit sweater",
+  continuity:["Same woman, sweater and hairstyle in every shot","Can is always matte black with copper Ember & Oak logo, label-forward","Office stays warm-lit; window light from screen left","Glass is a tall clear tumbler throughout"],
+  shots:[
+    {n:1,time:"0–4s",shotType:"Wide",description:"Busy office at 3pm: phones ringing, people rushing past. She sits at her desk, eyes heavy.",camera:"Slow dolly in",vo:"",super:"",sound:"Office chaos, overlapping chatter",imagePrompt:"Cinematic 16:9 still, modern open-plan office at late afternoon, warm tungsten light, blurred coworkers rushing past in the foreground, a woman in her early 30s in an oatmeal knit sweater sitting at a desk looking tired, 35mm lens, shallow depth of field, light film grain.",videoPrompt:"Slow dolly toward her as people blur past, she exhales and rubs her eyes. 4 seconds."},
+    {n:2,time:"4–7s",shotType:"Close-up",description:"Her hand reaches for the matte black Ember & Oak can on the desk.",camera:"Static, 85mm",vo:"",super:"",sound:"Chatter starts to fade",imagePrompt:"Close-up of a woman's hand reaching for a matte black can with a copper Ember & Oak logo on a wooden desk, warm side light, shallow depth of field, cinematic.",videoPrompt:"Her hand closes around the can and lifts it slightly. 3 seconds."},
+    {n:3,time:"7–10s",shotType:"Extreme close-up",description:"The can cracks open. The office sound cuts to near-silence.",camera:"Macro",vo:"",super:"",sound:"Crisp can crack, then silence",imagePrompt:"Extreme macro of the ring-pull of a matte black can just opening, tiny mist escaping, copper logo edge in frame, dark warm background.",videoPrompt:"The tab lifts and a fine mist rises. Slow motion. 3 seconds."},
+    {n:4,time:"10–18s",shotType:"Macro / slow motion",description:"Coffee pours into a tall glass; the nitro cascade rolls down and settles into a cream head.",camera:"Locked-off macro, 100mm",vo:"Some coffee wakes you up.",super:"",sound:"Soft pour, piano enters",imagePrompt:"Macro shot of dark nitro cold brew pouring into a tall clear tumbler, creamy cascade of tiny bubbles rolling downward, warm backlight glowing through the glass, black background.",videoPrompt:"Slow-motion cascade swirling down the glass and settling into a cream head. 8 seconds."},
+    {n:5,time:"18–25s",shotType:"Medium close-up",description:"She takes a sip. Around her, the office has slowed to a gentle blur. She smiles slightly.",camera:"Slow push-in",vo:"This one gives you the afternoon back.",super:"",sound:"Piano continues",imagePrompt:"Medium close-up of the same woman sipping from the tall glass of nitro coffee, eyes closed, calm half smile, warm office background in soft blur, golden window light from left.",videoPrompt:"She sips, lowers the glass, opens her eyes calmly; background people move in slow motion. 7 seconds."},
+    {n:6,time:"25–30s",shotType:"Product hero",description:"Can and glass on the desk in warm light. Logo and tagline.",camera:"Slow orbit",vo:"Ember & Oak. Take your afternoon back.",super:"Take your afternoon back.",sound:"Piano resolves",imagePrompt:"Product hero shot: matte black Ember & Oak can beside a tall glass of nitro cold brew with a cream head on a walnut desk, warm rim light, dark background, premium commercial lighting.",videoPrompt:"Slow 15-degree orbit around the can and glass, foam settles. 5 seconds."}
+  ],
+  script:"Some coffee wakes you up. This one gives you the afternoon back. Ember & Oak. Take your afternoon back.",
+  music:"Sparse warm piano entering on the pour (shot 4), resolving on the end card. License a track or generate an original.",
+  endCard:"Logo centred on black, tagline below, 'Now in stores'.",
+  cutdowns:[{length:"15s",platform:"YouTube pre-roll",shots:"1, 3, 4, 6"},{length:"6s",platform:"Bumper / TikTop",shots:"3, 4, 6"},{length:"9:16 reframe",platform:"Reels / TikTok",shots:"All, reframed tighter on her and the glass"}],
+  references:["Clear front photo of the can with the label readable","One approved still of the actress, reused as the reference for shots 1, 2 and 5","Glass and desk reference for continuity"],
+  compliance:["Don't claim health benefits or exact energy effects","Check music licensing before airing","Label as AI-generated where the platform requires it"],
+  castBible:[{tag:"@CAST-1",role:"Creative director, lead",look:"Woman, early 30s, warm brown skin, natural makeup, shoulder-length twists",wardrobe:"Oatmeal knit sweater, small gold hoops",source:"Cast for you: generate one approved headshot first, then reuse it"}],
+  productBible:[{tag:"@PRODUCT-1",name:"Ember & Oak Nitro Cold Brew can",authority:"The supplied product photo is the absolute reference. Never redesign the can.",shape:"Standard 330ml slim aluminium can",color:"Matte black body, brushed copper ring-pull",brandMark:"Copper 'Ember & Oak' wordmark centred, oak-leaf icon above",label:"'NITRO COLD BREW' small caps under the wordmark",doNot:"No other colours, no glossy finish, no extra text, no condensation that hides the logo"}],
+  attach:["@PRODUCT-1: front photo of the can, label readable","@CAST-1: the approved headshot","Optional: Ember & Oak logo on plain background"],
+  oneTake:[
+    {part:"Part 1 of 2",time:"0–15s",prompt:"TITLE: EMBER & OAK — THE CASCADE (PART 1)\nDURATION: 15 seconds · ASPECT RATIO: 16:9\nSTYLE: Premium cinematic TV commercial · QUALITY: ultra-photorealistic, warm film grain\nREFERENCES: @CAST-1 is the woman. @PRODUCT-1 is the can — preserve it exactly, no redesign.\n\nSCENE FLOW:\n0–4s: Busy open-plan office at 3pm, coworkers blur past, @CAST-1 at her desk looks drained. Slow dolly in.\n4–7s: Close-up, her hand lifts @PRODUCT-1 from the walnut desk, label facing camera.\n7–10s: Extreme macro, the ring-pull cracks open, fine mist rises; office noise cuts to near-silence.\n10–15s: Macro, coffee pours into a tall clear tumbler, nitro cascade rolls down in slow motion, warm backlight.\n\nCAMERA: Continuous cinematic movement, smooth gimbal, slow push-ins, 100mm macro for product. No abrupt cuts.\nCONTINUITY LOCK: @CAST-1's face, twists, oatmeal sweater and gold hoops identical throughout. @PRODUCT-1 matte black with copper wordmark exactly as the reference. Same office, warm tungsten light from screen left, same colour grade.\nAUDIO: Office chatter that fades to silence on the can crack, crisp can sound, soft pour, warm piano enters at 10s. Voiceover, female, Nigerian accent, calm and warm, at 11s: \"Some coffee wakes you up.\"\nAVOID: Text inside the shot, extra logos, changes to the can design, lip movement."},
+    {part:"Part 2 of 2",time:"15–30s",prompt:"TITLE: EMBER & OAK — THE CASCADE (PART 2)\nDURATION: 15 seconds · ASPECT RATIO: 16:9\nSTYLE: Premium cinematic TV commercial · QUALITY: ultra-photorealistic, warm film grain\nREFERENCES: @CAST-1 is the woman. @PRODUCT-1 is the can — preserve it exactly.\n\nSCENE FLOW:\n0–3s: The cascade settles into a cream head in the tumbler.\n3–10s: Medium close-up, @CAST-1 sips, eyes closed, calm half smile; the office behind her moves in slow motion.\n10–15s: Product hero, @PRODUCT-1 beside the glass on the walnut desk, slow 15-degree orbit, warm rim light.\n\nCAMERA: Smooth gimbal, slow push-in on her, gentle orbit on the product. No abrupt cuts.\nCONTINUITY LOCK: Same as Part 1: identical face, hair, wardrobe, can design, office and grade.\nAUDIO: Warm piano continues and resolves. Voiceover, female, Nigerian accent, at 4s: \"This one gives you the afternoon back.\" At 11s: \"Ember & Oak. Take your afternoon back.\"\nAVOID: Text inside the shot, lip movement, extra products."}
+  ]
+};
+
+/* ---------- Rendering ---------- */
+function renderStrategy(st, brief, isExample){
+  setStage(2);
+  out.replaceChildren();
+  const sheet=el("article","sheet panel");
+  const head=el("div","sheet-head"); const left=el("div"); const badges=el("div","actions");
+  if(isExample) badges.append(el("span","badge example","Example"));
+  badges.append(el("span","badge",brief.mode));
+  left.append(badges, el("h2",null,"Strategy for "+(brief.brand||"your product")), el("p",null,st.positioning||""));
+  head.append(left); sheet.append(head);
+  if(st.message) sheet.append(el("div","msg",st.message));
+  const cols=el("div","cols");
+  cols.append(block("Audience insight",el("p",null,st.insight||"")), block("Desired response",el("p",null,st.desiredResponse||"")), block("Audience",el("p",null,st.audience||"")), block("Tone",el("p",null,st.tone||"")));
+  sheet.append(cols);
+  sheet.append(el("span","eyebrow","Pick a concept to develop"));
+  const grid=el("div","concepts");
+  (st.concepts||[]).forEach(c=>{
+    const card=el("div","concept");
+    card.append(el("span","letter",c.letter||""), el("h3",null,c.name||""), el("p",null,c.logline||""), el("p","why",c.why||""));
+    const d=el("dl","kv"); [["Look",c.look],["Music",c.music]].forEach(([k,v])=>{if(v) d.append(el("dt",null,k),el("dd",null,v));}); card.append(d);
+    const b=el("button","primary",isExample?"See the example package":"Develop this concept"); b.type="button";
+    b.onclick=()=> isExample ? renderPackage(EX_PACKAGE,EX_BRIEF,true) : developConcept(c);
+    card.append(b); grid.append(card);
+  });
+  sheet.append(grid);
+  if(!isExample){const again=el("button",null,"Give me three new concepts"); again.type="button"; again.onclick=()=>$("brief").requestSubmit(); sheet.append(again);}
+  out.append(sheet);
+  renderHistory();
+}
+
+function asText(pk, brief){
+  const L=[];
+  L.push(`COMMERCIAL — ${pk.title}`, `${brief.mode} · ${brief.runtime}s · ${brief.mode==="TV commercial"?"16:9":"9:16"} · ${brief.model||""} · ${brief.voice||""}${brief.accent?" ("+brief.accent+")":""}`, "", `LOGLINE: ${pk.logline}`, `CAST: ${pk.cast}`, "", "LOOK");
+  Object.entries(pk.look||{}).forEach(([k,v])=>L.push(`- ${k}: ${v}`));
+  L.push("", "CONTINUITY LOCK"); (pk.continuity||[]).forEach(c=>L.push(`- ${c}`));
+  (pk.castBible||[]).forEach(c=>L.push("", `CAST ${c.tag}: ${c.role} — ${c.look}; wardrobe: ${c.wardrobe}; source: ${c.source}`));
+  (pk.productBible||[]).forEach(p=>L.push("", `PRODUCT IDENTITY ${p.tag}: ${p.name}`, `- Authority: ${p.authority}`, `- Shape: ${p.shape}`, `- Colour: ${p.color}`, `- Brand mark: ${p.brandMark}`, `- Label: ${p.label}`, `- Do not: ${p.doNot}`));
+  if((pk.oneTake||[]).length){ L.push("", `ONE-TAKE PROMPT(S) FOR ${brief.model||"VIDEO MODEL"}`); if((pk.attach||[]).length){L.push("Attach:"); pk.attach.forEach(a=>L.push(`- ${a}`));} pk.oneTake.forEach(o=>L.push("", `--- ${o.part} (${o.time}) ---`, o.prompt)); }
+  L.push("", "SHOTS");
+  (pk.shots||[]).forEach(s=>L.push("", `Shot ${s.n} (${s.time}) — ${s.shotType}`, `Description: ${s.description}`, `Camera: ${s.camera}`, `VO / dialogue: ${s.vo||"—"}`, `Super: ${s.super||"—"}`, `Sound: ${s.sound||"—"}`, `IMAGE PROMPT: ${s.imagePrompt}`, `VIDEO PROMPT: ${s.videoPrompt}`));
+  L.push("", "SCRIPT", pk.script||"", "", `MUSIC: ${pk.music||""}`, `END CARD: ${pk.endCard||""}`, "", "CUTDOWNS");
+  (pk.cutdowns||[]).forEach(c=>L.push(`- ${c.length} · ${c.platform} · shots ${c.shots}`));
+  L.push("", "REFERENCES NEEDED"); (pk.references||[]).forEach(r=>L.push(`- ${r}`));
+  L.push("", "COMPLIANCE"); (pk.compliance||[]).forEach(r=>L.push(`- ${r}`));
+  return L.join("\n");
+}
+
+function renderPackage(pk, brief, isExample){
+  setStage(3);
+  out.replaceChildren();
+  const sheet=el("article","sheet panel");
+  const head=el("div","sheet-head"); const left=el("div"); const badges=el("div","actions");
+  if(isExample) badges.append(el("span","badge example","Example"));
+  badges.append(el("span","badge",brief.mode));
+  left.append(badges, el("h2",null,pk.title||"Production package"), el("p",null,pk.logline||""));
+  const tools=el("div","actions");
+  const back=el("button",null,"← Back to concepts"); back.type="button";
+  back.onclick=()=> isExample ? renderStrategy(EX_STRATEGY,EX_BRIEF,true) : (current.strategy ? renderStrategy(current.strategy,current.brief,false) : null);
+  if(isExample || current.strategy) tools.append(back);
+  const cAll=el("button",null,"Copy package"); cAll.type="button"; cAll.onclick=()=>copyText(asText(pk,brief),cAll);
+  const cCl=el("button",null,"Copy for Claude to render"); cCl.type="button";
+  cCl.onclick=()=>copyText(((pk.oneTake||[]).length?"Produce this commercial in Higgsfield with "+(brief.model||"Seedance 2.0")+". I'll upload the reference images listed. Lock the cast first if it needs casting, then run the one-take prompt(s) with the references attached. Tell me the credit cost before generating.":"Produce this commercial in Higgsfield. Lock the cast and product references first, then generate each shot's still for my approval, then animate each shot. Tell me the credit cost before each stage.")+"\n\n"+asText(pk,brief),cCl);
+  tools.append(cAll,cCl); head.append(left,tools); sheet.append(head);
+
+  const meta=el("div","meta");
+  [["Format",brief.mode],["Model",brief.model||"Any"],["Voice",brief.voice==="No voice, music only"?"Music only":(brief.voice||"")+(brief.accent&&brief.voice!=="No voice, music only"?" · "+brief.accent:"")],["Runtime",brief.runtime+"s"],["Aspect",brief.mode==="TV commercial"?"16:9":"9:16"],["Shots",(pk.shots||[]).length]].forEach(([k,v])=>{const s=el("span"); s.append(k+": "); s.append(el("b",null,String(v))); meta.append(s);});
+  sheet.append(meta);
+
+  const cols=el("div","cols");
+  cols.append(block("Look",kv(pk.look)), block("Continuity lock",list(pk.continuity)));
+  sheet.append(cols);
+
+  const bibles=el("div","cols");
+  (pk.castBible||[]).forEach(c=>bibles.append(block("Cast · "+(c.tag||""),kv({role:c.role,look:c.look,wardrobe:c.wardrobe,source:c.source}))));
+  if(!(pk.castBible||[]).length && pk.cast) bibles.append(block("Cast",el("p",null,pk.cast)));
+  (pk.productBible||[]).forEach(p=>bibles.append(block("Product identity · "+(p.tag||""),kv({product:p.name,authority:p.authority,shape:p.shape,color:p.color,brandMark:p.brandMark,label:p.label,doNot:p.doNot}))));
+  if(bibles.children.length) sheet.append(bibles);
+
+  if((pk.oneTake||[]).length){
+    sheet.append(el("span","eyebrow",`One-take prompt · paste into ${brief.model||"your video model"} with the reference images`));
+    if((pk.attach||[]).length) sheet.append(block("Attach these references, in this order",list(pk.attach)));
+    pk.oneTake.forEach(o=>sheet.append(promptBox(`${o.part||"Prompt"} · ${o.time||""}`, o.prompt||"")));
+  }
+
+  sheet.append(el("span","eyebrow",(pk.oneTake||[]).length?"Storyboard · what the prompt above produces":"Storyboard"));
+  const sh=el("div","shots");
+  (pk.shots||[]).forEach(s=>{
+    const row=el("div","shot");
+    const tc=el("div","tc"); tc.append(el("span","n",String(s.n).padStart(2,"0")), el("span","t",s.time||""), el("span","s",s.shotType||""));
+    const body=el("div","sh-body");
+    body.append(el("h4",null,s.description||""));
+    const c=el("div","line"); c.append(el("em",null,"Camera"), s.camera||""); body.append(c);
+    if(s.sound){const so=el("div","line"); so.append(el("em",null,"Sound"), s.sound); body.append(so);}
+    if(s.vo){const d=el("div","say"); d.append(el("em",null,"VO "), "“"+s.vo+"”"); body.append(d);}
+    if(s.super){const su=el("div","line"); su.append(el("em",null,"Super"), s.super); body.append(su);}
+    if(s.imagePrompt) body.append(promptBox("Image prompt · photoreal still", s.imagePrompt));
+    if(s.videoPrompt) body.append(promptBox("Video prompt · animate", s.videoPrompt));
+    row.append(tc,body); sh.append(row);
+  });
+  sheet.append(sh);
+
+  const cols2=el("div","cols");
+  const sc=el("div"); sc.append(promptBox("Full voiceover",pk.script||""));
+  cols2.append(block("Script",sc), block("Music",el("p",null,pk.music||"")), block("End card",el("p",null,pk.endCard||"")));
+  sheet.append(cols2);
+
+  if((pk.cutdowns||[]).length){
+    const wrap=el("div","table-wrap"); const t=el("table"); const thead=el("thead"); const tr=el("tr");
+    ["Cut","Platform","Shots"].forEach(h=>tr.append(el("th",null,h))); thead.append(tr); t.append(thead);
+    const tb=el("tbody"); pk.cutdowns.forEach(c=>{const r=el("tr"); r.append(el("td",null,c.length||""),el("td",null,c.platform||""),el("td",null,c.shots||"")); tb.append(r);}); t.append(tb); wrap.append(t);
+    sheet.append(block("Cutdowns",wrap));
+  }
+  const cols3=el("div","cols");
+  cols3.append(block("References needed",list(pk.references)), block("Compliance checks",list(pk.compliance)));
+  sheet.append(cols3);
+  out.append(sheet);
+  renderHistory();
+}
+
+/* ---------- History ---------- */
+const HKEY="waves-commercial-packages";
+function loadHist(){try{return JSON.parse(localStorage.getItem(HKEY)||"[]")}catch{return []}}
+function saveHist(pk,brief){try{const h=loadHist(); h.unshift({at:Date.now(),pk,brief}); localStorage.setItem(HKEY,JSON.stringify(h.slice(0,10)));}catch{}}
+function renderHistory(){const h=loadHist(); if(!h.length) return;
+  const box=el("div","history panel"); box.append(el("span","eyebrow","Recent packages on this device"));
+  const ol=el("ol"); h.forEach(it=>{const li=el("li"); const b=el("button",null,it.pk.title||"Untitled"); b.type="button"; b.onclick=()=>{current={brief:it.brief,strategy:null}; renderPackage(it.pk,it.brief,false);}; li.append(b," · "+new Date(it.at).toLocaleDateString()); ol.append(li);});
+  box.append(ol); out.append(box);}
+
+/* ---------- Prompts ---------- */
+function briefText(b){
+  return `- Format: ${b.mode} (${b.mode==="TV commercial"?"16:9 broadcast/YouTube, cinematic pacing, can build":"9:16 vertical for TikTok/Reels/Shorts, hook in the first 1.5 seconds, designed for sound-off with supers"})
+- Brand and product: ${b.brand||"(not given — invent a plausible fictional brand and say so)"}
+- What it is: ${b.what||"(not given)"}
+- Audience: ${b.audience||"(propose one)"}
+- Goal: ${b.goal}
+- Brand personality: ${b.persona.join(", ")||"(propose one)"}
+- Must include: ${b.musts||"(nothing specific)"}
+- References / vibe: ${b.refs||"(none)"}
+- Runtime: ${b.runtime} seconds, ${b.shots} shots
+- Video model: ${b.model}
+- Cast: ${b.castMode}${b.cast?" — "+b.cast.replace(/\n/g,"; "):""}
+- Voice: ${b.voice}${b.voice==="No voice, music only"?"":", "+b.accent+" accent"}
+${b.photoCount?`- ${b.photoCount} product photo(s) attached: describe the packaging exactly as shown.`:""}`;
+}
+function strategyPrompt(b){
+  return `You are the executive creative director of a top advertising agency. Develop the strategy and three distinct creative concepts for this brief.
+
+${briefText(b)}
+
+Rules: concepts must be genuinely different from each other (e.g. product-as-hero, human story, craft/process, humour). Each must be producible with AI image and video generation (photoreal stills animated into clips), so avoid crowds of interacting people, readable text on screens, and complex mechanical demonstrations. No unverifiable claims. Plain English, no emojis.
+
+Reply with ONLY a JSON object:
+{"insight":string (the audience insight),"desiredResponse":string (what we want viewers to feel or say, in their words),"positioning":string,"message":string (the single-minded message, under 8 words),"audience":string,"tone":string,
+"concepts":[{"letter":"A","name":string,"logline":string,"why":string,"look":string,"music":string}, {"letter":"B",...}, {"letter":"C",...}]}`;
+}
+function packagePrompt(b, st, c){
+  return `You are the director and creative director producing a commercial with AI: each shot is first generated as a photorealistic still, then animated with image-to-video (Higgsfield, Kling, Veo, Seedance), then edited.
+
+Brief:
+${briefText(b)}
+
+Agreed strategy: ${st.positioning} Single-minded message: "${st.message}". Tone: ${st.tone}
+
+Chosen concept ${c.letter}: "${c.name}" — ${c.logline} Look: ${c.look}. Music: ${c.music}.
+
+Write the full production package with exactly ${b.shots} shots whose times add up to ${b.runtime} seconds.
+Output mode: ${b.output==="one-take"?`ONE-TAKE. The ad will be generated as ${Math.ceil(b.runtime/15)} single multi-shot generation(s) of at most 15 seconds each in ${b.model}, with reference images attached. Write "oneTake" as an array of ${Math.ceil(b.runtime/15)} part(s). Each part's "prompt" is complete and paste-ready, plain text with these labelled sections on their own lines: TITLE, DURATION · ASPECT RATIO, STYLE · QUALITY, REFERENCES (map every @tag to what it is and say the product must be preserved exactly), SCENE FLOW (timecoded beats within the part), CAMERA (continuous cinematic movement, no abrupt cuts unless the concept needs them), CONTINUITY LOCK, AUDIO (music, sound effects, and every voice line with its timecode and the ${b.accent} accent if there is voice), AVOID. In the "shots" array leave imagePrompt and videoPrompt as "".`:`SHOT BY SHOT. Each shot gets its own imagePrompt and videoPrompt. Set "oneTake" to [].`}
+Cast and product locks: tag each person @CAST-1, @CAST-2… and each product @PRODUCT-1… and use those tags everywhere. ${b.castMode==="I'll provide headshots"?"The user will upload headshots for the cast: say so in each castBible source.":"Cast the talent: describe each person precisely enough to generate one approved headshot, and say so in source."} The productBible must describe each product so precisely that a model cannot redesign it: shape, colours, cap or closure, brand mark position, label text, and what must never change.
+Rules:
+1. Lock the cast, wardrobe, setting, lighting and product appearance; repeat the key identity details inside every imagePrompt so each still can be generated alone.
+2. imagePrompt: one dense paragraph for a photoreal ${b.mode==="TV commercial"?"16:9":"9:16"} still: subject, action, setting, lighting, lens and depth of field, colour grade, product placement label-forward. videoPrompt: the motion and camera move only, 1–2 sentences, with the clip length.
+3. Keep actions simple for AI video: ${b.voice==="Dialogue on camera"?"keep on-camera lines short (one sentence per speaker)":"no lip movement or on-camera dialogue (voice is "+(b.voice==="Voiceover"?"voiceover only":"absent")+")"}, no hands operating small mechanisms, no readable on-screen text inside the shot (put words in "super" instead).
+4. ${b.mode==="TV commercial"?"Build to a clear product hero and end card.":"Shot 1 must stop the scroll in 1.5 seconds; supers carry the story for sound-off viewing."}
+5. Cutdowns: suggest 2–3 shorter edits or reframes from the same shots.
+6. No unverifiable or medical claims. Plain English, no emojis.
+
+Reply with ONLY a JSON object:
+{"title":string,"concept":"${c.letter}","logline":string,
+"look":{"lighting":string,"palette":string,"lens":string,"grade":string,"setting":string},
+"cast":string,"continuity":[string],
+"castBible":[{"tag":"@CAST-1","role":string,"look":string,"wardrobe":string,"source":string}],
+"productBible":[{"tag":"@PRODUCT-1","name":string,"authority":string,"shape":string,"color":string,"brandMark":string,"label":string,"doNot":string}],
+"attach":[string] (each reference image to attach, in order, starting with its @tag),
+"oneTake":[{"part":"Part 1 of N","time":"0–15s","prompt":string}],
+"shots":[{"n":number,"time":"0–4s","shotType":string,"description":string,"camera":string,"vo":string,"super":string,"sound":string,"imagePrompt":string,"videoPrompt":string}],
+"script":string,"music":string,"endCard":string,
+"cutdowns":[{"length":string,"platform":string,"shots":string}],
+"references":[string],"compliance":[string]}`;
+}
+
+/* ---------- Claude calls ---------- */
+const ERR={
+  not_granted:"Claude access was declined for this page. Reload the page to be asked again.",
+  sampling_disabled:"Claude isn't available on this account, so this page can't generate.",
+  rate_limited:"You've hit a usage limit. Wait a few minutes and try again.",
+  session_expired:"Your session expired. Sign in to Claude again, then retry.",
+  refused:"Claude declined this brief. Change the product details and try again.",
+  invalid_json:"The answer came back in the wrong shape. Try again, or ask for fewer shots.",
+  image_rejected:"One of the photos couldn't be used. Try a different JPG or PNG.",
+  prompt_too_large:"The brief is too long. Shorten it and try again.",
+  empty_completion:"Nothing came back. Simplify the brief and try again."
+};
+let sample=null, ctl=null, imagesOK=false, blocked=false, busy=false;
+let current={brief:null,strategy:null,files:[]};
+
+function readBrief(){
+  const fd=new FormData($("brief"));
+  const files=imagesOK?Array.from($("photos").files||[]):[];
+  return {brief:{mode:fd.get("mode")||"TV commercial", brand:$("brand").value.trim(), what:$("what").value.trim(), audience:$("audience").value.trim(),
+    goal:fd.get("goal")||"Launch", persona:fd.getAll("persona"), musts:$("musts").value.trim(), refs:$("refs").value.trim(),
+    runtime:Number($("runtime").value), shots:Number($("shotsN").value), photoCount:files.length,
+    model:$("model").value, output:$("output").value, castMode:fd.get("castMode")||"Cast it for me", cast:$("cast").value.trim(), voice:$("voice").value, accent:$("accent").value}, files};
+}
+
+async function ask(prompt, files, label, onFail){
+  if(!sample||busy) return null;
+  busy=true; ctl=new AbortController(); go.disabled=true; stopBtn.hidden=false; statusEl.className="status"; statusEl.textContent="";
+  const th=el("div","thinking panel"); th.append(el("i"), el("span",null,label)); out.replaceChildren(th);
+  try{
+    const opts={signal:ctl.signal, cache:false}; if(files&&files.length) opts.images=files;
+    return await sample.json(prompt, opts);
+  }catch(err){
+    onFail();
+    if(err&&err.code==="cancelled") statusEl.textContent="Stopped.";
+    else{statusEl.className="status err"; statusEl.textContent=ERR[err&&err.code]||"Something went wrong reaching Claude. Try again."; if(err&&(err.code==="not_granted"||err.code==="sampling_disabled")) blocked=true;}
+    return null;
+  }finally{busy=false; stopBtn.hidden=true; go.disabled=blocked;}
+}
+
+async function developConcept(c){
+  const {brief,strategy,files}=current;
+  const pk=await ask(packagePrompt(brief,strategy,c), files, `Building the storyboard for “${c.name}”… usually 30–90 seconds.`, ()=>renderStrategy(strategy,brief,false));
+  if(!pk) return;
+  if(!Array.isArray(pk.shots)){statusEl.className="status err"; statusEl.textContent=ERR.invalid_json; renderStrategy(strategy,brief,false); return;}
+  saveHist(pk,brief); renderPackage(pk,brief,false); statusEl.textContent="Production package ready.";
+}
+
+$("brief").addEventListener("submit", async e=>{
+  e.preventDefault(); if(!sample) return;
+  const {brief,files}=readBrief();
+  const prev=current;
+  const st=await ask(strategyPrompt(brief), files, "Writing strategy and three concepts… usually 20–60 seconds.", ()=>{ prev.strategy ? renderStrategy(prev.strategy,prev.brief,false) : renderStrategy(EX_STRATEGY,EX_BRIEF,true); });
+  if(!st) return;
+  if(!Array.isArray(st.concepts)||!st.concepts.length){statusEl.className="status err"; statusEl.textContent=ERR.invalid_json; renderStrategy(EX_STRATEGY,EX_BRIEF,true); return;}
+  current={brief,strategy:st,files};
+  renderStrategy(st,brief,false); statusEl.textContent="Pick a concept to develop.";
+});
+stopBtn.onclick=()=>ctl?.abort();
+
+function syncHints(){
+  $("outputHint").textContent = $("output").value==="one-take"
+    ? "One-take: one paste-ready prompt per 15 seconds. Attach your cast and product photos in the video tool and generate once. Fastest and cheapest."
+    : "Shot by shot: a still and a motion prompt for every shot. More control, more generations.";
+  $("accent").disabled = $("voice").value==="No voice, music only";
+}
+$("output").addEventListener("change",syncHints); $("voice").addEventListener("change",syncHints); syncHints();
+
+/* ---------- Boot ---------- */
+renderStrategy(EX_STRATEGY,EX_BRIEF,true);
+statusEl.textContent="Connecting to Claude…";
+(async()=>{
+  try{ sample = window.claude ? await window.claude.use("sample") : null; }catch{ sample=null; }
+  if(!sample){ go.disabled=true; statusEl.textContent="Generating needs this page opened on claude.ai. The example shows the format."; return; }
+  statusEl.textContent="";
+  try{ const lim=await sample.limits(); if(lim&&lim.images){ imagesOK=true; $("photoField").hidden=false; $("photos").accept=lim.images.mediaTypes.join(","); $("photoNote").textContent=`Up to ${lim.images.maxCount} photos.`; } }catch{}
+})();
+</script>
