@@ -148,3 +148,45 @@ Patterns learned from talking videos the user sends. We learn general performanc
   - keyword rule and density (4th).
 - **New candidates:** gesture toward the side where the overlay appears; CTA point down toward the bio; seated framing with hands resting in the lap.
 - **Promoted:** pain-point face, presenting palm. Waiting: hand to chin, props either side of the face, rolling hand, both index fingers up, confident smirk, wearing the product, image insets, plus the three new candidates.
+
+## Video 6: @thejuliverse "Day 14" wellness tea (52s; about 30s talking)
+- **Framing:** seated, waist-up, vanity room with bulb mirror; jump cuts and punch-ins; product inset beside her head. Energy: upbeat.
+- **Beats seen:**
+  - **Hook:** smile, a loose fist or hand moving at chest height.
+  - **"If [I owned a] wellness-tea brand":** presenting palm, with the product inset beside her.
+  - **"wouldn't just post pictures":** **pain-point face** (squint, lips pulled, head tilt).
+  - **"THIS":** a punch-in with a big smile.
+  - **"Let me show you what I would do instead":** one finger up, then a point at the camera.
+  - **Explaining:** both hands rolling, and **tapping off points on the other hand's fingers**.
+  - **List** (CREATE SAMPLES, BUILD PORTFOLIO, PITCH WELLNESS BRANDS): 1 finger, then 2, then an open hand.
+  - **"I'm checking attendance":** a tight punch-in with **hook surprise** (eyes wide, mouth "oh"), and a finger pointing at the notification overlay.
+  - **Sign-off:** wave.
+  - Her AI ad example shows the **product held beside the face**.
+- **Confirms:** pain-point face (3rd); presenting palm (3rd); rolling hand (2nd); gesture toward the overlay (2nd); finger count (4th source); hook surprise (2nd); punch-in on "THIS"; wave; slow blink; product beside the face (2nd, with video 2).
+- **New candidate:** tapping off fingers on the other hand.
+
+## Video 7: @thejuliverse "Day 13" real estate (57s; about 30s talking, the rest an AI property tour)
+- **Framing:** seated, waist-up, often leaning on the chair arm; vanity room; insets of "static property pictures" beside her head. Energy: conversational and confident.
+- **Beats seen:**
+  - **Hook:** smile, hands in her lap.
+  - **"If I was a realtor...":** hands lightly gesturing in her lap.
+  - **"I wouldn't just post static property pictures":** **pain-point face** with a palm-up shrug, insets beside her head.
+  - **"I'd create content like this":** a big smile, then cut.
+  - **"if you're an AI creator":** a point at the camera.
+  - **"This is the kind of portfolio content":** presenting palm up.
+  - **List:** "1. consistent property" one finger, "cinematic tour" one finger, "professional presentation" two fingers.
+  - **"Now let me prove what I mean":** a **thumb over the shoulder** toward the coming clip.
+  - **"create sample property tours":** **serious emphasis face**, one finger up.
+  - **"build your portfolio then pitch":** another count.
+  - **"developers, Airbnb hosts...":** both palms up in her lap.
+  - **"click the link in my bio":** **point down**.
+  - **"comment 13 done":** point down and at herself.
+  - **Sign-off:** wave.
+  - **Her AI tour-host clips:** an arm sweeping toward each room feature.
+- **Confirms:** pain-point face (4th); presenting palm (4th); gesture toward the next cut (3rd); CTA point down (2nd); seated framing (3rd); finger count (5th); insets beside the head (3rd); wave; slow blink; point at the camera on "you".
+- **New candidates:** serious emphasis face; leaning on the armrest; tour-host sweep.
+- **Promoted after videos 6 and 7:**
+  - **Gestures:** rolling hand, gesture toward the overlay or next cut, CTA point down, product beside the face.
+  - **Body language:** seated framing.
+  - **Editing:** image insets.
+  - **New section 9b:** the series video structure (the shape shared by videos 5, 6 and 7).

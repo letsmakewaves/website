@@ -57,6 +57,10 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 | **Thumb back at self (confirmed in 3 videos)** | "Day 5 DONE", "I", "me", her own result. Variant (video 5): both index fingers pointing in at herself on "DAY 12 DONE" | Chest |
 | **Open-palm wave (confirmed in 2 videos)** | The hello, "there you have it", and the sign-off ("I'll see you tomorrow") | Shoulder, beside the face |
 | **Presenting palm (confirmed in videos 4 and 5)** | "Like this", "look at this", the result: one or both palms up, opening outward toward the side where the example appears (an inset or the next cut) | Chest |
+| **Rolling hand (confirmed in videos 4 and 6)** | While explaining a process ("and then this, and then that"): one or both hands loosely roll or circle at chest height. Small, and only during the explanation | Chest |
+| **Gesture toward the overlay or next cut (confirmed in videos 5, 6 and 7)** | Her palm, finger or a thumb over the shoulder points to the side of the frame where the example image will appear, or toward "what I mean" before the cut ("Now let me prove what I mean"). Decide the overlay side before generating, so the gesture and the inset match | Chest to shoulder |
+| **CTA point down (confirmed in videos 5 and 7)** | "Click the link in my bio", "comment 13 done": a finger points down and to the side, toward the caption and bio area | Waist to chest |
+| **Product beside the face (videos 2 and 6)** | Opening a product video, or a UGC "hold up the product" moment: the product is held up next to the cheek, label to camera, with a soft smile | Face height |
 | **Hands come together** | The last item of a list that sums it up ("turn everything into one..."): both hands meet at the chest, fingertips touching | Chest |
 
 **Mic in one hand:** only the free hand gestures, and it stays at chest height or lower than the mic so it doesn't cover the face.
@@ -66,6 +70,7 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 - **Posture:** upright, shoulders relaxed and down, not stiff.
 - **Lean:** a small lean toward the camera on the most important line.
 - **Breathing:** a small, visible breath before a big line makes her look alive.
+- **Seated framing (confirmed in videos 5, 6 and 7):** sitting in a chair, framed waist-up, hands resting in the lap between gestures. Gestures rise from the lap and settle back. A calm "sit down and talk" format, good for longer explainers.
 - **Shoulders:** a little shrug for "it's that easy", a small bounce with a laugh.
 - **Energy levels:**
   - Calm: slow moves, longer holds, smaller smiles.
@@ -89,17 +94,15 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 
 These have been seen in only one reference video. Use them when they clearly fit the line:
 - **Hand to chin:** on "imagine" or "think about it", with a head tilt and eyes drifting up.
-- **Props on either side of the face:** to open a video about a product.
-- **Rolling hand (video 4):** while explaining a process, one hand loosely rolls or circles at chest height ("and then this, and then that"). Keep it small and only during the explanation.
 - **Both index fingers up (video 4):** a strong "wait" or "this part" before the key point.
 - **Closed-lip confident smirk (video 4):** at the end of the pitch, before cutting to the result: lips closed, one corner up, chin slightly down, eyes on the lens.
 - **Wearing the product (video 4):** for jewellery or fashion, she wears the item while talking about it, so the talking shot doubles as a product shot.
-- **Edit (video 4):** small images of the result float beside her head, with doodled sparkles, while she talks about them.
-- **Gesture toward the overlay (video 5):** her palm or finger points to the side of the frame where the product image or example will appear in the edit. Plan the overlay side before generating, so the gesture and the inset match.
-- **CTA point down (video 5):** on "click the link in my bio", the finger points down and to the side, toward where the bio and caption sit.
-- **Seated framing (video 5):** sitting in a chair, framed waist-up, hands resting in her lap between gestures. Gestures rise from the lap and settle back. A calm, "sit down and talk" format.
+- **Tapping off fingers on the other hand (video 6):** while explaining several points quickly, the index finger of one hand taps the fingers of the other hand, one per point. A softer alternative to holding up a count.
+- **Serious emphasis face (video 7):** on the instruction that matters most ("create sample property tours"), the brows draw together, the chin dips slightly and one finger goes up, then a slow blink. A no-nonsense "listen to me" moment.
+- **Leaning on the armrest (video 7):** seated, one forearm resting on the chair arm, body slightly angled, which reads relaxed and confident.
+- **Tour-host sweep (video 7, in her AI property ad):** when presenting a space, an open arm sweeps toward the feature being named ("your private lounge", "open living, elegant dining here"). Useful for real-estate and venue formats.
 
-Promoted after video 5: pain-point face (expressions), presenting palm (gestures). Promoted after video 3: slow blink (expressions), thumb back at self, open-palm wave, hands together (gestures), and jump-cut punch-ins (section 9).
+Promoted after video 7: rolling hand, gesture toward the overlay or next cut, CTA point down, product beside the face (gestures), seated framing (body language), image insets (section 9). Promoted after video 5: pain-point face (expressions), presenting palm (gestures). Promoted after video 3: slow blink (expressions), thumb back at self, open-palm wave, hands together (gestures), jump-cut punch-ins (section 9).
 
 ## 8. Lists and finger counts (user observation, confirmed)
 
@@ -117,9 +120,26 @@ When the creator lists things, she counts them on her fingers, accurately: one f
 - **Framing:** this works even in a tight chest-up shot, because the hand rises to collarbone or chin height beside the face. That's the fix for close-ups like Chloe's DJI-mic frame (use the free hand).
 - **AI risk:** video models often get the number of fingers wrong. In review, freeze on each count and check it. If it's wrong, retry with a closer framing, fewer items per clip, or a slower read of the list in the voiceover. If it's still wrong, cut the count and put the numbers in the captions.
 
-## 9. Editing pattern (confirmed in 2 videos)
+## 9. Editing pattern (confirmed in 4+ videos)
 
-The talking parts are jump cuts between sentences, alternating the base framing with a slightly tighter punch-in on key lines (the hook, the CTA). For AI production, generate **one clip per sentence or two**, each with its own beat map. Then cut them together, punching in a little on the strongest lines. Fresh starts also keep each clip's performance short and accurate, which is easier for the model.
+The talking parts are jump cuts between sentences, alternating the base framing with a slightly tighter punch-in on key lines (the hook, "THIS", the CTA). Small images of the subject (the product, the "wrong way" photos) float beside her head while she talks about them (videos 4, 6 and 7). For AI production, generate **one clip per sentence or two**, each with its own beat map. Then cut them together, punching in a little on the strongest lines. Fresh starts also keep each clip's performance short and accurate, which is easier for the model.
+
+## 9b. Series video structure (seen in videos 5, 6 and 7)
+
+Her daily "Day N" videos follow the same performance shape. Use the shape with your own words:
+
+| Beat | Line type | Performance |
+|---|---|---|
+| 1 | Hook: "Day N of..." | Smile, slight head tilt, hands resting |
+| 2 | "If I owned a [type of] brand..." | Presenting palm toward the side where the product inset appears |
+| 3 | "...I wouldn't just post [the boring way]" | **Pain-point face** with a palm-up shrug; insets of the boring version beside her head |
+| 4 | "THIS is the kind of [ad] I'd create" | **Punch-in**, a big smile on "THIS", then cut to the example |
+| 5 | The example | B-roll of the AI result |
+| 6 | "If you're a creator looking for [X] deals..." | Brief point toward the camera on "you're" |
+| 7 | The steps | **Finger count** 1, 2, 3, with a slow blink between items |
+| 8 | "Click the link in my bio" | **Point down** to the side |
+| 9 | "Comment N done" / "Day N done" | Fingers or thumb pointing back at herself, a proud smile |
+| 10 | "I'll see you tomorrow" | **Wave**, a warm smile |
 
 ## 10. Fix table
 
