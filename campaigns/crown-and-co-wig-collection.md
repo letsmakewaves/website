@@ -1,0 +1,16 @@
+# Crown & Co. luxury wig collection (sample portfolio campaign)
+
+Fictional brand. Talent: Chloe (Higgsfield Element). Format: collection campaign. Styling: studio look from campaign-styling.md, with the logo on the left chest (pocket position).
+Model: Nano Banana Pro (routed to Nano Banana 2), 4:5, about 2 credits per image.
+
+| Look | Front | 3/4 turn | Over shoulder / profile | Confidence |
+|---|---|---|---|---|
+| 1. 30" jet-black bone-straight | 43e59379 | e9d58a71 | f8c3ec61 | b9ca5d61 (square-on, pocket logo; approved) |
+| 2. 26" jet-black deep body wave | 4efbcfde | efb246f2 | d4691609 | a95be382 |
+| 3. 24" dusty rose-pink body wave | b89195af | 0ebeb328 | 284aab1c | 3a943621 |
+| 4. 28" 613 honey-platinum straight | 53d6b1b0 | 7f818fed | 2a2d242b | f360c4d2 |
+| 5. 22" natural-black kinky curly | 8114a5f1 | f96b1a4a | 8acb890b | 60092313 |
+| Poster | 6faae54a | | | |
+
+Rejected: 15dee95f and b654ebcb (logo off-centre on a three-quarter body).
+Full image URL pattern: https://d8j0ntlcm91z4.cloudfront.net/user_3EtvNcgyfXmwXycZqJ5WwIUfClC/hf_<date>_<time>_<job_id>.png
