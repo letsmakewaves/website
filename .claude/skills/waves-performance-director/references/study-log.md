@@ -71,3 +71,30 @@ Patterns learned from talking videos the user sends. We learn general performanc
 ## User observation (after video 2): finger counts on lists
 - **Pattern:** when listing items (1, 2, 3, 4, 5), she counts them on her fingers accurately: one finger, then two, and so on, on each item's number word.
 - **Promoted:** yes (the user confirmed it across her videos). Library section 8 "Lists and finger counts"; the anti-pattern was changed from "no counting" to "no mismatched or unnecessary counts"; the fix table now has a row for wrong finger counts.
+
+## Video 3: @thejuliverse "Day 6" commercial tutorial (85s; about 40s talking, the rest B-roll and screen recording)
+- **Framing:** chest-up (off-shoulder top, the shoulders fill the bottom of the frame), tighter than videos 1 and 2. Bright apartment, window light. Jump cuts between sentences, with punch-ins on key lines. Energy: upbeat and conversational.
+- **Beats seen:**
+  - **Opening:** a big smile on the hello, then **hook surprise** on the bold claim (eyes wide, brows up, mouth open).
+  - **List 1** ("build the concept, create the product shots, direct the mother-and-baby scenes, turn everything into one polished commercial"):
+    - 1 finger on "build";
+    - 2 fingers on "create";
+    - 3 fingers on "direct";
+    - a slow blink between items;
+    - **on the last, summing-up item, both hands come together at the chest**, fingertips touching, instead of 4 fingers.
+    - The hand is at collarbone-to-chin height, beside the face, off-centre, palm to camera.
+  - **List 2:** 1 finger, then 2 (held), then 3 fingers, then the hands drop. The hand stays up between counts.
+  - **"there you have it":** an open-palm wave beside the face, with a big smile.
+  - **"don't just watch this and scroll":** a knowing look, head slightly tilted.
+  - **"Pick a product":** one finger up, then a brief point toward the camera.
+  - **"DAY 6 DONE":** thumb pointing back at herself, a proud smile.
+  - **"I'll see you tomorrow":** a wave and a warm smile.
+- **Gesture count:** about 2–3 per 10s in the talking parts, almost all on keywords or list counts.
+- **New patterns:** hook surprise face; counting hand beside the face at collarbone-to-chin height (it works in a tight frame); count on the item's first word; a summing-up last item shown as hands coming together.
+- **Confirms (2+ videos):** slow blink (videos 2 and 3); thumb back at self on DONE (videos 2 and 3); open-palm wave on hello and sign-off (videos 2 and 3); brief point at camera on a CTA (videos 2 and 3); jump-cut punch-ins (videos 2 and 3); keyword rule; upbeat density.
+- **Promoted:** yes.
+  - **Expressions:** slow blink, hook surprise.
+  - **Gestures:** thumb back at self, wave, hands together.
+  - **Section 8:** detailed counting mechanics.
+  - **Section 9:** editing pattern.
+  - **Candidates left:** hand to chin, props either side of the face.

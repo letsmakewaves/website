@@ -24,6 +24,8 @@
 - **Brow raise:** both brows for surprise or emphasis; one brow for cheeky or sceptical.
 - **Concerned or empathetic:** inner brows up, soft eyes, small closed smile.
 - **Playful disbelief:** a small squint, lips pressed, a slight head shake.
+- **Hook surprise:** eyes wide, both brows up, mouth open mid-word, used on the bold opening claim right after a smiling hello.
+- **Slow blink (confirmed in 2 videos):** the eyes close for a beat mid-sentence on a point she's sure of, or between list items, then reopen on the next keyword. Once or twice per clip, never on every line.
 
 ## 3. Head movements
 
@@ -50,7 +52,10 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 | **Both hands framing** | Size, "this much" (only when both hands are free) | Chest |
 | **One finger up** | A real number ("day six", "one minute") or emphasis on "THIS" | Chest to chin |
 | **Finger count for a list** | Listing items ("one... two... three"). On each item's number word she holds up **exactly that many fingers**, clearly, then moves on to the next count; the hand stays up through the list and drops after the last item | Chest, palm toward camera |
-| **Brief point toward camera** | Only on "you" or "yours" in a call to action, then back to rest | Low chest |
+| **Brief point toward camera** | Only on "you" or "yours" in a call to action ("Create yours", "Pick a product"), then back to rest | Low chest |
+| **Thumb back at self (confirmed in 2 videos)** | "Day 5 DONE", "I", "me", her own result | Chest |
+| **Open-palm wave (confirmed in 2 videos)** | The hello, "there you have it", and the sign-off ("I'll see you tomorrow") | Shoulder, beside the face |
+| **Hands come together** | The last item of a list that sums it up ("turn everything into one..."): both hands meet at the chest, fingertips touching | Chest |
 
 **Mic in one hand:** only the free hand gestures, and it stays at chest height or lower than the mic so it doesn't cover the face.
 
@@ -82,11 +87,9 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 
 These have been seen in only one reference video. Use them when they clearly fit the line:
 - **Hand to chin:** on "imagine" or "think about it", with a head tilt and eyes drifting up.
-- **Slow blink or brief eye close:** mid-sentence on a point she's sure of, reopening on the keyword.
-- **Thumb back at self:** on "I", "me" or "done".
-- **Open-palm wave:** on the greeting.
 - **Props on either side of the face:** to open a video about a product.
-- **Edit:** jump cuts between sentences, alternating mid-torso and a tighter punch-in. One AI clip per sentence or two makes this easy.
+
+Promoted after video 3: slow blink (expressions), thumb back at self, open-palm wave, hands together (gestures), and jump-cut punch-ins (section 9).
 
 ## 8. Lists and finger counts (user observation, confirmed)
 
@@ -95,10 +98,20 @@ When the creator lists things, she counts them on her fingers, accurately: one f
 - **Prompt it explicitly for each item:** `On "first," she holds up exactly one finger. On "second," exactly two fingers. On "third," exactly three fingers.` Name the count as a number of fingers, not just "counts on her fingers".
 - **Up to 5 items on one hand.** For longer lists, split them across clips.
 - **The count is the gesture for that line.** Don't add other gestures during the list; the face stays engaged, with a small nod on each item.
-- **Framing:** mid-torso or closer, hand at chest height and palm toward the camera, so the fingers read clearly.
+- **How she does it (video 3, studied frame by frame):**
+  - The counting hand is raised **beside her face, between collarbone and chin height**, off to one side, palm toward the camera, with the counted fingers clearly spread and the others folded.
+  - The count changes **on the item's first word** ("**build** the concept" = 1, "**create** the product shots" = 2, "**direct** the mother-and-baby scenes" = 3).
+  - Between items the hand either stays up or dips slightly and comes back up with the next count. Both looked natural.
+  - The face keeps talking normally; a slow blink between items is common.
+  - **The last item often isn't counted.** When it sums up the list ("turn everything into one polished commercial"), both hands come together at the chest instead.
+- **Framing:** this works even in a tight chest-up shot, because the hand rises to collarbone or chin height beside the face. That's the fix for close-ups like Chloe's DJI-mic frame (use the free hand).
 - **AI risk:** video models often get the number of fingers wrong. In review, freeze on each count and check it. If it's wrong, retry with a closer framing, fewer items per clip, or a slower read of the list in the voiceover. If it's still wrong, cut the count and put the numbers in the captions.
 
-## 9. Fix table
+## 9. Editing pattern (confirmed in 2 videos)
+
+The talking parts are jump cuts between sentences, alternating the base framing with a slightly tighter punch-in on key lines (the hook, the CTA). For AI production, generate **one clip per sentence or two**, each with its own beat map. Then cut them together, punching in a little on the strongest lines. Fresh starts also keep each clip's performance short and accurate, which is easier for the model.
+
+## 10. Fix table
 
 | Symptom | Fix in the next prompt |
 |---|---|
@@ -112,7 +125,7 @@ When the creator lists things, she counts them on her fingers, accurately: one f
 | Wrong number of fingers on a count | Name the exact count ("exactly three fingers") on the number word; closer framing; fewer items per clip |
 | Lip-sync off | Check the voiceover is attached as an audio reference; match the duration to the audio |
 
-## 10. Prompt template
+## 11. Prompt template
 
 ```
 [NAME] talks directly to camera, lip-syncing exactly to the attached voiceover[, holding the PROP in one hand the whole time].
@@ -127,7 +140,7 @@ Static camera, framing exactly as in the start image, [background and light]. Sa
 
 For **Kling** (no audio input), replace the first line with: "[NAME] speaks the line '[full script]' directly to camera" and generate with sound off, then lip-sync to the approved voiceover.
 
-## 11. Worked example (Chloe, approved direction)
+## 12. Worked example (Chloe, approved direction)
 
 Script: "If you have a phone or a laptop, you shouldn't be broke. Give me just one minute a day for the next thirty days, and I'll show you how to become a paid AI content creator."
 
