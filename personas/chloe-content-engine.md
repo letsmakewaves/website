@@ -22,7 +22,7 @@ Replace `@you` with your handle.
 
 Turn on the AI-generated label on every post.
 
-## Pinned video: "Who's behind Chloe?" (about 35 seconds)
+## Pinned video: "Who's behind Chloe?" (optional; skipped for launch, the bio handles the disclosure)
 | Time | Picture | Voice / on screen |
 |---|---|---|
 | 0–3s | Chloe at her desk, soft smile | **Chloe:** "Everything you've seen on this page… isn't real." |
@@ -77,7 +77,7 @@ Post one Reel or TikTok a day. Go live once a week (Day 7 and Day 14).
 
 | Day | Pillar | Format | Outfit | Location | Hook | CTA |
 |---|---|---|---|---|---|---|
-| 1 | Behind Chloe | Pinned intro video | 1 | 1 | "Everything on this page isn't real." | Follow |
+| 1 | Behind Chloe | "Meet Chloe" carousel (the 5 launch photos) | — | — | "Hi, I'm Chloe. 100% AI. Here's what I do." | Follow |
 | 2 | Made in 10 min | Ad reveal + breakdown | 10 | 6 | "This skincare ad took 10 minutes." | Comment PROMPTS |
 | 3 | Steal my prompt | Talking head + screen | 3 | 3 | "The one line that fixed my AI faces." | Save |
 | 4 | Brand glow-up | Before/after | 2 | 1 | "If a jollof spot hired me…" | Comment PROMPTS |
