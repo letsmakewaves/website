@@ -26,6 +26,12 @@ The AI face of the page: shows AI ads and how they're made. Openly AI, built by 
 ## Working rules
 - Talking-video look (from the user's reference): Chloe waist-up holding a small wireless handheld mic with a fluffy grey windscreen near her chin in one hand, the free hand mostly still (see the hands rule below). Soft beige and blush luxury living room, warm light, heavily blurred. Clips of 10–15 seconds each, stitched in editing with B-roll of her ads and word-by-word captions with highlighted keywords. About 4.5 credits per second at 720p.
 - Hands move only when needed: the free hand rests still by default, with at most one small, natural gesture where the line truly calls for it. No constant, choreographed or per-phrase gestures (user rule).
+- **Expression map (from the user's reference):** the face does the acting. Before each video, mark the script's beats and write them into the prompt:
+  - a **smile** that comes with the words when the line deserves it (a punchline, good news, the offer);
+  - a **slight head tilt** with a knowing look or a raised brow on a playful, cheeky or "be honest" line;
+  - a **raised brow or small lean in** on a key number or promise;
+  - a **neutral, sincere** face on straight information.
+  Two or three beats per 10 seconds is enough. Don't smile through the whole clip. The reference was framed mid-torso, which is why the brief two-hand gestures stayed fully in frame.
 - If a shot needs visible hands, frame her waist-up or mid-torso (a chest-up close-up crops them out). If movement still looks robotic, use motion transfer from a clip the user records themselves (never someone else's video).
 - Seedance 2.0 at 720p (start image + approved voiceover as audio reference) worked well for the first talking test.
 - Before any talking or voiceover video, share the voiceover link and wait for the user to approve it. Never generate the video first.
