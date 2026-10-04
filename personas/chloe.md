@@ -24,12 +24,12 @@ The AI face of the page: shows AI ads and how they're made. Openly AI, built by 
 - **Video with Chloe:** Seedance 2.0 or Kling 3.0 with the Chloe Element. Kling needs a start image.
 
 ## Working rules
-- Talking-video look (from the user's reference): Chloe waist-up holding a small wireless handheld mic with a fluffy grey windscreen near her chin in one hand, the free hand gesturing (open palms, small sweeps, counting, pointing). Soft beige and blush luxury living room, warm light, heavily blurred. Clips of 10–15 seconds each, stitched in editing with B-roll of her ads and word-by-word captions with highlighted keywords. About 4.5 credits per second at 720p.
+- Talking-video look (from the user's reference): Chloe waist-up holding a small wireless handheld mic with a fluffy grey windscreen near her chin in one hand, the free hand mostly still (see the hands rule below). Soft beige and blush luxury living room, warm light, heavily blurred. Clips of 10–15 seconds each, stitched in editing with B-roll of her ads and word-by-word captions with highlighted keywords. About 4.5 credits per second at 720p.
 - Hands move only when needed: the free hand rests still by default, with at most one small, natural gesture where the line truly calls for it. No constant, choreographed or per-phrase gestures (user rule).
-- Talking videos default to natural hand gestures. Frame her waist-up or mid-torso with her hands visible (a chest-up close-up crops the hands out). In the Seedance prompt, time each gesture to a phrase (small wave on the greeting, open palms, hand to chest, palms toward camera). If it still looks robotic, use motion transfer from a clip the user records themselves (never someone else's video).
+- If a shot needs visible hands, frame her waist-up or mid-torso (a chest-up close-up crops them out). If movement still looks robotic, use motion transfer from a clip the user records themselves (never someone else's video).
 - Seedance 2.0 at 720p (start image + approved voiceover as audio reference) worked well for the first talking test.
 - Before any talking or voiceover video, share the voiceover link and wait for the user to approve it. Never generate the video first.
-- Talking-video models: Wan 2.7 failed (low quality, delivered at 768x1344). Next to try: Seedance 2.0 (start image + audio reference), 720p about 40.5 credits or 1080p about 81 credits for 9 seconds.
+- Talking-video models: Wan 2.7 failed (low quality, delivered at 768x1344). Seedance 2.0 is the approved model (see the recipe below); 1080p costs double.
 - Before any generation, state the number of variations and the credit cost, and wait for the user's yes.
 - Keep Chloe clearly adult. Keep her styling professional, not sexualised.
 - The bio must say she is AI and credit the creator.
