@@ -73,6 +73,15 @@ Change only the PRODUCT and POSE lines between frames.
 
 ## Video for campaigns
 
+- **Plan the video first, then the stills (lesson from Crown & Co. v1, which looked boring next to the reference).** Before any still is generated, decide: (1) the video aspect ratio (9:16 for Reels and TikTok), (2) full-body framing for any hero motion, and (3) the motion per shot. Make the start frames for those shots in that ratio and framing.
+- **Use big, product-showing motion, not small head turns.** For hair, fashion and apparel, a talking-head crop wastes the product. Use:
+  - **360° spin:** she turns all the way around, slowly, and the hair or garment swings out and settles. Full body, camera locked.
+  - **Walk toward the camera:** a confident runway walk from mid-ground to the camera, the hair bouncing with each step.
+  - **Full hair flip or turn-and-look-back:** whole-body rotation with the hair whipping round.
+  - **Fabric or hair in a breeze:** a wind machine with flowing movement, for a hero shot.
+- **A full-body start frame needs the full outfit.** Lock the bottoms too (e.g. black fitted leggings or wide-leg trousers, bare feet or simple heels), so the outfit matches across clips.
+- **Test one clip before running the set,** and compare it against the reference creator's motion and framing, not just against our own stills.
+
 - **Make the stills in the video's aspect ratio from the start.** If the campaign will become a 9:16 Reel or TikTok, generate every still at 9:16, so the stills can be used directly as video start frames. (Lesson from the first test: 4:5 stills had to be stretched to 9:16.) Check the target video format before generating stills.
 - **Kling with a start image keeps the start image's shape and ignores the aspect-ratio setting.** Always check the real width and height of the downloaded file (ffprobe), never the job metadata. If a clip comes out 4:5, centre-crop it to 9:16 for free (`crop=ih*9/16:ih`, then scale to 1080x1920), after checking that the face, product and logo sit inside the centre.
 
