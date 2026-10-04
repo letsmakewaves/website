@@ -4,6 +4,8 @@ How to make a brand campaign look like a premium, cohesive campaign rather than 
 
 ## The 7 rules of a premium campaign
 
+0. **Start from real product photos.** Every product in the campaign (each wig, bottle, piece of jewellery) needs a real reference photo from the user or brand, attached to every generation of that product. Text-only products look invented. This is what made the reference creator's wigs look real.
+
 1. **One visual universe.** Every frame shares the same backdrop, light, colour grade, model and glam. Only the product changes.
 2. **The product is the only variable.** Lock everything else: same model, same make-up, same wardrobe uniform, same set. For a collection, each look changes only the product (wig, necklace, outfit).
 3. **The brand lives in the wardrobe or set, not in overlays.** For example, a fitted black tee or bodysuit with the brand logo on the chest, or brand-coloured set pieces. Text on screen stays minimal.

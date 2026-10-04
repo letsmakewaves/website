@@ -67,6 +67,19 @@ Confirm what was saved and that it will be used in every prompt from now on.
 
 For a full shoot or carousel plan, hand over to **waves-visual-blueprint**. For a product ad or brand deal, hand over to **waves-commercial-director**, using `@INFLUENCER` as the cast. For talking videos, direct the performance with **waves-performance-director**.
 
+
+## Pre-flight checklist (hard gate before ANY generation)
+
+Before spending a single credit, show the user this checklist, completely filled in, and wait for an explicit yes. No line may be blank or "TBD". If one can't be filled, stop and ask for what's missing.
+
+1. **Final deliverable:** format (stills, video, carousel), **aspect ratio** (e.g. 9:16 Reel), length, platform. Every still is made in the deliverable's aspect ratio.
+2. **Approved storyboard:** framing (e.g. full body, close-up) and **motion** for every shot, approved by the user.
+3. **Product references (required for any product, brand or campaign work):** real photos of every product (e.g. the actual wigs, bottles, jewellery). They come from the user or the brand. **Never invent a product from a text description.** If no photos are provided, ask for them and don't start.
+4. **Locked references:** the talent (Element or approved image) and the branding (an approved branded frame, once one exists).
+5. **Benchmark:** the reference example the result must match or beat (e.g. the creator video the user sent). Compare the test against it, not just against our own stills.
+6. **Test first, and how it will be checked:** one test item before the full set. I check the real downloaded file (dimensions with ffprobe, frames, logo, face, product), or say up front that I can't view it.
+7. **Cost:** number of takes and total credits.
+
 ## Rules
 
 - **Don't copy real people.** Never create or imitate a real, identifiable person, celebrity or private individual. If the user uploads someone else's photos, confirm they have that person's permission.

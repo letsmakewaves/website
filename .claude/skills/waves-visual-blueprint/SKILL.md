@@ -118,6 +118,19 @@ Always show it after the blueprint:
    - or, for Seedance 2.0, offer a single multi-shot prompt that covers up to 15 seconds per generation (see the waves-commercial-director templates).
 5. **Fix what's off:** regenerate only the frames that drift (face, wardrobe, product) by tightening that frame's prompt.
 
+
+## Pre-flight checklist (hard gate before ANY generation)
+
+Before spending a single credit, show the user this checklist, completely filled in, and wait for an explicit yes. No line may be blank or "TBD". If one can't be filled, stop and ask for what's missing.
+
+1. **Final deliverable:** format (stills, video, carousel), **aspect ratio** (e.g. 9:16 Reel), length, platform. Every still is made in the deliverable's aspect ratio.
+2. **Approved storyboard:** framing (e.g. full body, close-up) and **motion** for every shot, approved by the user.
+3. **Product references (required for any product, brand or campaign work):** real photos of every product (e.g. the actual wigs, bottles, jewellery). They come from the user or the brand. **Never invent a product from a text description.** If no photos are provided, ask for them and don't start.
+4. **Locked references:** the talent (Element or approved image) and the branding (an approved branded frame, once one exists).
+5. **Benchmark:** the reference example the result must match or beat (e.g. the creator video the user sent). Compare the test against it, not just against our own stills.
+6. **Test first, and how it will be checked:** one test item before the full set. I check the real downloaded file (dimensions with ffprobe, frames, logo, face, product), or say up front that I can't view it.
+7. **Cost:** number of takes and total credits.
+
 ## Rules
 
 - **Voiceover approval before any video with speech:** generate the voiceover (or import the user's audio) first, share the listen link, and wait for the user to approve the voice and line. Only then quote and generate the video.
