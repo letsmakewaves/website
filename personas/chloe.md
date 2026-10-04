@@ -23,6 +23,8 @@ The AI face of the page: shows AI ads and how they're made. Openly AI, built by 
 - **Video with Chloe:** Seedance 2.0 or Kling 3.0 with the Chloe Element. Kling needs a start image.
 
 ## Working rules
+- Talking videos default to natural hand gestures. Frame her waist-up or mid-torso with her hands visible (a chest-up close-up crops the hands out). In the Seedance prompt, time each gesture to a phrase (small wave on the greeting, open palms, hand to chest, palms toward camera). If it still looks robotic, use motion transfer from a clip the user records themselves (never someone else's video).
+- Seedance 2.0 at 720p (start image + approved voiceover as audio reference) worked well for the first talking test.
 - Before any talking or voiceover video, share the voiceover link and wait for the user to approve it. Never generate the video first.
 - Talking-video models: Wan 2.7 failed (low quality, delivered at 768x1344). Next to try: Seedance 2.0 (start image + audio reference), 720p about 40.5 credits or 1080p about 81 credits for 9 seconds.
 - Before any generation, state the number of variations and the credit cost, and wait for the user's yes.
