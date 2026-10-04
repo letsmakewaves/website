@@ -67,3 +67,7 @@ Patterns learned from talking videos the user sends. We learn general performanc
   - **Density** now depends on energy.
   - The **anti-pattern for pointing and counting** has been corrected: allowed on a real number or a CTA "you".
   - **Candidates** (seen once, waiting for a second video): hand to chin on "imagine", slow-blink emphasis, thumb back at self, greeting wave, props either side of the face, punch-in jump cuts.
+
+## User observation (after video 2): finger counts on lists
+- **Pattern:** when listing items (1, 2, 3, 4, 5), she counts them on her fingers accurately: one finger, then two, and so on, on each item's number word.
+- **Promoted:** yes (the user confirmed it across her videos). Library section 8 "Lists and finger counts"; the anti-pattern was changed from "no counting" to "no mismatched or unnecessary counts"; the fix table now has a row for wrong finger counts.

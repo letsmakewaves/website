@@ -48,7 +48,8 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 | **Small sweep to the side** | "Forget that", "next" | Chest |
 | **Pinch or precise fingers** | A specific detail | Near the chin, inside the frame |
 | **Both hands framing** | Size, "this much" (only when both hands are free) | Chest |
-| **One finger up** | A real number ("day six", "one minute") or emphasis on "THIS". Not counting through a list | Chest to chin |
+| **One finger up** | A real number ("day six", "one minute") or emphasis on "THIS" | Chest to chin |
+| **Finger count for a list** | Listing items ("one... two... three"). On each item's number word she holds up **exactly that many fingers**, clearly, then moves on to the next count; the hand stays up through the list and drops after the last item | Chest, palm toward camera |
 | **Brief point toward camera** | Only on "you" or "yours" in a call to action, then back to rest | Low chest |
 
 **Mic in one hand:** only the free hand gestures, and it stays at chest height or lower than the mic so it doesn't cover the face.
@@ -67,7 +68,8 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 ## 6. Anti-patterns (ban them in the prompt when they appear)
 
 - A gesture on every phrase (robotic, "TED talk hands")
-- Counting through a list on the fingers, or jabbing a finger at the camera (one finger up for a real number, or a brief point on a CTA "you", is fine)
+- Jabbing a finger at the camera (a brief point on a CTA "you" is fine)
+- Finger counts that don't match the number, or counting when nothing is being listed
 - One fixed smile from start to finish
 - Nodding on every line
 - A frozen face or a stiff neck
@@ -86,7 +88,17 @@ These have been seen in only one reference video. Use them when they clearly fit
 - **Props on either side of the face:** to open a video about a product.
 - **Edit:** jump cuts between sentences, alternating mid-torso and a tighter punch-in. One AI clip per sentence or two makes this easy.
 
-## 8. Fix table
+## 8. Lists and finger counts (user observation, confirmed)
+
+When the creator lists things, she counts them on her fingers, accurately: one finger on the first item, two on the second, and so on.
+
+- **Prompt it explicitly for each item:** `On "first," she holds up exactly one finger. On "second," exactly two fingers. On "third," exactly three fingers.` Name the count as a number of fingers, not just "counts on her fingers".
+- **Up to 5 items on one hand.** For longer lists, split them across clips.
+- **The count is the gesture for that line.** Don't add other gestures during the list; the face stays engaged, with a small nod on each item.
+- **Framing:** mid-torso or closer, hand at chest height and palm toward the camera, so the fingers read clearly.
+- **AI risk:** video models often get the number of fingers wrong. In review, freeze on each count and check it. If it's wrong, retry with a closer framing, fewer items per clip, or a slower read of the list in the voiceover. If it's still wrong, cut the count and put the numbers in the captions.
+
+## 9. Fix table
 
 | Symptom | Fix in the next prompt |
 |---|---|
@@ -97,9 +109,10 @@ These have been seen in only one reference video. Use them when they clearly fit
 | Expression on the wrong words | Quote the exact words in the beat; shorten the beat |
 | Too much movement | Lower the energy; cap at 2 gestures and 1 lean per 10 seconds |
 | Face drifts to a different person | Add the lock line; keep the start image; lower motion intensity |
+| Wrong number of fingers on a count | Name the exact count ("exactly three fingers") on the number word; closer framing; fewer items per clip |
 | Lip-sync off | Check the voiceover is attached as an audio reference; match the duration to the audio |
 
-## 9. Prompt template
+## 10. Prompt template
 
 ```
 [NAME] talks directly to camera, lip-syncing exactly to the attached voiceover[, holding the PROP in one hand the whole time].
@@ -114,7 +127,7 @@ Static camera, framing exactly as in the start image, [background and light]. Sa
 
 For **Kling** (no audio input), replace the first line with: "[NAME] speaks the line '[full script]' directly to camera" and generate with sound off, then lip-sync to the approved voiceover.
 
-## 10. Worked example (Chloe, approved direction)
+## 11. Worked example (Chloe, approved direction)
 
 Script: "If you have a phone or a laptop, you shouldn't be broke. Give me just one minute a day for the next thirty days, and I'll show you how to become a paid AI content creator."
 
