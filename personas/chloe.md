@@ -11,11 +11,12 @@ The AI face of the page: shows AI ads and how they're made. Openly AI, built by 
 - **Default background:** soft grey seamless studio, or a white marble desk with a grey wall.
 
 ## Voice (locked)
-- **Higgsfield voice:** `Chloe-1` (your own voice, not the built-in "Chloe" preset), cloned from the ElevenLabs Voice Design voice "Lagos Creator".
-- **Engine:** Text to Speech v2 with the **ElevenLabs** variant. Don't use Seed Audio; the user rejected it.
-- **Cost:** about 0.45 credits per short line, about 1.5 credits for 30 seconds.
+- **Primary: ElevenLabs cloned voice `Chloe`** (voice_id `p8gH0uEJdvz76yHY6Qfp`, Nigerian English accent), in the user's own ElevenLabs account, generated through the ElevenLabs connector.
+- **Model:** Multilingual v2 (approved take A1). v3 is the more expressive alternative.
+- **Cost:** about 171 ElevenLabs credits for a 9-second line (about $0.03).
+- **Into Higgsfield:** import the ElevenLabs result URL with Higgsfield URL import (the links expire after about 2 hours), then use it as `audio_references` in Seedance.
+- **Old:** Higgsfield voice `Chloe-1` (Text to Speech v2, ElevenLabs variant). The user said its accent was lacking, so don't use it. Seed Audio was also rejected.
 - **Tone:** warm, confident, friendly Lagos accent.
-- **Fallback:** the user generates in ElevenLabs (speed 100, stability 50, similarity 75), shares a Google Drive link set to "anyone with the link", and it's imported with Higgsfield's URL import.
 
 ## Models
 - **New looks or new people:** Soul Cinema, with no reference image. When given a reference image it ignored the written prompt.
@@ -32,3 +33,11 @@ The AI face of the page: shows AI ads and how they're made. Openly AI, built by 
 - Before any generation, state the number of variations and the credit cost, and wait for the user's yes.
 - Keep Chloe clearly adult. Keep her styling professional, not sexualised.
 - The bio must say she is AI and credit the creator.
+
+## Approved talking-video recipe (first video, "So perfect")
+1. Still: tight close-up, DJI mic with grey windscreen at chin, outfit #2, soft studio light (no ring light), blurred background. Start image job `4059d70b-f514-4b25-a56f-a73174bbd1ac`.
+2. Voiceover: ElevenLabs `Chloe` on Multilingual v2. The user approves it before any video.
+3. Video: Seedance 2.0, mode std, 720p, 9:16, duration = voiceover length rounded up (10s = 45 credits). Inputs: start_image + audio_references.
+4. Prompt core: "talks directly to camera, lip-syncing exactly to the attached voiceover... free hand stays relaxed and still... moves only once, if natural... expression carries the delivery: warm, confident, easy smile, soft small nods, natural blinks. Camera static, framing exactly as in the start image, background softly blurred, soft studio light, no ring light."
+5. Result: job `c378e57e-938b-4a72-9478-cec4c30008f3`.
+
