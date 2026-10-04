@@ -45,3 +45,6 @@ The v1 frames above are superseded (inconsistent logo).
 - Look 3: 49434b61
 - Look 4: 0c5ebb8f
 - Look 5: 14f5525b
+
+### Poster (v2, built around the locked reference a95be382)
+- 269c6419
