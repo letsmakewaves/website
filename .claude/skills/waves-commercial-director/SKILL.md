@@ -85,4 +85,4 @@ Always show the storyboard right after the package, as a grid where the voice si
 
 ## Related tools
 
-The user also has a matching web tool, **Waves Commercial Studio**. If they paste a package from it, skip to Stage 4. For non-ad content (photo shoots, carousels, thumbnails, lifestyle or travel series), hand over to **waves-visual-blueprint**.
+The user also has a matching web tool, **Waves Commercial Studio**. If they paste a package from it, skip to Stage 4. For non-ad content (photo shoots, carousels, thumbnails, lifestyle or travel series), hand over to **waves-visual-blueprint**. For the acting in talking or dialogue shots, use **waves-performance-director**.

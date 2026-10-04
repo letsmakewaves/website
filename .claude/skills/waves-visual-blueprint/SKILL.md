@@ -113,4 +113,4 @@ Always show it after the blueprint:
 
 ## Related tools
 
-There's a matching web tool, **Waves Visual Blueprint**. If the user pastes a blueprint from it, go straight to Stage 4 or Stage 5. For product ads and commercials, hand over to **waves-commercial-director**.
+There's a matching web tool, **Waves Visual Blueprint**. If the user pastes a blueprint from it, go straight to Stage 4 or Stage 5. For product ads and commercials, hand over to **waves-commercial-director**. For the acting in any talking shot (expressions, head movement, hand gestures, body language), use **waves-performance-director**.

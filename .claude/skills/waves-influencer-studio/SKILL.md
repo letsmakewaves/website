@@ -65,7 +65,7 @@ Confirm what was saved and that it will be used in every prompt from now on.
 5. **Prompts:** for each piece, use the content prompt template. It always includes the identity block, then the outfit, location, pose, camera and light. Video uses Seedance 2.0 or Kling with the Element, plus a voice line in the persona's accent. Offer to create a consistent voice with Higgsfield's voice tool.
 6. **Batch production:** confirm the credit cost first, generate in batches, then run the **consistency check** in `references/identity-kit.md` on every result. Regenerate anything that fails. Never post a drifted face.
 
-For a full shoot or carousel plan, hand over to **waves-visual-blueprint**. For a product ad or brand deal, hand over to **waves-commercial-director**, using `@INFLUENCER` as the cast.
+For a full shoot or carousel plan, hand over to **waves-visual-blueprint**. For a product ad or brand deal, hand over to **waves-commercial-director**, using `@INFLUENCER` as the cast. For talking videos, direct the performance with **waves-performance-director**.
 
 ## Rules
 
