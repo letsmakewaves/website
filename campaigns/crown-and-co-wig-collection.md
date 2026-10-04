@@ -58,3 +58,4 @@ The v1 frames above are superseded (inconsistent logo).
 - Scene 6 (kinky curly): e8326854
 - Scene 7 (finale): 240018c4
 - Joined edit, scenes 2-7: campaigns/crown-and-co-collection-9x16.mp4 (1080x1920, 30.2s, silent). QC: logo partly turned away in scenes 4 and 6 (profile angle) and briefly covered by hair mid-flip in scene 5; otherwise consistent.
+- Music: ElevenLabs Music v2.5, 2 tracks (flow BpJsRZdCz6BsODMMB7Mt; generations kW1O6wt4XFj8zNPsLdOL = A, nII0OrfKCxhH7kBAdL8z = B), 30s each. Saved as campaigns/music_A.mp3 and music_B.mp3. Versions with music: crown-and-co-collection-9x16-musicA/B.mp4 (0.5s fade-in, 1.7s fade-out).
