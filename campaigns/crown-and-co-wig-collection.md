@@ -38,3 +38,10 @@ The v1 frames above are superseded (inconsistent logo).
 - Look 3: bf54f27e
 - Look 4: fde5befe
 - Look 5: a30ad8dc
+
+### Over-the-shoulder length shots (v2, each an edit of that look's locked image)
+- Look 1: f63dca19
+- Look 2: f7845528
+- Look 3: 49434b61
+- Look 4: 0c5ebb8f
+- Look 5: 14f5525b
