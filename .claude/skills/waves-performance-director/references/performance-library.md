@@ -37,6 +37,8 @@
 
 Use them only on words that need them. Each one goes rest, then peak on the word, then back to rest.
 
+**Keyword rule (seen in both reference videos):** a gesture lands on the one word in the line that carries the meaning, the same word you would highlight in the captions ("THIS", "SHOW", "yours", "DONE"). If a line has no keyword, it gets no gesture.
+
 | Gesture | Use it for | Height |
 |---|---|---|
 | **Open palm up (offering)** | An offer, a promise, "here's the thing" | Chest |
@@ -46,6 +48,8 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 | **Small sweep to the side** | "Forget that", "next" | Chest |
 | **Pinch or precise fingers** | A specific detail | Near the chin, inside the frame |
 | **Both hands framing** | Size, "this much" (only when both hands are free) | Chest |
+| **One finger up** | A real number ("day six", "one minute") or emphasis on "THIS". Not counting through a list | Chest to chin |
+| **Brief point toward camera** | Only on "you" or "yours" in a call to action, then back to rest | Low chest |
 
 **Mic in one hand:** only the free hand gestures, and it stays at chest height or lower than the mic so it doesn't cover the face.
 
@@ -57,13 +61,13 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 - **Shoulders:** a little shrug for "it's that easy", a small bounce with a laugh.
 - **Energy levels:**
   - Calm: slow moves, longer holds, smaller smiles.
-  - Conversational: medium moves, quick settles (default).
-  - Hype: bigger brows, faster nods, more smile. Still at most 2 gestures per 10 seconds.
+  - Conversational: medium moves, quick settles (default). About 1–2 gestures per 10 seconds.
+  - Upbeat or hype: bigger brows, faster nods, more smile. Up to about 2–3 gestures per 10 seconds, each on a keyword (the reference creator averaged about 2.5 per 10s in an upbeat tutorial).
 
 ## 6. Anti-patterns (ban them in the prompt when they appear)
 
 - A gesture on every phrase (robotic, "TED talk hands")
-- Counting on fingers, or pointing at the camera
+- Counting through a list on the fingers, or jabbing a finger at the camera (one finger up for a real number, or a brief point on a CTA "you", is fine)
 - One fixed smile from start to finish
 - Nodding on every line
 - A frozen face or a stiff neck
@@ -72,7 +76,17 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 - Big theatrical brows or a mouth that over-articulates
 - Writing "her hand stays still" as a blanket rule (the model removes all gestures)
 
-## 7. Fix table
+## 7. Candidate patterns (seen once; promote when seen again)
+
+These have been seen in only one reference video. Use them when they clearly fit the line:
+- **Hand to chin:** on "imagine" or "think about it", with a head tilt and eyes drifting up.
+- **Slow blink or brief eye close:** mid-sentence on a point she's sure of, reopening on the keyword.
+- **Thumb back at self:** on "I", "me" or "done".
+- **Open-palm wave:** on the greeting.
+- **Props on either side of the face:** to open a video about a product.
+- **Edit:** jump cuts between sentences, alternating mid-torso and a tighter punch-in. One AI clip per sentence or two makes this easy.
+
+## 8. Fix table
 
 | Symptom | Fix in the next prompt |
 |---|---|
@@ -85,7 +99,7 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 | Face drifts to a different person | Add the lock line; keep the start image; lower motion intensity |
 | Lip-sync off | Check the voiceover is attached as an audio reference; match the duration to the audio |
 
-## 8. Prompt template
+## 9. Prompt template
 
 ```
 [NAME] talks directly to camera, lip-syncing exactly to the attached voiceover[, holding the PROP in one hand the whole time].
@@ -100,7 +114,7 @@ Static camera, framing exactly as in the start image, [background and light]. Sa
 
 For **Kling** (no audio input), replace the first line with: "[NAME] speaks the line '[full script]' directly to camera" and generate with sound off, then lip-sync to the approved voiceover.
 
-## 9. Worked example (Chloe, approved direction)
+## 10. Worked example (Chloe, approved direction)
 
 Script: "If you have a phone or a laptop, you shouldn't be broke. Give me just one minute a day for the next thirty days, and I'll show you how to become a paid AI content creator."
 

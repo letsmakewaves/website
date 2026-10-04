@@ -35,7 +35,7 @@ Use the library for each column. Then apply the **density rules**:
 
 - **Face:** 2–4 clear expression changes per 10 seconds. Go back to a relaxed neutral between beats so the changes read. Never one fixed smile for the whole clip.
 - **Head:** small movements only. A tilt, a nod or a slight lean on the beats that need them. Don't nod on every phrase.
-- **Hands:** **at most 2 gestures per 10 seconds**, each tied to a word that needs it (an offer, a number, "I'll show you", a contrast). Each gesture starts from rest, peaks on the word, and returns to rest. The rest of the time the hand is relaxed and out of the way.
+- **Hands:** each gesture lands on the line's **keyword**, the word you'd highlight in the captions. About 1–2 per 10 seconds for calm or conversational, up to about 2–3 for upbeat; a line with no keyword gets no gesture. Each gesture starts from rest, peaks on the word, and returns to rest. The rest of the time the hand is relaxed and out of the way.
 - **Body:** one lean or posture shift per clip is plenty.
 - **Stillness is part of the performance.** But never write "stays still" as a blanket rule: models then drop the gestures entirely. Write *when* the hand moves and *that it rests otherwise*.
 
