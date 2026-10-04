@@ -36,6 +36,7 @@ form.brief{padding:18px;display:flex;flex-direction:column;gap:16px;position:sti
 @media (max-width:900px){form.brief{position:static}}
 .eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted)}
 .field{display:flex;flex-direction:column;gap:6px;min-width:0}
+[hidden]{display:none !important}
 .field label,.field .lbl{font-weight:600;font-size:13px}
 .field small{color:var(--muted);font-size:12px}
 input[type=text],textarea,select{font:inherit;color:var(--ink);background:var(--bg);border:1px solid var(--line);border-radius:6px;padding:9px 10px;width:100%}
@@ -178,9 +179,18 @@ select:disabled{opacity:.5}
         <small id="styleHint"></small>
       </div>
 
-      <div class="field" data-hide-free>
-        <span class="lbl">Angle</span>
+      <div class="field">
+        <span class="lbl">Format</span>
         <div class="chips" id="angle"></div>
+      </div>
+
+      <div class="field">
+        <label for="cast">Cast</label>
+        <select id="cast">
+          <option selected>Cast it for me</option>
+          <option>I have my cast (describe below or attach a photo)</option>
+          <option>Keep it open (plug-and-play, drop my model in later)</option>
+        </select>
       </div>
 
       <div class="field" data-hide-free>
@@ -266,8 +276,16 @@ function chipGroup(box, name, items, checked){
   });
 }
 
-const CONTENT_TYPES=["UGC ad","Product promotion","Fashion campaign","Beauty","Lifestyle / day in the life","Food & cooking","Fitness & wellness","Travel","Real estate","Business","Luxury lifestyle","Tech & gadgets","Home & interior","Automotive","Podcast","YouTube thumbnail","Instagram carousel","Editorial shoot"];
-const ANGLES=["Routine / tutorial","Story / mini-film","Lookbook / showcase","Behind the scenes","Day in the life","Testimonial","Problem → solution","Unboxing","Get ready with me","Interview / conversation"];
+const CONTENT_TYPES=["UGC ad","Product promotion","Brand campaign","Fashion campaign","Beauty","Lifestyle / day in the life","Food & cooking","Fitness & wellness","Travel","Real estate","Business","Luxury lifestyle","Tech & gadgets","Home & interior","Automotive","Podcast","YouTube thumbnail","Instagram carousel","Editorial shoot","Storytelling","Personal brand","Event content"];
+const ANGLES=["Routine / tutorial","Story / mini-film","Lookbook / showcase","Behind the scenes","Day in the life","Testimonial","Problem → solution","Unboxing","Get ready with me","Interview / conversation","Collection campaign","Hero product campaign","Transformation campaign","Editorial campaign","Lifestyle campaign","Brand launch","Surprise me"];
+const CAMPAIGN_RULES=`CAMPAIGN STYLING (premium campaign, not random AI pictures):
+- One visual universe: every frame shares the same backdrop, light, grade, model and glam. The product is the only variable.
+- The brand lives in the wardrobe or set (e.g. a fitted black tee or bodysuit with the brand logo on the chest), not in text overlays.
+- Default studio look for beauty, hair and fashion: a hand-painted mottled charcoal-grey canvas backdrop, a large soft key from front-left, gentle fill, a subtle hair rim light, an 85mm f/2.8 portrait feel, clean glowing skin with real texture.
+- Per product, 3-6 frames: a front beauty portrait, a three-quarter turn with a hand in the hair or on the product, a profile or over-the-shoulder shot showing length or texture, full-length or knee-up for long items, a confidence pose (arms crossed or hand at collarbone), and motion (hair flip or turn). Add 2-3 macro details for jewellery or small products.
+- Collection: show range (textures, colours, finishes) inside the same universe.
+- Finale: a magazine-style poster or hero frame (brand name in large serif at the top, thin gold frame, product line at the bottom). Keep its words short.
+- Formats: Collection = several looks as one cohesive collection; Hero product = details, then in use, then beauty portrait, then poster; Transformation = honest before, then process, then studio after, with no fake claims; Editorial = magazine energy and dramatic sets; Lifestyle = the product in an aspirational world; Brand launch = brand-coloured set, the hero, the range and a launch poster.`;
 const STYLES={
   "Raw / phone-shot":{hint:"Looks filmed or shot on a phone by a real person: selfie or propped-phone angles, natural light, casual.",
     rules:"Every frame looks self-shot on a phone: selfie or propped-phone angles, handheld, natural or mixed everyday light, slight imperfections, casual wardrobe, real everyday locations. No studio lighting, slow motion or styled sets."},
@@ -391,7 +409,7 @@ function render(bp, isExample){
   tools.append(cAll,cClaude); head.append(left,tools); sheet.append(head);
 
   const meta=el("div","meta");
-  [["Medium",bp.medium||"Video"],["Style",styleName],["Angle",bp.angle||bp.format],["Platform",bp.platform],photo?null:["Runtime",(bp.runtime||"?")+"s"],photo?null:["Audio",bp.audio],[photo?"Frames":"Scenes",(bp.scenes||[]).length]].filter(Boolean).forEach(([k,v])=>{if(!v&&v!==0) return; const s=el("span"); s.append(k+": "); s.append(el("b",null,String(v))); meta.append(s);});
+  [["Medium",bp.medium||"Video"],["Style",styleName],["Format",bp.angle||bp.format],["Platform",bp.platform],photo?null:["Runtime",(bp.runtime||"?")+"s"],photo?null:["Audio",bp.audio],[photo?"Frames":"Scenes",(bp.scenes||[]).length]].filter(Boolean).forEach(([k,v])=>{if(!v&&v!==0) return; const s=el("span"); s.append(k+": "); s.append(el("b",null,String(v))); meta.append(s);});
   sheet.append(meta);
   if(bp.hook) sheet.append(el("div","hook",bp.hook));
 
@@ -452,11 +470,14 @@ function buildPrompt(v){
 - Idea (freestyle): ${v.idea || "(none — propose a strong idea for this content type)"}
 - Platform / aspect: ${v.platform}
 - ${photo?`Exactly ${v.scenes} frames`:`Runtime ${v.runtime} seconds, exactly ${v.scenes} scenes whose times add up to the runtime; audio: ${v.audio}`}
-FREESTYLE: you take the creative lead. Choose the style, angle, talent, location, wardrobe, props and pacing yourself, and make bold, specific choices that suit the platform.`
+- Format: ${v.angle==="Surprise me"?"(you choose the strongest format)":v.angle}
+- Cast: ${v.cast}
+FREESTYLE: you take the creative lead. Choose the style, talent look, location, wardrobe, props and pacing yourself, and make bold, specific choices that suit the platform.`
     : `- Content type: ${v.contentType}
 - Medium: ${v.medium}
 - Style: ${v.style}. ${STYLES[v.style].rules}
-- Angle: ${v.angle}
+- Format: ${v.angle==="Surprise me"?"(you choose the strongest format)":v.angle}
+- Cast: ${v.cast}
 - Idea: ${v.idea || "(none given — propose a strong one)"}
 - Subject / products (first = hero): ${v.products || "(none — if a product is needed, invent a plausible fictional brand and say it is fictional)"}
 - Talent look: ${v.talent || "(choose one that fits the audience)"}
@@ -467,7 +488,7 @@ FREESTYLE: you take the creative lead. Choose the style, angle, talent, location
 
 Brief:
 ${brief}
-${v.photoCount ? `- ${v.photoCount} reference photo(s) are attached. Describe what they show exactly (people, products, packaging, colours, label text) wherever they appear.` : ""}
+${/campaign|launch/i.test(v.contentType+" "+v.angle) ? "\n"+CAMPAIGN_RULES+"\n" : ""}${/keep it open/i.test(v.cast) ? "\nCAST IS OPEN: write the talent as a plug-and-play slot. Use \"@TALENT-1\" plus a neutral, brief description (age range, vibe, glam) in every imagePrompt, so the user can drop their own model reference in later.\n" : ""}${v.photoCount ? `- ${v.photoCount} reference photo(s) are attached. Describe what they show exactly (people, products, packaging, colours, label text) wherever they appear.` : ""}
 
 Rules:
 1. Lock one talent (if people appear), setting palette, wardrobe and lighting. Repeat the key identity details inside every imagePrompt so each frame can be generated alone.
@@ -519,7 +540,7 @@ $("brief").addEventListener("submit", async e=>{
   const medium=fd.get("medium")||"Video";
   const v={contentType:fd.get("ctype")||"UGC ad", medium, freestyle:$("freestyle").checked,
     style:STYLES[fd.get("style")]?fd.get("style"):"Hybrid", angle:fd.get("angle")||"Story / mini-film",
-    idea:$("idea").value.trim(), products:$("products").value.trim(), talent:$("talent").value.trim(), location:$("location").value.trim(),
+    cast:$("cast").value, idea:$("idea").value.trim(), products:$("products").value.trim(), talent:$("talent").value.trim(), location:$("location").value.trim(),
     runtime:$("runtime").value, scenes:$("scenes").value, audio:$("audio").value, platform:$("platform").value, photoCount:files.length};
   ctl=new AbortController();
   go.disabled=true; stopBtn.hidden=false; statusEl.className="status"; statusEl.textContent="";

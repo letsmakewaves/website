@@ -190,3 +190,23 @@ Patterns learned from talking videos the user sends. We learn general performanc
   - **Body language:** seated framing.
   - **Editing:** image insets.
   - **New section 9b:** the series video structure (the shape shared by videos 5, 6 and 7).
+
+## Video 8 (final training video): @thejuliverse luxury wig campaign tutorial (87s; about 35s talking, plus a Photoshop "before", her Visual Blueprint chat and the campaign result)
+- **Framing:** seated, waist-up, vanity room; denim corset top; jump cuts and punch-ins; a wig inset beside her head. Energy: upbeat.
+- **Beats seen:**
+  - **Opening:** hands loosely together in her lap, then both hands open and rolling at chest height while setting up the idea.
+  - **"wig" (inset appears):** **both thumbs up**, then both palms up and presenting.
+  - **The old way** (Photoshop wig swaps): a sincere, slightly sceptical face.
+  - **Freestyle, tool demo:** a presenting palm toward the screen insert.
+  - **"Imagine offering a wig brand THIS":** brows up, a slight lean.
+  - **The list** ("try-ons, hair transformations, product reels, campaign videos"):
+    - **tapping off the first items on the other hand's fingers**;
+    - then **3 fingers** on "product reels";
+    - then **4 fingers** on "campaign videos";
+    - a squint on "campaign videos".
+  - **"that's a service you can SELL":** a presenting palm, then a point at the camera.
+  - **Ending:** a slow blink with a smile, a wave, a warm smile.
+- **Gesture count:** about 2–3 per 10s in the talking parts.
+- **Confirms:** tapping off on the other hand (videos 6 and 8, promoted); finger counts up to 4 (promoted note); presenting palm; rolling hand; slow blink; wave; point at the camera on "you"; seated framing; image insets; keyword rule.
+- **New candidate:** both thumbs up.
+- **This closes the training set** (8 videos plus the user's notes). Further updates come from reviewing Chloe's own renders.

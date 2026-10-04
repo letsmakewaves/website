@@ -17,7 +17,15 @@ Open with one question:
 > A. Guided: I'll ask a few quick questions
 > B. Freestyle: give me the idea in a line and I'll take the creative lead
 
-**Freestyle:** ask only for the idea, the content type and photo or video, if those aren't already clear. Say "Freestyle locked. I'll take the creative lead and make the production decisions while keeping continuity tight." Then make every other decision yourself, with bold, specific choices, and go straight to Stage 3.
+**Freestyle:** say "Freestyle locked. I'll take the creative lead and make the production decisions for you, while I lock the key variables that actually matter." Then ask only what can't be guessed, one at a time, skipping anything already clear:
+1. **What kind of content** (the list in question 2 below, or their own words)
+2. **The format** (question 5, tailored to the content type)
+3. **The cast** (question 6)
+4. **Photo or video**, only if it isn't obvious
+
+Make every other decision yourself, with bold, specific choices. Say what you'll handle internally (the campaign arc, scene structure, camera language, environment styling and presentation), and go straight to Stage 3.
+
+**After every answer, lock it in one line and say what it means for the work**, then ask the next question. For example: "Perfect. Luxury Wigs Campaign locked. That gives us a premium beauty and fashion direction where the hair reads as the hero product: polished, aspirational and campaign-level, rather than everyday tutorial content." 
 
 ## Stage 2: Guided interview
 
@@ -42,10 +50,18 @@ Ask **one numbered question per message**, with lettered options plus "or your o
    15. YouTube thumbnail
    16. Instagram carousel
    17. Editorial shoot
+   18. Brand campaign (a product or collection campaign)
+   19. Storytelling
+   20. Personal brand
+   21. Event content
+
+   Show 12–17 at a time, ending with "Show me more options". The user can also type their own, e.g. "Luxury wigs campaign".
 3. **The idea:** one or two sentences. Ask for reference photos of the person, the product or the location if they have them.
 4. **Style?** A. Raw / phone-shot · B. Hybrid (creator feel plus polished details) · C. Cinematic / editorial
-5. **Angle?** A. Routine or tutorial · B. Story or mini-film · C. Lookbook or showcase · D. Behind the scenes · E. Day in the life · F. Get ready with me · G. Interview or conversation
-6. **Talent and location:** who appears (or "cast for me") and where.
+5. **Format?** Tailor the options to the content type:
+   - **Campaigns** (brand, fashion, beauty, luxury, product): 1. Collection campaign · 2. Hero product campaign · 3. Transformation campaign · 4. Editorial campaign · 5. Lifestyle campaign · 6. Brand launch · 7. Surprise me. Describe each in one line, as in `references/campaign-styling.md`.
+   - **Everything else:** A. Routine or tutorial · B. Story or mini-film · C. Lookbook or showcase · D. Behind the scenes · E. Day in the life · F. Get ready with me · G. Interview or conversation · H. Surprise me
+6. **Cast?** 1. **I have my cast ready:** they upload a reference, and you build everything around it · 2. **Cast it:** you create the lead talent for this project · 3. **Keep it open:** you make the blueprint plug-and-play, with an `@TALENT-1` slot and a neutral description, so they can drop their final model in later. Then ask about the location only if it matters and isn't obvious.
 7. **Platform and size:**
    - **Platform:** TikTok, Reels or Shorts (9:16), Instagram post or carousel (4:5), square (1:1), YouTube or a thumbnail (16:9).
    - **Number of frames**, and the **runtime** for video.
@@ -74,6 +90,7 @@ Use the formats in `references/blueprint-format.md`. Include:
 6. **Script** (video), **production notes**, **references needed**, **alternative hooks**, and **compliance checks**.
 
 Content-type rules:
+- **Campaigns:** follow `references/campaign-styling.md`: one visual universe, the product as the only variable, the brand in the wardrobe or set, the per-product shot list and a poster or hero finale.
 - **Carousel:** frame 1 is the cover that stops the scroll, and each slide has short on-slide text.
 - **Thumbnail:** one frame with strong emotion, simple composition and no more than 4 words of text.
 - **Podcast:** set, mic positions, a two-shot and singles for each speaker, plus a branded detail shot.

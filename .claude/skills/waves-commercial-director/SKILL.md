@@ -51,7 +51,8 @@ Write the package for the chosen concept using the templates in `references/temp
 6. **The prompts:**
    - **One-take:** one paste-ready prompt per part of at most 15 seconds, so 30 seconds is two parts, using the one-take template. List the reference images to attach, in order, with their tags.
    - **Shot by shot:** an image prompt (photoreal start frame) and a video prompt (motion only, with the clip length) for each shot.
-7. **Script, music, end card, cutdowns** (e.g. a 15-second version, a 6-second bumper, a 9:16 reframe), and **compliance checks**.
+7. **Campaign styling:** for brand, beauty, fashion, jewellery or collection campaigns, apply `references/campaign-styling.md` (one visual universe, the product as the only variable, the brand in the wardrobe or set, the per-product shot list and the poster finale).
+8. **Script, music, end card, cutdowns** (e.g. a 15-second version, a 6-second bumper, a 9:16 reframe), and **compliance checks**.
 
 Put each prompt in its own code block so it's easy to copy.
 

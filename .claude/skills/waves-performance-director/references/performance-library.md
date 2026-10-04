@@ -61,6 +61,7 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 | **Gesture toward the overlay or next cut (confirmed in videos 5, 6 and 7)** | Her palm, finger or a thumb over the shoulder points to the side of the frame where the example image will appear, or toward "what I mean" before the cut ("Now let me prove what I mean"). Decide the overlay side before generating, so the gesture and the inset match | Chest to shoulder |
 | **CTA point down (confirmed in videos 5 and 7)** | "Click the link in my bio", "comment 13 done": a finger points down and to the side, toward the caption and bio area | Waist to chest |
 | **Product beside the face (videos 2 and 6)** | Opening a product video, or a UGC "hold up the product" moment: the product is held up next to the cheek, label to camera, with a soft smile | Face height |
+| **Tapping off on the other hand (confirmed in videos 6 and 8)** | Listing services or quick points ("try-ons, hair transformations..."): the index finger of one hand taps the fingers of the other hand, one per item. It can switch to a held-up count for the later items | Chest |
 | **Hands come together** | The last item of a list that sums it up ("turn everything into one..."): both hands meet at the chest, fingertips touching | Chest |
 
 **Mic in one hand:** only the free hand gestures, and it stays at chest height or lower than the mic so it doesn't cover the face.
@@ -97,19 +98,19 @@ These have been seen in only one reference video. Use them when they clearly fit
 - **Both index fingers up (video 4):** a strong "wait" or "this part" before the key point.
 - **Closed-lip confident smirk (video 4):** at the end of the pitch, before cutting to the result: lips closed, one corner up, chin slightly down, eyes on the lens.
 - **Wearing the product (video 4):** for jewellery or fashion, she wears the item while talking about it, so the talking shot doubles as a product shot.
-- **Tapping off fingers on the other hand (video 6):** while explaining several points quickly, the index finger of one hand taps the fingers of the other hand, one per point. A softer alternative to holding up a count.
 - **Serious emphasis face (video 7):** on the instruction that matters most ("create sample property tours"), the brows draw together, the chin dips slightly and one finger goes up, then a slow blink. A no-nonsense "listen to me" moment.
+- **Both thumbs up (video 8):** a quick double thumbs-up on a positive line ("wig", "great results"), held for a beat.
 - **Leaning on the armrest (video 7):** seated, one forearm resting on the chair arm, body slightly angled, which reads relaxed and confident.
 - **Tour-host sweep (video 7, in her AI property ad):** when presenting a space, an open arm sweeps toward the feature being named ("your private lounge", "open living, elegant dining here"). Useful for real-estate and venue formats.
 
-Promoted after video 7: rolling hand, gesture toward the overlay or next cut, CTA point down, product beside the face (gestures), seated framing (body language), image insets (section 9). Promoted after video 5: pain-point face (expressions), presenting palm (gestures). Promoted after video 3: slow blink (expressions), thumb back at self, open-palm wave, hands together (gestures), jump-cut punch-ins (section 9).
+Promoted after video 8 (final training video): tapping off on the other hand; 4-finger counts. Promoted after video 7: rolling hand, gesture toward the overlay or next cut, CTA point down, product beside the face (gestures), seated framing (body language), image insets (section 9). Promoted after video 5: pain-point face (expressions), presenting palm (gestures). Promoted after video 3: slow blink (expressions), thumb back at self, open-palm wave, hands together (gestures), jump-cut punch-ins (section 9).
 
 ## 8. Lists and finger counts (user observation, confirmed)
 
 When the creator lists things, she counts them on her fingers, accurately: one finger on the first item, two on the second, and so on.
 
 - **Prompt it explicitly for each item:** `On "first," she holds up exactly one finger. On "second," exactly two fingers. On "third," exactly three fingers.` Name the count as a number of fingers, not just "counts on her fingers".
-- **Up to 5 items on one hand.** For longer lists, split them across clips.
+- **Up to 5 items on one hand** (4-finger counts confirmed in video 8). For longer lists, split them across clips.
 - **The count is the gesture for that line.** Don't add other gestures during the list; the face stays engaged, with a small nod on each item.
 - **How she does it (video 3, studied frame by frame):**
   - The counting hand is raised **beside her face, between collarbone and chin height**, off to one side, palm toward the camera, with the counted fingers clearly spread and the others folded.
