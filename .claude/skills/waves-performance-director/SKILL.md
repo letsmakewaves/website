@@ -71,6 +71,15 @@ When the user sends the result file, pull frames (`ffmpeg -i in.mp4 -vf "fps=2,s
 
 Fix only what failed, using the fix table in the library. Change one or two things per retry, so you know what worked. Save rules the user confirms into the persona's profile.
 
+## Learning from reference videos
+
+When the user sends a reference video of a creator, study it and update this skill:
+
+1. Pull frames (and a transcript if the audio is clear) and log the video in `references/study-log.md` using its entry format.
+2. Tell the user in a few lines what you saw: the beats, gesture count, and any new pattern.
+3. When a pattern appears in 2 or more videos, promote it into `references/performance-library.md` and say what changed.
+4. Learn habits only (timing, how expressions follow meaning, gesture density), never the person's face, identity, scripts or signature routine.
+
 ## Rules
 
 - **Voiceover approval before any video with speech.** Generate it (or import the user's audio), share the link, and wait for approval.
