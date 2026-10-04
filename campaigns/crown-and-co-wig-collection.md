@@ -51,3 +51,4 @@ The v1 frames above are superseded (inconsistent logo).
 
 ## Video (Kling 3.0 Pro, 9:16, 5s, no sound)
 - Scene 2 test (look 1, straight): 5a57e09e, started from the 4:5 still e9728c11, output 1080x1920
+- Kling ignored aspect_ratio 9:16 and kept the 4:5 shape of the start still (actual file 1292x1604). Fix: centre-crop to 902x1604, scale to 1080x1920 (ffmpeg). Saved as campaigns/crown-and-co-scene2-9x16.mp4.

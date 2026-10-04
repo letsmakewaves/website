@@ -74,6 +74,7 @@ Change only the PRODUCT and POSE lines between frames.
 ## Video for campaigns
 
 - **Make the stills in the video's aspect ratio from the start.** If the campaign will become a 9:16 Reel or TikTok, generate every still at 9:16, so the stills can be used directly as video start frames. (Lesson from the first test: 4:5 stills had to be stretched to 9:16.) Check the target video format before generating stills.
+- **Kling with a start image keeps the start image's shape and ignores the aspect-ratio setting.** Always check the real width and height of the downloaded file (ffprobe), never the job metadata. If a clip comes out 4:5, centre-crop it to 9:16 for free (`crop=ih*9/16:ih`, then scale to 1080x1920), after checking that the face, product and logo sit inside the centre.
 
 - 3–5 second slow-motion clips per look: a hair flip, a turn to camera, a hand through the hair, fabric moving, light catching jewellery.
 - Cut to music in the same order as the collection. End on the poster frame.
