@@ -6,7 +6,7 @@ The AI face of the page: shows AI ads and how they're made. Openly AI, built by 
 - **Higgsfield Element:** `Chloe`, character, made from the #11 portrait and Sheet B. Use it in every image and video prompt.
 - **Look:** Nigerian woman, about 26, rich deep brown skin, clean clear skin, soft warm approachable expression with a gentle smile.
 - **Hair:** long, glossy, jet-black bone-straight, sleek middle part.
-- **Signature styling:** ivory tailored blazer over a champagne satin top, small diamond studs, fine gold chain.
+- **Styling:** soft, feminine and simple. Fitted mock-necks, off-the-shoulder tops, satin slip dresses and midi skirts, neutral colours. Small gold hoops and a fine gold chain. **No blazer unless asked**; save blazers for announcements. Note: the saved Element's description still says "signature: ivory blazer", so always write "no blazer" into prompts.
 - **Makeup rule:** always soft natural glam. Never heavy contour or dramatic lashes, which make her look intense or "scary".
 - **Default background:** soft grey seamless studio, or a white marble desk with a grey wall.
 

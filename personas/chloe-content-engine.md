@@ -42,6 +42,9 @@ Turn on the AI-generated label on every post.
 **"Chloe's 5 Ad Prompts":** five copy-paste prompts (skincare, food, fashion, app, real estate), each with an example image. CTA: *"Comment PROMPTS and I'll send it to you."* Deliver it with a ManyChat-style automated DM, which collects an email or WhatsApp number.
 
 ## Outfit library
+
+Default to soft, feminine looks (board 2): black mock-neck top + trousers, off-the-shoulder pinstripe top with a black bodice, blush satin slip dress + cardigan, cream off-the-shoulder knit + satin midi skirt, sage silk blouse + ivory trousers, chocolate square-neck midi dress. Blazers (below) only for announcements.
+
 | Tag | Outfit |
 |---|---|
 | OUTFIT-1 | **Signature:** ivory blazer, champagne satin top, diamond studs, gold chain |
@@ -66,6 +69,8 @@ Turn on the AI-generated label on every post.
 | LOC-6 | Luxury bathroom vanity (beauty and skincare content) |
 | LOC-7 | Car back seat, phone in hand (quick talking-head tips) |
 | LOC-8 | Soft grey seamless studio (product shots and announcements) |
+| LOC-9 | Cozy vanity room: white shutters, sheer curtains, pampas grass, light-bulb mirror, candles, white orchid |
+| LOC-10 | Luxury open-plan apartment: marble kitchen island, pendant lights, floor-to-ceiling windows with a city view |
 
 ## First 14 days
 Post one Reel or TikTok a day. Go live once a week (Day 7 and Day 14).
