@@ -57,3 +57,4 @@ The v1 frames above are superseded (inconsistent logo).
 - Scene 5 (613 blonde): e046a595
 - Scene 6 (kinky curly): e8326854
 - Scene 7 (finale): 240018c4
+- Joined edit, scenes 2-7: campaigns/crown-and-co-collection-9x16.mp4 (1080x1920, 30.2s, silent). QC: logo partly turned away in scenes 4 and 6 (profile angle) and briefly covered by hair mid-flip in scene 5; otherwise consistent.
