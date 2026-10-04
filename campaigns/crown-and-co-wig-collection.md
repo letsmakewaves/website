@@ -31,3 +31,10 @@ The v1 frames above are superseded (inconsistent logo).
 - Look 3: 17067965
 - Look 4: bd174181
 - Look 5: 639ba4c3
+
+### Front beauty portraits (v2, each an edit of that look's locked image)
+- Look 1: e9728c11
+- Look 2: b50ea9c2
+- Look 3: bf54f27e
+- Look 4: fde5befe
+- Look 5: a30ad8dc
