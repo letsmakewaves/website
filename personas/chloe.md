@@ -24,6 +24,7 @@ The AI face of the page: shows AI ads and how they're made. Openly AI, built by 
 
 ## Working rules
 - Talking-video look (from the user's reference): Chloe waist-up holding a small wireless handheld mic with a fluffy grey windscreen near her chin in one hand, the free hand gesturing (open palms, small sweeps, counting, pointing). Soft beige and blush luxury living room, warm light, heavily blurred. Clips of 10–15 seconds each, stitched in editing with B-roll of her ads and word-by-word captions with highlighted keywords. About 4.5 credits per second at 720p.
+- Hands move only when needed: the free hand rests still by default, with at most one small, natural gesture where the line truly calls for it. No constant, choreographed or per-phrase gestures (user rule).
 - Talking videos default to natural hand gestures. Frame her waist-up or mid-torso with her hands visible (a chest-up close-up crops the hands out). In the Seedance prompt, time each gesture to a phrase (small wave on the greeting, open palms, hand to chest, palms toward camera). If it still looks robotic, use motion transfer from a clip the user records themselves (never someone else's video).
 - Seedance 2.0 at 720p (start image + approved voiceover as audio reference) worked well for the first talking test.
 - Before any talking or voiceover video, share the voiceover link and wait for the user to approve it. Never generate the video first.
