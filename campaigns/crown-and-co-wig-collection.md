@@ -14,3 +14,13 @@ Model: Nano Banana Pro (routed to Nano Banana 2), 4:5, about 2 credits per image
 
 Rejected: 15dee95f and b654ebcb (logo off-centre on a three-quarter body).
 Full image URL pattern: https://d8j0ntlcm91z4.cloudfront.net/user_3EtvNcgyfXmwXycZqJ5WwIUfClC/hf_<date>_<time>_<job_id>.png
+
+## Locked branding set (v2)
+Brand reference (approved by the user): a95be382, look 2 body wave with arms crossed. Plain black tee, no pocket, "Crown & Co." in pink script on the left chest.
+Every other look is an edit of that exact image, with only the hair changed:
+- Look 1, 30" straight: 7ccfdaf1
+- Look 2, 26" body wave: a95be382 (the reference)
+- Look 3, rose-pink wave: 451b24e7
+- Look 4, 613 blonde: e8cc7526
+- Look 5, kinky curly: 7974b1b7
+The v1 frames above are superseded (inconsistent logo).
