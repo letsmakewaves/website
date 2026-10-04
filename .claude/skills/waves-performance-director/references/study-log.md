@@ -98,3 +98,24 @@ Patterns learned from talking videos the user sends. We learn general performanc
   - **Section 8:** detailed counting mechanics.
   - **Section 9:** editing pattern.
   - **Candidates left:** hand to chin, props either side of the face.
+
+## Video 4: @thejuliverse jewellery campaign tutorial (44s; about 22s talking, the rest the AI campaign result)
+- **Framing:** mid-torso, 9:16, apartment with warm kitchen lights. Wearing the jewellery being discussed (necklace, earrings). Jump cuts, plus small image insets with sparkle doodles beside her head. Energy: upbeat and warm.
+- **Beats seen:**
+  - **Opening:** a smile and a small head tilt.
+  - **Explaining the idea:** one hand loosely rolling or circling at chest height, with a sincere face.
+  - **The pain point** (an inset shows a plain product photo): **pinched brows, a slight squint, lips pulled to one side, a head tilt**, like "ugh". Then back to a smile.
+  - **The key point:** **both index fingers up** at chest height.
+  - **Presenting the result:** **both hands open outward, palms up**, a bright face, insets of the campaign images beside her.
+  - **Before cutting to the result:** a **closed-lip confident smirk**, chin slightly down.
+  - **Ending:** thumb back at herself, palm extended toward the camera on "you", a slow blink with a smile, and a wave on the sign-off.
+- **Gesture count:** about 2–3 per 10s in the talking parts, on keywords.
+- **New patterns (candidates):** pain-point face; rolling hand while explaining; both hands open, palms up; both index fingers up; closed-lip confident smirk; wearing the product; image insets beside the head.
+- **Confirms:**
+  - thumb back at self (3rd video);
+  - open-palm wave on the sign-off (3rd);
+  - slow blink (3rd);
+  - brief reach toward the camera on "you" (3rd);
+  - keyword rule and upbeat density (3rd);
+  - the face carries the delivery and goes back to neutral between beats (4th).
+- **Promoted:** nothing new (no repeats yet). Seven new candidates added to library section 7. Still waiting: hand to chin, props either side of the face.

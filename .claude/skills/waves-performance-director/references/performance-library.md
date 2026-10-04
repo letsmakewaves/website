@@ -88,6 +88,13 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 These have been seen in only one reference video. Use them when they clearly fit the line:
 - **Hand to chin:** on "imagine" or "think about it", with a head tilt and eyes drifting up.
 - **Props on either side of the face:** to open a video about a product.
+- **Pain-point face (video 4):** when describing the problem, the brows pinch together, the eyes squint slightly and the lips pull to one side, with a small head tilt, like "ugh, I know". It flips back to a smile when the solution comes.
+- **Rolling hand (video 4):** while explaining a process, one hand loosely rolls or circles at chest height ("and then this, and then that"). Keep it small and only during the explanation.
+- **Both hands open, palms up (video 4):** presenting the result ("look at this"), both hands opening outward at chest height.
+- **Both index fingers up (video 4):** a strong "wait" or "this part" before the key point.
+- **Closed-lip confident smirk (video 4):** at the end of the pitch, before cutting to the result: lips closed, one corner up, chin slightly down, eyes on the lens.
+- **Wearing the product (video 4):** for jewellery or fashion, she wears the item while talking about it, so the talking shot doubles as a product shot.
+- **Edit (video 4):** small images of the result float beside her head, with doodled sparkles, while she talks about them.
 
 Promoted after video 3: slow blink (expressions), thumb back at self, open-palm wave, hands together (gestures), and jump-cut punch-ins (section 9).
 
