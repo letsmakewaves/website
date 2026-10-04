@@ -24,3 +24,10 @@ Every other look is an edit of that exact image, with only the hair changed:
 - Look 4, 613 blonde: e8cc7526
 - Look 5, kinky curly: 7974b1b7
 The v1 frames above are superseded (inconsistent logo).
+
+### Three-quarter turns (v2, each an edit of that look's locked image)
+- Look 1: a12030f7
+- Look 2: b702529e
+- Look 3: 17067965
+- Look 4: bd174181
+- Look 5: 639ba4c3
