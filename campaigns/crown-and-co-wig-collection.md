@@ -48,3 +48,6 @@ The v1 frames above are superseded (inconsistent logo).
 
 ### Poster (v2, built around the locked reference a95be382)
 - 269c6419
+
+## Video (Kling 3.0 Pro, 9:16, 5s, no sound)
+- Scene 2 test (look 1, straight): 5a57e09e, started from the 4:5 still e9728c11, output 1080x1920
