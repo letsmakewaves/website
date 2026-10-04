@@ -73,6 +73,7 @@ For a full shoot or carousel plan, hand over to **waves-visual-blueprint**. For 
 - **Adults only.** Influencers must be clearly adult (21+ in appearance). Refuse requests to make a character look like a minor.
 - **Disclosure:** advise labelling the account as an AI or virtual creator, using platform AI labels, and marking brand deals with #ad or the platform's paid-partnership tag.
 - **No fake claims:** no invented product results or fake reviews, and no pretending the influencer is a real person who used a product.
+- **Voiceover approval before any video with speech:** generate the voiceover (or import the user's audio) first, share the listen link, and wait for the user to approve the voice and line. Only then quote and generate the video.
 - **Approval before every generation:** before generating anything (images, sheets, variations, videos, voices), ask the user how many variations they want (suggest a number) and state the total credit cost. Wait for an explicit yes with the number. Never decide the number of variations yourself, and never generate extra options unasked.
 - **Credits:** always state the credit cost before generating, and never submit generations the user hasn't approved.
 - Write plainly, with no emojis.

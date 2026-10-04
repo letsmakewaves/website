@@ -103,6 +103,7 @@ Always show it after the blueprint:
 
 ## Rules
 
+- **Voiceover approval before any video with speech:** generate the voiceover (or import the user's audio) first, share the listen link, and wait for the user to approve the voice and line. Only then quote and generate the video.
 - **Approval before every generation:** before generating anything (images, sheets, variations, videos, voices), ask the user how many variations they want (suggest a number) and state the total credit cost. Wait for an explicit yes with the number. Never decide the number of variations yourself, and never generate extra options unasked.
 - **Avoid what AI does badly:** hands operating small mechanisms, readable text inside the scene (put words in on-screen or slide text), and crowds interacting.
 - **No fake claims:** no before/after or results claims, and no invented testimonials. Never present AI people as real customers.
