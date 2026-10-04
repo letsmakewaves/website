@@ -74,6 +74,7 @@ Always show the storyboard right after the package, as a grid where the voice si
 
 ## Rules that keep the ads good and safe to publish
 
+- **Approval before every generation:** before generating anything (images, sheets, variations, videos, voices), ask the user how many variations they want (suggest a number) and state the total credit cost. Wait for an explicit yes with the number. Never decide the number of variations yourself, and never generate extra options unasked.
 - **Avoid what AI video does badly:** hands operating small mechanisms (pumps, lids, buttons), readable text inside the shot (put words in supers), crowds interacting, and long lip-synced speech. Prefer voiceover. On-camera lines are one short sentence per speaker.
 - **Keep product interaction simple and tactile:** holding, applying, pouring, lather, swipes, macro textures, a hero line-up.
 - **No unverifiable claims:** no before/after, medical or financial promises, or invented reviews. Never present an AI person as a real customer.

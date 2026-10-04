@@ -103,6 +103,7 @@ Always show it after the blueprint:
 
 ## Rules
 
+- **Approval before every generation:** before generating anything (images, sheets, variations, videos, voices), ask the user how many variations they want (suggest a number) and state the total credit cost. Wait for an explicit yes with the number. Never decide the number of variations yourself, and never generate extra options unasked.
 - **Avoid what AI does badly:** hands operating small mechanisms, readable text inside the scene (put words in on-screen or slide text), and crowds interacting.
 - **No fake claims:** no before/after or results claims, and no invented testimonials. Never present AI people as real customers.
 - **Real brands and stores** (e.g. a Zara shopping day) are fine for personal and portfolio content. Don't present the content as sponsored by them.
