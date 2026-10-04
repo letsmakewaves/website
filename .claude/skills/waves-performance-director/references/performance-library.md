@@ -24,6 +24,7 @@
 - **Brow raise:** both brows for surprise or emphasis; one brow for cheeky or sceptical.
 - **Concerned or empathetic:** inner brows up, soft eyes, small closed smile.
 - **Playful disbelief:** a small squint, lips pressed, a slight head shake.
+- **Pain-point / "not like that" face (confirmed in videos 4 and 5):** for the problem or the wrong way ("I wouldn't just post the product"), the brows pinch, the eyes squint a little, the lips pull to one side and the head tilts, often with a small palm-up shrug. It flips to a bright smile when the solution or "THIS" comes, and that contrast is the point.
 - **Hook surprise:** eyes wide, both brows up, mouth open mid-word, used on the bold opening claim right after a smiling hello.
 - **Slow blink (confirmed in 2 videos):** the eyes close for a beat mid-sentence on a point she's sure of, or between list items, then reopen on the next keyword. Once or twice per clip, never on every line.
 
@@ -53,8 +54,9 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 | **One finger up** | A real number ("day six", "one minute") or emphasis on "THIS" | Chest to chin |
 | **Finger count for a list** | Listing items ("one... two... three"). On each item's number word she holds up **exactly that many fingers**, clearly, then moves on to the next count; the hand stays up through the list and drops after the last item | Chest, palm toward camera |
 | **Brief point toward camera** | Only on "you" or "yours" in a call to action ("Create yours", "Pick a product"), then back to rest | Low chest |
-| **Thumb back at self (confirmed in 2 videos)** | "Day 5 DONE", "I", "me", her own result | Chest |
+| **Thumb back at self (confirmed in 3 videos)** | "Day 5 DONE", "I", "me", her own result. Variant (video 5): both index fingers pointing in at herself on "DAY 12 DONE" | Chest |
 | **Open-palm wave (confirmed in 2 videos)** | The hello, "there you have it", and the sign-off ("I'll see you tomorrow") | Shoulder, beside the face |
+| **Presenting palm (confirmed in videos 4 and 5)** | "Like this", "look at this", the result: one or both palms up, opening outward toward the side where the example appears (an inset or the next cut) | Chest |
 | **Hands come together** | The last item of a list that sums it up ("turn everything into one..."): both hands meet at the chest, fingertips touching | Chest |
 
 **Mic in one hand:** only the free hand gestures, and it stays at chest height or lower than the mic so it doesn't cover the face.
@@ -88,15 +90,16 @@ Use them only on words that need them. Each one goes rest, then peak on the word
 These have been seen in only one reference video. Use them when they clearly fit the line:
 - **Hand to chin:** on "imagine" or "think about it", with a head tilt and eyes drifting up.
 - **Props on either side of the face:** to open a video about a product.
-- **Pain-point face (video 4):** when describing the problem, the brows pinch together, the eyes squint slightly and the lips pull to one side, with a small head tilt, like "ugh, I know". It flips back to a smile when the solution comes.
 - **Rolling hand (video 4):** while explaining a process, one hand loosely rolls or circles at chest height ("and then this, and then that"). Keep it small and only during the explanation.
-- **Both hands open, palms up (video 4):** presenting the result ("look at this"), both hands opening outward at chest height.
 - **Both index fingers up (video 4):** a strong "wait" or "this part" before the key point.
 - **Closed-lip confident smirk (video 4):** at the end of the pitch, before cutting to the result: lips closed, one corner up, chin slightly down, eyes on the lens.
 - **Wearing the product (video 4):** for jewellery or fashion, she wears the item while talking about it, so the talking shot doubles as a product shot.
 - **Edit (video 4):** small images of the result float beside her head, with doodled sparkles, while she talks about them.
+- **Gesture toward the overlay (video 5):** her palm or finger points to the side of the frame where the product image or example will appear in the edit. Plan the overlay side before generating, so the gesture and the inset match.
+- **CTA point down (video 5):** on "click the link in my bio", the finger points down and to the side, toward where the bio and caption sit.
+- **Seated framing (video 5):** sitting in a chair, framed waist-up, hands resting in her lap between gestures. Gestures rise from the lap and settle back. A calm, "sit down and talk" format.
 
-Promoted after video 3: slow blink (expressions), thumb back at self, open-palm wave, hands together (gestures), and jump-cut punch-ins (section 9).
+Promoted after video 5: pain-point face (expressions), presenting palm (gestures). Promoted after video 3: slow blink (expressions), thumb back at self, open-palm wave, hands together (gestures), and jump-cut punch-ins (section 9).
 
 ## 8. Lists and finger counts (user observation, confirmed)
 

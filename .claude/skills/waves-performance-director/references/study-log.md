@@ -119,3 +119,32 @@ Patterns learned from talking videos the user sends. We learn general performanc
   - keyword rule and upbeat density (3rd);
   - the face carries the delivery and goes back to neutral between beats (4th).
 - **Promoted:** nothing new (no repeats yet). Seven new candidates added to library section 7. Still waiting: hand to chin, props either side of the face.
+
+## Video 5: @thejuliverse "Day 12" hair-care UGC tutorial (51s; about 30s talking, the rest example ads)
+- **Framing:** **seated** in a chair, waist-up, hands resting in her lap. Vanity room with bulb mirror, candles and orchids, cool window light. Captions at the top plus keyword captions mid-frame. Jump cuts, with a **tight punch-in on "THIS"**. Energy: upbeat and conversational.
+- **Beats seen:**
+  - **Hook "Day 12 of becoming a paid AI content creator":** smile, a slight head tilt, hands in her lap.
+  - **"if I owned a shampoo or hair care brand":** a palm-up hand out to the side, where the product inset appears.
+  - **"I wouldn't just post the product":** **squint, lips pulled to one side, head tilt, palm-up shrug** (the "not like that" face).
+  - **"this is the kind of UGC ad I'd create":** a tight punch-in, a big smile on "THIS", then the example ad.
+  - **"if you're an AI UGC creator":** a point toward the camera on "you're".
+  - **Steps** ("create content that shows the problem, the product, how it's used, and the result"): 2 fingers, then a point to the side toward the coming example.
+  - **Second list** ("create sample UGC ads, add them to your portfolio, then start pitching"): **1 finger, then 2 ("two"), then 3 fingers**, at chest height beside her.
+  - **"realistic AI UGC like this":** a presenting palm toward the side.
+  - **"click the link in my bio":** a point down and to the side.
+  - **"DAY 12 DONE":** both index fingers pointing in at herself.
+  - **"I'll see you tomorrow":** a wave and a smile.
+  - A slow blink on "brands".
+- **Gesture count:** about 2–3 per 10s in the talking parts, on keywords and counts.
+- **Confirms:**
+  - finger counts on lists (3rd source: the user, video 3 and this one);
+  - pain-point face (videos 4 and 5);
+  - presenting palm (videos 4 and 5);
+  - thumb or finger back at self on DONE (3rd);
+  - wave on the sign-off (4th);
+  - slow blink (4th);
+  - point at the camera on "you" (4th);
+  - punch-in on the key line (3rd);
+  - keyword rule and density (4th).
+- **New candidates:** gesture toward the side where the overlay appears; CTA point down toward the bio; seated framing with hands resting in the lap.
+- **Promoted:** pain-point face, presenting palm. Waiting: hand to chin, props either side of the face, rolling hand, both index fingers up, confident smirk, wearing the product, image insets, plus the three new candidates.
