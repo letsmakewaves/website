@@ -21,11 +21,12 @@ seg 4 look3-pink.mp4      2.35 6 '24" ROSE PINK'
 # honey: extended to land on the hair whip (0.10-3.42s, just before the turn at 3.5s), slowed ~6% to fill 8 beats
 D5=$(python3 -c "print(round(8*$B,3))")
 ffmpeg -v error -y -ss 0.10 -t 3.32 -i look4-honey-5s.mp4 -an -vf "$W,setpts=PTS*$D5/3.32" -c:v libx264 -crf 17 -preset medium -pix_fmt yuv420p build/5.mp4
-# end card: logo on black + tagline
+# end card: the 9:16 flyer (honey blonde + brand name), fade in from black with a slow push-in
 ED=$(python3 -c "print(round(6*$B,3))")
-ffmpeg -v error -y -f lavfi -i "color=c=0x0e0e0e:s=1080x1920:r=30:d=$ED" -loop 1 -t "$ED" -i "$LOGO" \
-  -filter_complex "[1]scale=900:-1,format=rgba,fade=in:st=0:d=0.4:alpha=1[l];[0][l]overlay=(W-w)/2:(H-h)/2,setsar=1" \
-  -c:v libx264 -crf 17 -pix_fmt yuv420p build/6.mp4
+FR=$(python3 -c "print(int(round(6*$B*30)))")
+ffmpeg -v error -y -loop 1 -framerate 30 -t "$ED" -i flyer/crown-and-co-flyer-9x16.png \
+  -vf "scale=2160:3840,zoompan=z='1+0.04*on/$FR':x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':d=1:s=1080x1920:fps=30,fade=in:st=0:d=0.3,setsar=1" \
+  -frames:v "$FR" -c:v libx264 -crf 17 -pix_fmt yuv420p build/6.mp4
 printf "file '%s'\n" 1.mp4 2.mp4 3.mp4 4.mp4 5.mp4 6.mp4 > build/list.txt
 ffmpeg -v error -y -f concat -safe 0 -i build/list.txt -c copy build/video.mp4
 DUR=$(ffprobe -v error -show_entries format=duration -of csv=p=0 build/video.mp4)
