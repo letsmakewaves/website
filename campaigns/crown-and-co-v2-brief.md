@@ -8,3 +8,6 @@
 
 ## Answers so far
 (to be filled in as the user answers)
+
+## Review log
+- Look 3 close-up (rose pink), first try: good colour, hairline and face. Rejected for flyaways and frizz halo (caused partly by the "strong rim light" wording), stringy wave ends, and hair covering the logo (only "Crown" visible). Fixed with an edit prompt; the pack now asks for zero flyaways, a subtle rim light and the hair kept behind the shoulder on the logo side.
