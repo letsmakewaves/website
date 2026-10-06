@@ -4,7 +4,7 @@ Deliverable: one **9:16 Reel/TikTok, about 25–30 seconds**, cut to music. Each
 
 ## 0. What her video does (studied frame by frame)
 
-- **Every look is about 2 seconds,** cut fast. Seven looks in about 16 seconds. The energy comes from the cutting and the music, not from big actions.
+- **Every shot is 0.5 to 2.3 seconds, about 1.7 seconds on average,** cut fast. 9 shots for 7 looks in **15 seconds** (0:49.6 to 1:04.6). Measured cuts: bone straight 2.3s · body wave 1.6s + 1.3s (two angles) · rose pink 2.3s · blonde 0.5s (front) + 1.4s (profile) · black curly 1.7s · highlight curly 2.0s · bob 2.0s. The energy comes from the cutting and the music, not from big actions.
 - **The camera does the moving.** Most shots open **chest-up on the face**, then the camera smoothly **pulls back to show the full length of the hair and the full body.** Other moves: a slow orbit to profile, a tilt down the length of the hair, a slow push-in.
 - **She moves like a high-fashion model:** slow, controlled, every move eased in and out. Never fast, never bouncy, never a big laugh.
 - **Her signature beat: eyes down, then up to the lens.** Head slightly bowed, eyes lowered, then she lifts her gaze into the camera with a calm, knowing, closed-lip look.
