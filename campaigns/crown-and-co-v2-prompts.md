@@ -6,13 +6,13 @@ Everything here is **vertical 9:16**. You generate the images yourself in Gemini
 
 ## Before you start: the 3 references you attach
 
-Gemini locks a look much better from pictures than from words. Attach images in this order, and keep the order the same every time:
+Gemini locks a look much better from pictures than from words. Attach images in this order, and keep the order the same every time. The wigs are designed inside the prompts, so you don't need wig photos.
 
 | # | Reference | Where to get it |
 |---|---|---|
 | **Image 1** | **Chloe's face**: her approved portrait (the #11 portrait / Sheet B). After Step 1, use your approved character sheet instead. | Your Higgsfield library |
 | **Image 2** | **Branding**: the approved Crown & Co. frame (body wave, arms crossed, plain black tee with the pink script logo on the left chest). | The image you sent me as "it must be this branding" |
-| **Image 3** | **The real wig photo** for that look (from the brand or stock). | You're still sourcing these. **Don't run Step 3 without them.** |
+| **Image 3** | **That look's approved close-up** (made in Step 3; only for the full-body A frames and the finale) | You generate it first, from the wig description |
 
 **Making sure it comes out 9:16:** every prompt says "vertical 9:16". If Gemini still returns a square or 4:5 image, reply: *"Same image, but reformat to vertical 9:16, extending the backdrop and floor; change nothing else."* Check the size before using any image as a video start frame. On a phone, the image info shows it; 9:16 is, for example, 1080×1920 or 1536×2752.
 
@@ -65,90 +65,111 @@ From now on, **Image 1 = Sheet A, and Sheet B is added as an extra reference.**
 
 ---
 
-## STEP 2: The video storyboard (what each image is for)
+## STEP 2: How each look is made (the wig lock)
 
-Each look gets **2 images**: a **full-body motion start frame** (the video starts from it) and a **close-up beauty frame** (a 1–2 second cutaway that shows texture and hairline).
+We don't have real wig photos, so **each wig is designed inside the prompt**. To keep a wig identical across its shots, every look goes in this order:
 
-| Look | Wig (match Image 3) | Video motion | Start frame (9:16) |
+1. **Generate the close-up (B frame) first** from its wig description. This is where the wig's quality is decided, so take your time: regenerate until the hair looks like a **$1,000+ luxury unit**.
+2. **Approve it.** That close-up becomes **Image 3**, the locked wig for that look.
+3. **Generate the full-body motion frame (A frame)** with Image 3 attached, so the wig comes out the same.
+
+| Look | Wig | Video motion | A frame (9:16) |
 |---|---|---|---|
-| 1 | 30" jet-black bone-straight | Slow **360° spin**, the hair swinging out | Full body, standing front-on, centred |
-| 2 | 26" jet-black deep body wave | **Runway walk toward the camera** | Full body, mid-step, a few metres back |
-| 3 | 24" rose-pink body wave | **Turn and look back** over her shoulder | Full body, back three-quarter to the camera |
-| 4 | 28" 613 honey blonde straight | **Big hair flip** | Full body, head tilted forward, mid-flip start |
+| 1 | 30" raw bone-straight, jet black | Slow **360° spin** | Full body, standing front-on, centred |
+| 2 | 26" deep body wave, jet black | **Runway walk toward the camera** | Full body, mid-step, a few metres back |
+| 3 | 24" rose-pink body wave | **Turn and look back** | Full body, back three-quarter to the camera |
+| 4 | 28" 613 honey-platinum blonde, straight | **Big hair flip** | Full body, head tilted, about to flip |
 | 5 | 22" natural-black kinky curly | **360° spin + laugh** | Full body, standing front-on, centred |
-| 6 | Finale (look 2 or your favourite) | Arms cross, slow push-in, confident smile | Knee-up, square to the camera |
+| 6 | Finale (your favourite look) | Arms cross, slow push-in | Knee-up, square to the camera |
 
 ---
 
-## STEP 3: Image prompts per look (attach Images 1, 2, 3)
+## The LUXURY HAIR block (already inside every wig prompt)
 
-In every prompt, **[WIG]** is your wig. Describe it in a few words, and the prompt tells Gemini to copy it **exactly from Image 3**.
+> Ultra-luxury raw human hair, the highest grade, the kind found in a $1,000+ unit. 250% density, full and even from root to tip, with thick, healthy, **blunt ends**: no thin, wispy or see-through ends. Individual strands are visible with natural light-catching shine, a soft realistic sheen, never plastic or synthetic-looking. **Invisible HD film lace** melted seamlessly into her skin, with no visible lace edge, line or shine. Pre-plucked natural hairline, soft fine baby hairs laid gently, invisible bleached knots, and a realistic scalp-like part showing natural skin. The hair has real weight and falls and moves naturally. Macro-sharp hair detail.
 
-### Look 1: 30" bone straight
+---
 
-**1A: Full-body start frame (for the 360° spin)**
+## STEP 3: Image prompts per look
+
+**Attach:** Image 1 (Sheet A, Chloe's face) and Image 2 (the branding frame). For the A frames, also attach **Image 3: that look's approved close-up**.
+
+### Look 1: 30" raw bone-straight
+
+**1B: Close-up (generate and approve FIRST)**
 ```
-Vertical 9:16 premium hair campaign photo. Full body, head to toe, of the woman from Image 1, standing centred and front-on on a mottled charcoal-grey canvas studio backdrop with a matching grey floor, feet slightly apart, arms relaxed, calm confident expression, eyes to camera. She is wearing the wig from Image 3 exactly as it is: a 30-inch jet-black bone-straight human-hair wig with a middle part and a natural HD lace hairline, glossy and falling past her waist. Copy the wig's exact colour, length, texture, part and hairline from Image 3. Outfit exactly as in Image 2: a plain fitted black short-sleeve crew-neck tee with no pocket and "Crown & Co." in small pink script on her left chest; black high-waist fitted leggings; bare feet. Soft natural glam makeup, small gold studs. Large soft key light from front-left, gentle fill, a subtle hair rim light so the shine and length read clearly. Leave clear space around her for a spin. Photorealistic, premium beauty-campaign quality, natural skin texture. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign close-up of the woman from Image 1, chest-up, front-on, soft closed-lip smile. She wears a 30-inch jet-black RAW BONE-STRAIGHT human-hair wig: Vietnamese raw hair, perfectly straight and silky, falling flat like a sheet of black silk past her chest, with a deep mirror-like glass shine and no frizz, kinks or flyaways. Crisp middle part on a 13x6 HD lace frontal. Ultra-luxury raw human hair, highest grade, the kind in a $1,000+ unit; 250% density, full and even from root to tip, thick healthy blunt ends, never thin or wispy; individual strands visible with natural light-catching shine, never plastic or synthetic; invisible HD film lace melted seamlessly into her deep brown skin with no visible lace edge; pre-plucked natural hairline, soft fine baby hairs laid gently, invisible bleached knots, realistic scalp-like part. Macro-sharp detail on the hairline, part and strands. She wears the plain fitted black tee from Image 2 with "Crown & Co." in small pink script on her left chest, visible at the bottom of the frame. Hand-painted mottled charcoal-grey canvas backdrop, large soft key light from front-left, a strong hair rim light so the shine glows. Photorealistic luxury beauty-campaign photography, natural skin texture. No other text.
 ```
 
-**1B: Close-up beauty frame**
+**1A: Full-body start frame (for the 360° spin), attach the approved 1B as Image 3**
 ```
-Vertical 9:16 premium hair campaign close-up of the woman from Image 1, chest-up, front-on, soft closed-lip smile, wearing the wig from Image 3 exactly as it is (30-inch jet-black bone-straight, middle part, natural HD lace hairline). Show the hairline, the part and the silky shine in crisp detail. The plain black tee with "Crown & Co." in small pink script on her left chest is visible at the bottom of the frame, exactly as in Image 2. Mottled charcoal-grey canvas backdrop, soft key light from front-left, hair rim light. Photorealistic. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign photo. Full body, head to toe, of the woman from Image 1, standing centred and front-on on a hand-painted mottled charcoal-grey canvas studio backdrop with a matching grey floor, feet slightly apart, arms relaxed, calm confident expression. She wears the exact wig from Image 3, unchanged: 30-inch jet-black raw bone-straight hair with a mirror-like glass shine, middle part, invisible HD lace, thick blunt ends falling to her hips. Outfit exactly as in Image 2: plain fitted black short-sleeve crew-neck tee with no pocket and "Crown & Co." in small pink script on her left chest; black high-waist fitted leggings; bare feet. Soft natural glam, small gold studs. Large soft key light from front-left, hair rim light so the full length shines. Leave clear space around her for a spin. Photorealistic, luxury campaign quality. No other text.
 ```
 
 ### Look 2: 26" deep body wave
 
-**2A: Full-body start frame (for the runway walk)**
+**2B: Close-up (FIRST)**
 ```
-Vertical 9:16 premium hair campaign photo. Full body, head to toe, of the woman from Image 1 walking toward the camera mid-stride, a few metres back from the camera, on a mottled charcoal-grey canvas studio backdrop with a matching grey floor, confident runway walk, chin slightly up, soft smile. She is wearing the wig from Image 3 exactly as it is: a 26-inch jet-black deep body wave human-hair wig, voluminous glossy S-waves, side part, natural HD lace hairline. The waves are bouncing with her step. Copy the wig's exact colour, length, wave pattern, part and hairline from Image 3. Outfit exactly as in Image 2: plain fitted black short-sleeve crew-neck tee, no pocket, "Crown & Co." in small pink script on her left chest; black high-waist fitted leggings; bare feet. Soft natural glam, small gold studs. Soft key light from front-left, hair rim light. Photorealistic, premium campaign quality. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign close-up of the woman from Image 1, chest-up, three-quarter turn, one hand gently lifting the waves on the far side, soft smile. She wears a 26-inch jet-black DEEP BODY WAVE human-hair wig: large, uniform, bouncy S-shaped waves from mid-length to ends, with soft lift and volume at the root, a deep side part with a glamorous swoop over one eye-line, and glossy, defined waves that catch the light on every curve. 13x6 HD lace frontal. Ultra-luxury raw human hair, highest grade, the kind in a $1,000+ unit; 250% density, full from root to tip, thick healthy ends; individual strands visible with natural shine, never plastic or synthetic; invisible HD film lace melted into her deep brown skin; pre-plucked hairline, soft baby hairs, invisible knots, realistic scalp-like part. Macro-sharp wave and hairline detail. The plain black tee from Image 2 with "Crown & Co." in small pink script on her left chest is visible and not covered by her hand. Mottled charcoal-grey canvas backdrop, soft key light from front-left, hair rim light. Photorealistic. No other text.
 ```
 
-**2B: Close-up beauty frame**
+**2A: Full-body start frame (for the walk), attach the approved 2B as Image 3**
 ```
-Vertical 9:16 premium hair campaign close-up of the woman from Image 1, chest-up, three-quarter turn, one hand lifting the waves on the far side, soft smile, wearing the wig from Image 3 exactly as it is (26-inch jet-black deep body wave, side part, HD lace hairline). Show the wave definition and shine in crisp detail. The black tee with "Crown & Co." in small pink script on her left chest is visible and not covered, exactly as in Image 2. Mottled charcoal-grey backdrop, soft key light, hair rim light. Photorealistic. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign photo. Full body, head to toe, of the woman from Image 1 walking toward the camera mid-stride, a few metres back, on a mottled charcoal-grey canvas studio backdrop with a matching grey floor, confident runway walk, chin slightly up, soft smile. She wears the exact wig from Image 3, unchanged: 26-inch jet-black deep body wave, bouncy glossy S-waves, deep side part, invisible HD lace; the waves bounce with her step. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest; black high-waist fitted leggings; bare feet. Soft key light from front-left, hair rim light. Photorealistic, luxury campaign quality. No other text.
 ```
 
 ### Look 3: 24" rose-pink body wave
 
-**3A: Full-body start frame (for the turn and look back)**
+**3B: Close-up (FIRST)**
 ```
-Vertical 9:16 premium hair campaign photo. Full body, head to toe, of the woman from Image 1 standing with her back three-quarters to the camera, starting to look back over her left shoulder toward the camera with a soft smile, on a mottled charcoal-grey canvas studio backdrop with a matching grey floor. She is wearing the wig from Image 3 exactly as it is: a 24-inch dusty rose-pink body wave human-hair wig, soft glossy waves cascading down her back, HD lace hairline. Copy the wig's exact colour, length, wave pattern and hairline from Image 3. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest (visible at the edge of her chest from this angle); black high-waist fitted leggings; bare feet. Soft key light from front-left, a strong hair rim light so the pink glows. Photorealistic. No other text.
-```
-
-**3B: Close-up beauty frame**
-```
-Vertical 9:16 premium hair campaign close-up of the woman from Image 1, chest-up, front-on, playful soft smile, wearing the wig from Image 3 exactly as it is (24-inch dusty rose-pink body wave, HD lace hairline). Show the colour, the wave pattern and the hairline in crisp detail. The black tee with "Crown & Co." in small pink script on her left chest is visible, exactly as in Image 2. Mottled charcoal-grey backdrop, soft key light, hair rim light. Photorealistic. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign close-up of the woman from Image 1, chest-up, front-on, playful soft smile. She wears a 24-inch DUSTY ROSE-PINK BODY WAVE human-hair wig: an even, salon-perfect dusty rose pink with soft champagne undertones and a slightly deeper rose shadow at the root, rich, dimensional colour that looks expensively dyed, never flat, neon or synthetic. Soft, glossy, voluminous body waves, middle part, 13x6 HD lace frontal. Ultra-luxury raw human hair, highest grade, the kind in a $1,000+ unit; 250% density, full from root to tip, thick healthy ends; individual strands visible with natural shine; invisible HD film lace melted into her deep brown skin; pre-plucked hairline with soft baby hairs, invisible knots, realistic scalp-like part. Macro-sharp detail on the colour, waves and hairline. The plain black tee from Image 2 with "Crown & Co." in small pink script on her left chest is visible. Mottled charcoal-grey canvas backdrop, soft key light from front-left, a strong hair rim light so the pink glows. Photorealistic. No other text.
 ```
 
-### Look 4: 28" 613 honey blonde straight
-
-**4A: Full-body start frame (for the hair flip)**
+**3A: Full-body start frame (for the turn and look back), attach the approved 3B as Image 3**
 ```
-Vertical 9:16 premium hair campaign photo. Full body, head to toe, of the woman from Image 1 standing front-on, centred, on a mottled charcoal-grey canvas studio backdrop with a matching grey floor, her head tilted slightly forward and to one side, about to flip her hair, hands relaxed. She is wearing the wig from Image 3 exactly as it is: a 28-inch honey-platinum 613 blonde bone-straight human-hair wig, silky and glossy, middle part, melted HD lace hairline. Copy the wig's exact colour, length, texture and hairline from Image 3. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest; black high-waist fitted leggings; bare feet. Soft key light from front-left, hair rim light so the blonde shines. Leave clear space above her head for the flip. Photorealistic. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign photo. Full body, head to toe, of the woman from Image 1 standing with her back three-quarters to the camera, starting to look back over her left shoulder toward the camera with a soft smile, on a mottled charcoal-grey canvas studio backdrop with a matching grey floor. She wears the exact wig from Image 3, unchanged: 24-inch dusty rose-pink body wave cascading down her back, glossy and voluminous, invisible HD lace. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest (visible at the edge of her chest); black high-waist fitted leggings; bare feet. Soft key light from front-left, a strong hair rim light so the pink glows. Photorealistic. No other text.
 ```
 
-**4B: Close-up beauty frame**
+### Look 4: 28" 613 honey-platinum blonde, straight
+
+**4B: Close-up (FIRST)**
 ```
-Vertical 9:16 premium hair campaign close-up of the woman from Image 1, chest-up, front-on, fingers sweeping the hair behind one ear, soft confident smile, wearing the wig from Image 3 exactly as it is (28-inch honey-platinum 613 blonde, silky straight, melted HD lace). Show the colour and the melted lace in crisp detail. The black tee with "Crown & Co." in small pink script on her left chest is visible and not covered, exactly as in Image 2. Mottled charcoal-grey backdrop, soft key light, hair rim light. Photorealistic. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign close-up of the woman from Image 1, chest-up, front-on, fingers sweeping the hair behind one ear, soft confident smile. She wears a 28-inch HONEY-PLATINUM 613 BLONDE bone-straight human-hair wig: a luminous, even platinum blonde with soft golden-honey warmth, uniform from root to tip, no brassy patches, a silky straight fall with a high, glassy shine. Middle part. The 13x6 HD lace is tinted to blend perfectly into her deep brown skin, with a natural, softly plucked blonde hairline and fine blonde baby hairs, so it looks like it grows from her scalp. Ultra-luxury raw human hair, highest grade, the kind in a $1,000+ unit; 250% density, thick healthy blunt ends, individual strands visible with natural shine, never plastic or synthetic. Macro-sharp detail on the melted lace and strands. The plain black tee from Image 2 with "Crown & Co." in small pink script on her left chest is visible and not covered. Mottled charcoal-grey canvas backdrop, soft key light from front-left, hair rim light so the blonde shines. Photorealistic. No other text.
 ```
 
-### Look 5: 22" kinky curly
-
-**5A: Full-body start frame (for the 360° spin and laugh)**
+**4A: Full-body start frame (for the hair flip), attach the approved 4B as Image 3**
 ```
-Vertical 9:16 premium hair campaign photo. Full body, head to toe, of the woman from Image 1 standing centred and front-on on a mottled charcoal-grey canvas studio backdrop with a matching grey floor, feet slightly apart, joyful open smile. She is wearing the wig from Image 3 exactly as it is: a 22-inch natural-black voluminous kinky curly human-hair wig with defined springy coils and soft curly bangs, natural hairline. Copy the wig's exact colour, volume, curl pattern and hairline from Image 3. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest; black high-waist fitted leggings; bare feet. Soft key light from front-left, hair rim light to show curl definition. Leave clear space around her for a spin. Photorealistic. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign photo. Full body, head to toe, of the woman from Image 1 standing front-on, centred, on a mottled charcoal-grey canvas studio backdrop with a matching grey floor, head tilted slightly forward and to one side, about to flip her hair, hands relaxed. She wears the exact wig from Image 3, unchanged: 28-inch honey-platinum 613 blonde, silky straight with a glassy shine, melted HD lace. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest; black high-waist fitted leggings; bare feet. Soft key light from front-left, hair rim light. Leave clear space above her head for the flip. Photorealistic. No other text.
 ```
 
-**5B: Close-up beauty frame**
+### Look 5: 22" natural-black kinky curly
+
+**5B: Close-up (FIRST)**
 ```
-Vertical 9:16 premium hair campaign close-up of the woman from Image 1, chest-up, three-quarter turn, one hand fluffing the curls on the far side, laughing, wearing the wig from Image 3 exactly as it is (22-inch natural-black kinky curly, defined coils, curly bangs). Show the curl definition and volume in crisp detail. The black tee with "Crown & Co." in small pink script on her left chest is visible and not covered, exactly as in Image 2. Mottled charcoal-grey backdrop, soft key light, hair rim light. Photorealistic. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign close-up of the woman from Image 1, chest-up, three-quarter turn, one hand fluffing the curls on the far side, laughing. She wears a 22-inch natural-black KINKY CURLY human-hair wig: juicy, hydrated, perfectly defined springy 4A coils with a soft natural sheen (never frizzy, dry or matted), big rounded salon-perfect volume, and soft curly curtain bangs. 13x4 HD lace frontal with small curly baby hairs at the hairline. Ultra-luxury raw human hair, highest grade, the kind in a $1,000+ unit; 250% density, even volume from root to ends; individual coils visible; invisible HD film lace melted into her deep brown skin; natural plucked hairline, invisible knots. Macro-sharp curl detail. The plain black tee from Image 2 with "Crown & Co." in small pink script on her left chest is visible and not covered by her hand. Mottled charcoal-grey canvas backdrop, soft key light from front-left, hair rim light to show curl definition. Photorealistic. No other text.
 ```
 
-### Finale: arms crossed (attach your favourite look's 1A or 2A as Image 3)
+**5A: Full-body start frame (for the 360° spin and laugh), attach the approved 5B as Image 3**
+```
+Vertical 9:16 ultra-premium luxury hair campaign photo. Full body, head to toe, of the woman from Image 1 standing centred and front-on on a mottled charcoal-grey canvas studio backdrop with a matching grey floor, feet slightly apart, joyful open smile. She wears the exact wig from Image 3, unchanged: 22-inch natural-black kinky curly with juicy defined coils, big volume and curly bangs. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest; black high-waist fitted leggings; bare feet. Soft key light from front-left, hair rim light. Leave clear space around her for a spin. Photorealistic. No other text.
+```
+
+### Finale: arms crossed (attach your favourite look's approved B close-up as Image 3)
 
 ```
-Vertical 9:16 premium hair campaign photo, knee-up, of the woman from Image 1, body square to the camera, arms crossed below her chest, chin slightly lifted, confident warm smile, wearing the same wig as in Image 3 exactly as it is. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest, fully visible above her crossed arms; black high-waist fitted leggings. Mottled charcoal-grey canvas backdrop, soft key light from front-left, hair rim light. Photorealistic. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign photo, knee-up, of the woman from Image 1, body square to the camera, arms crossed below her chest, chin slightly lifted, confident warm smile, wearing the exact wig from Image 3, unchanged. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest, fully visible above her crossed arms; black high-waist fitted leggings. Mottled charcoal-grey canvas backdrop, soft key light from front-left, hair rim light. Photorealistic. No other text.
 ```
+
+---
+
+## If a wig doesn't look expensive enough
+
+Reply in the same Gemini chat with one of these fixes (they keep everything else):
+- **Looks synthetic or plastic:** *"Make the hair look like real raw human hair: soft natural sheen, visible individual strands, no plastic gloss."*
+- **Thin or see-through ends:** *"Make the hair fuller: 250% density, thick blunt ends, no thin or wispy ends."*
+- **Visible lace edge or a fake hairline:** *"Melt the lace invisibly into her skin and give her a natural plucked hairline with soft baby hairs."*
+- **Frizz or flyaways (straight looks):** *"Perfectly sleek, no flyaways, mirror-like glass shine."*
+- **Dull curls:** *"Juicy, hydrated, defined coils with natural sheen, no frizz."*
 
 ---
 
@@ -156,7 +177,7 @@ Vertical 9:16 premium hair campaign photo, knee-up, of the woman from Image 1, b
 
 - [ ] **9:16 vertical** (check the actual pixel size)
 - [ ] **Face** matches Sheet A
-- [ ] **Wig** matches the real wig photo (colour, length, texture, hairline)
+- [ ] **Wig** looks like a luxury unit (full density, blunt ends, invisible lace, natural shine) and matches that look's approved close-up
 - [ ] **Logo:** "Crown & Co." spelled correctly, small pink script, left chest, tee with no pocket
 - [ ] **Full body** in the A frames: head to toe, with space for the motion
 - [ ] Same backdrop, floor and light as the other looks
