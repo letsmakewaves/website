@@ -158,7 +158,7 @@ Vertical 9:16 ultra-premium luxury hair campaign photo. Full body, head to toe, 
 ### Finale: arms crossed (attach your favourite look's approved B close-up as Image 3)
 
 ```
-Vertical 9:16 ultra-premium luxury hair campaign photo, knee-up, of the woman from Image 1, body square to the camera, arms crossed below her chest, chin slightly lifted, confident warm smile, wearing the exact wig from Image 3, unchanged. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest, fully visible above her crossed arms; black high-waist fitted leggings. Mottled charcoal-grey canvas backdrop, soft key light from front-left, hair rim light. Photorealistic. No other text.
+Vertical 9:16 ultra-premium luxury hair campaign photo, knee-up, of the woman from Image 1, body square to the camera, arms crossed below her chest, chin slightly lifted, confident warm smile, wearing the exact wig from Image 3, unchanged. Outfit exactly as in Image 2: plain fitted black short-sleeve tee, no pocket, "Crown & Co." in small pink script on her left chest, fully visible above her crossed arms; black high-waist fitted leggings. Mottled charcoal-grey canvas backdrop, soft key light from front-left, a subtle soft glow on the hair. Photorealistic. No other text.
 ```
 
 ---
