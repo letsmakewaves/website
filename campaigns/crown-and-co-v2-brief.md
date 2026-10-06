@@ -21,3 +21,4 @@
 - Look 2 (body wave) take 1: start image 90e013d5, Kling 3.0 Pro 8s, 1 take, about 14 credits. Job 42360312. New rule in the prompt: she always faces the camera and never turns her back or side (every back-print came from a turn); the camera only arcs 20 degrees or less in front of her. The user's rule: if 8s isn't liked, all future clips are 5s.
 - Look 4 take 4 (5s, 608d4277) finished.
 - Look 2 take 1 (8s): REJECTED. She turned around despite "never turning". From now on all clips are 5s with at most 2 poses.
+- Look 3 (rose pink) take 1: start image 774e480a (Gemini edit, head turned), Kling 3.0 Pro 5s, 2 moves, body square, 1 take, about 8.75 credits. Job 3bc1c9a8.
