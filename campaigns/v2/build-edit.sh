@@ -18,7 +18,9 @@ seg 1 look5-curly.mp4     1.20 8 '22" KINKY CURLY' hook
 seg 2 look1-straight.mp4  1.90 7 '30" BONE STRAIGHT'
 seg 3 look2-bodywave-8s.mp4 0.80 8 '26" DEEP BODY WAVE'
 seg 4 look3-pink.mp4      2.35 6 '24" ROSE PINK'
-seg 5 look4-honey-5s.mp4  0.10 6 '30" HONEY BLONDE'
+# honey: extended to land on the hair whip (0.10-3.42s, just before the turn at 3.5s), slowed ~6% to fill 8 beats
+D5=$(python3 -c "print(round(8*$B,3))")
+ffmpeg -v error -y -ss 0.10 -t 3.32 -i look4-honey-5s.mp4 -an -vf "$W,setpts=PTS*$D5/3.32" -c:v libx264 -crf 17 -preset medium -pix_fmt yuv420p build/5.mp4
 # end card: logo on black + tagline
 ED=$(python3 -c "print(round(6*$B,3))")
 ffmpeg -v error -y -f lavfi -i "color=c=0x0e0e0e:s=1080x1920:r=30:d=$ED" -loop 1 -t "$ED" -i "$LOGO" \
