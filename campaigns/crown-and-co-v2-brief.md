@@ -5,6 +5,7 @@
 - Ask thorough questions, one at a time, before generating anything.
 - Nothing is generated until the pre-flight checklist (in the skills) is filled in and approved.
 - **Clips are 5 seconds, never 8 (user rule).** In 8s takes Kling fills the extra time with unasked motion: she turned around even when told not to, which brings back text on the back.
+- **Clean videos: no subtitles or text overlays on the footage (user rule).** Branding comes from the tee and the logo end card only.
 - Always pull up the result link (the Higgsfield generation card) as soon as a generation finishes; don't make the user go looking for it.
 - v1 is a failed draft: wrong aspect ratio, chest-up framing only, weak motion, wigs invented from text.
 

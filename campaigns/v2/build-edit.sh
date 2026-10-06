@@ -11,10 +11,7 @@ TXT="fontfile=$F:fontcolor=white:shadowcolor=black@0.6:shadowx=2:shadowy=2"
 mkdir -p build
 seg() { # name src start beats label [hook]
   local d; d=$(python3 -c "print(round($4*$B,3))")
-  local vf="$W,drawtext=$TXT:fontsize=54:text='$5':box=1:boxcolor=black@0.35:boxborderw=18:x=(w-tw)/2:y=h*0.925:alpha='min(1,max(0,(t-0.25)/0.3))'"
-  if [ "${6:-}" = hook ]; then
-    vf="$vf,drawtext=$TXT:fontsize=86:text='5 WIGS. 1 CROWN.':x=(w-tw)/2:y=h*0.09:enable='lt(t,2.2)':alpha='min(1,(2.2-t)/0.3)'"
-  fi
+  local vf="$W"   # clean: no on-screen text (user rule)
   ffmpeg -v error -y -ss "$3" -t "$d" -i "$2" -an -vf "$vf" -c:v libx264 -crf 17 -preset medium -pix_fmt yuv420p build/$1.mp4
 }
 seg 1 look5-curly.mp4     1.20 8 '22" KINKY CURLY' hook
@@ -25,7 +22,7 @@ seg 5 look4-honey-5s.mp4  0.10 6 '30" HONEY BLONDE'
 # end card: logo on black + tagline
 ED=$(python3 -c "print(round(6*$B,3))")
 ffmpeg -v error -y -f lavfi -i "color=c=0x0e0e0e:s=1080x1920:r=30:d=$ED" -loop 1 -t "$ED" -i "$LOGO" \
-  -filter_complex "[1]scale=900:-1,format=rgba,fade=in:st=0:d=0.4:alpha=1[l];[0][l]overlay=(W-w)/2:(H-h)/2-120,drawtext=$TXT:fontsize=60:text='WEAR YOUR CROWN.':x=(w-tw)/2:y=h*0.66:alpha='min(1,max(0,(t-0.6)/0.4))',setsar=1" \
+  -filter_complex "[1]scale=900:-1,format=rgba,fade=in:st=0:d=0.4:alpha=1[l];[0][l]overlay=(W-w)/2:(H-h)/2,setsar=1" \
   -c:v libx264 -crf 17 -pix_fmt yuv420p build/6.mp4
 printf "file '%s'\n" 1.mp4 2.mp4 3.mp4 4.mp4 5.mp4 6.mp4 > build/list.txt
 ffmpeg -v error -y -f concat -safe 0 -i build/list.txt -c copy build/video.mp4
