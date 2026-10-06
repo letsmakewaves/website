@@ -4,6 +4,7 @@
 - Take it slow. Get everything right before moving on.
 - Ask thorough questions, one at a time, before generating anything.
 - Nothing is generated until the pre-flight checklist (in the skills) is filled in and approved.
+- **Clips are 5 seconds, never 8 (user rule).** In 8s takes Kling fills the extra time with unasked motion: she turned around even when told not to, which brings back text on the back.
 - Always pull up the result link (the Higgsfield generation card) as soon as a generation finishes; don't make the user go looking for it.
 - v1 is a failed draft: wrong aspect ratio, chest-up framing only, weak motion, wigs invented from text.
 
@@ -19,3 +20,4 @@
 - Look 4 take 4: start image 01d33b7d, Kling 3.0 Pro 5s, 1 take approved, about 8.75 credits. Job 608d4277. Take 3 (57b8bf0f, 8s) also finished.
 - Look 2 (body wave) take 1: start image 90e013d5, Kling 3.0 Pro 8s, 1 take, about 14 credits. Job 42360312. New rule in the prompt: she always faces the camera and never turns her back or side (every back-print came from a turn); the camera only arcs 20 degrees or less in front of her. The user's rule: if 8s isn't liked, all future clips are 5s.
 - Look 4 take 4 (5s, 608d4277) finished.
+- Look 2 take 1 (8s): REJECTED. She turned around despite "never turning". From now on all clips are 5s with at most 2 poses.
