@@ -24,3 +24,10 @@
 - Look 3 (rose pink) take 1: start image 774e480a (Gemini edit, head turned), Kling 3.0 Pro 5s, 2 moves, body square, 1 take, about 8.75 credits. Job 3bc1c9a8.
 - Look 1 (bone straight) take 1: start image 31c88e33 (Gemini edit, head turned), Kling 3.0 Pro 5s, 2 moves, 1 take, about 8.75 credits. Job 1face133. Rose pink take 1 (3bc1c9a8) finished.
 - Look 5 (kinky curly) take 1: start image da10943f (laughing, hand in curls), Kling 3.0 Pro 5s, energetic 2-move prompt, 1 take, about 8.75 credits. Job cb1526d2. Bone straight take 1 (1face133) finished.
+
+## Clip review (frame by frame; all 1076x1928, 9:16)
+- Bone straight 5s (1face133): good. Hand glide, head turns to camera, ends square. Logo consistent. No turn. Use 2.0-5.0s.
+- Kinky curly 5s (cb1526d2): best clip. Head shake, curls bounce, hands fluff at crown, big smile. Logo "CROWN & CO." stable throughout. Use 1.0-5.0s.
+- Rose pink 5s (3bc1c9a8): good. Comb-through, turn to camera, soft smile. Logo consistent. Use 2.25-5.0s.
+- Body wave 8s (42360312): 0-5s good (hand in waves, smiles). Turns around at about 5.3s; after that the logo garbles to "RROWN". Use 0.5-4.5s only. No redo needed.
+- Honey 5s (608d4277): turns around at about 3.2s and pink print appears on the back at 3.5-4s. Use 0-2.75s only.
