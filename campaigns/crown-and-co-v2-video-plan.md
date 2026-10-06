@@ -35,7 +35,7 @@ Kling 3.0 accepts a **start image and an end image** (checked):
 ## 3. The motion prompts (Kling 3.0 Pro, 9:16, 5s, sound off)
 
 Every prompt ends with the same **lock line:**
-> Same woman, same face, same wig, same black tee with "Crown & Co." in pink script on the left chest, same leggings, same charcoal studio backdrop and soft light in every frame. Photorealistic, natural hair physics with real weight and glossy shine. Smooth, slow, graceful high-fashion movement. No morphing, no extra people, no text changes.
+> Same woman, same face, same wig, same black tee with "Crown & Co." in pink script on the left chest only (the back and sleeves of the tee are plain black with no print or text), same leggings, same charcoal studio backdrop and soft light in every frame. Photorealistic, natural hair physics with real weight and glossy shine. Smooth, slow, graceful high-fashion movement. No morphing, no extra people, no text changes.
 
 **Look 1: bone straight (pull-back reveal)**
 > Luxury hair campaign film. The shot opens close on her face, chest-up: her head is slightly bowed, eyes lowered. She slowly lifts her eyes straight into the lens with a calm, confident, closed-lip look. As she does, the camera glides smoothly back to reveal her full body from head to toe, and the 30-inch jet-black bone-straight hair falls like a glossy silk sheet past her hips. She stands tall and still, with only a gentle shift of weight. A light breeze barely moves the ends. Smooth gimbal pull-back, slow and elegant. [lock line]
