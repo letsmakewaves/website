@@ -199,6 +199,8 @@ Reply in the same Gemini chat with one of these fixes (they keep everything else
 
 ## STEP 4 (later, after all images pass): video motion prompts
 
+**Superseded:** use the emotion-led prompts and the edit path in `crown-and-co-v2-video-plan.md`. The prompts below are the older, plainer versions.
+
 Use the A frames as the **start image** (Kling 3.0 Pro, 5–10s, no sound). Because the start frames are 9:16 now, the clips will come out 9:16.
 
 - **Look 1 (spin):** *"She slowly spins a full 360 degrees in place, her long straight hair swinging out in a wide arc and settling back down her back as she faces the camera again with a calm smile. Smooth, elegant, slow motion. Camera locked off, full body in frame throughout. Same face, wig, outfit and logo as the start image."*
