@@ -211,3 +211,19 @@ Use the A frames as the **start image** (Kling 3.0 Pro, 5–10s, no sound). Beca
 - **Finale:** *"She holds the arms-crossed pose, takes a soft breath and gives a slow confident smile while the camera pushes in slowly. Minimal motion. Same face, wig, outfit and logo."*
 
 The B frames are 1–2 second cutaways. Use them as stills with a slow zoom in CapCut, or animate them with a tiny push-in.
+
+---
+
+## REBRAND EDIT (big logo B): use on every image already generated
+
+**Attach:** Image 1 = the image to edit · Image 2 = `campaigns/brand/logo-B-bold-caps.png`
+
+```
+Edit Image 1. Keep everything exactly identical: the same woman, face, expression, pose, hands, wig, hair position, leggings, backdrop, lighting, framing and vertical 9:16 size. ONLY change the logo on her black tee: remove the small pink script logo completely, and print the logo from Image 2 large and centred across the front of the chest, exactly as designed in Image 2: a pink crown icon on top, "CROWN & CO." in bold pink serif capital letters, and "LUXURY HAIR" in small pink capitals underneath. The logo spans about two-thirds of the chest width, sits just below the neckline, follows the fabric's natural curve and folds, and looks screen-printed on the cotton. Spell it exactly "CROWN & CO." and "LUXURY HAIR". The tee stays plain black everywhere else, with no pocket and nothing on the sleeves or back. If hair falls over the chest, gently move it behind her shoulders so the whole logo is visible, without changing the hairstyle. No other text.
+```
+
+**If the hair has to stay where it is** (e.g. a close-up where the hair is the point), replace the last two sentences with: *"Where hair falls over the chest, the logo continues naturally underneath the hair; do not change the hair. No other text."*
+
+**If her back is to the camera:** *"Edit Image 1. Keep everything identical. ONLY make sure the back of her black tee is plain black with no print or text. The logo from Image 2 is on the front only."*
+
+**Check each result:** "CROWN & CO." spelled right · the crown is there · big and centred · nothing else changed (face, wig, pose). If the spelling breaks, reply: *"Same image; ONLY fix the logo text to read exactly CROWN & CO. as in Image 2."*
