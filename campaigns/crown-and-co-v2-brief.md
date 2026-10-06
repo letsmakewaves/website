@@ -23,3 +23,4 @@
 - Look 2 take 1 (8s): REJECTED. She turned around despite "never turning". From now on all clips are 5s with at most 2 poses.
 - Look 3 (rose pink) take 1: start image 774e480a (Gemini edit, head turned), Kling 3.0 Pro 5s, 2 moves, body square, 1 take, about 8.75 credits. Job 3bc1c9a8.
 - Look 1 (bone straight) take 1: start image 31c88e33 (Gemini edit, head turned), Kling 3.0 Pro 5s, 2 moves, 1 take, about 8.75 credits. Job 1face133. Rose pink take 1 (3bc1c9a8) finished.
+- Look 5 (kinky curly) take 1: start image da10943f (laughing, hand in curls), Kling 3.0 Pro 5s, energetic 2-move prompt, 1 take, about 8.75 credits. Job cb1526d2. Bone straight take 1 (1face133) finished.
