@@ -13,4 +13,4 @@
 ## Review log
 - Look 3 close-up (rose pink), first try: good colour, hairline and face. Rejected for flyaways and frizz halo (caused partly by the "strong rim light" wording), stringy wave ends, and hair covering the logo (only "Crown" visible). Fixed with an edit prompt; the pack now asks for zero flyaways, a subtle rim light and the hair kept behind the shoulder on the logo side.
 
-- Look 4 (honey blonde) video test: Kling 3.0 Pro, 5s, start image 9fea0328 (close-up) + end image b4999a0c (full body), 1 take approved. Job f6aaec22. Still rendering after about 17 minutes.
+- Look 4 (honey blonde) video test: Kling 3.0 Pro, 5s, start image 9fea0328 (close-up) + end image b4999a0c (full body), 1 take approved. Job f6aaec22. Finished: 1076x1928 (9:16), 5.04s. Rejected by the user ("doesn't look good"). Kling rushed to match a mismatched end pose: awkward arm swing, she shrinks, the logo becomes unreadable, odd head-tilt ending.
