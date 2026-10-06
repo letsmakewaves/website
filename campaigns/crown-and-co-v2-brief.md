@@ -17,3 +17,5 @@
 - Look 4 take 2 (job c35eae4d, start image only, 8s, three model poses): APPROVED by the user ("perfect"). 1076x1928, 8.04s. Flaw: pink text appears on the back/side of the tee at about 3.9–5.5s (the three-quarter hand-on-hip pose). From now on, every video prompt says the back of the tee is plain with no print.
 - Look 4 take 3 (new big logo B): start image cc0d79ba (Gemini rebrand edit), Kling 3.0 Pro 8s, 1 take approved, about 14 credits. Job 57b8bf0f. Prompt locks the front logo and a blank back; pose 2 turns only slightly.
 - Look 4 take 4: start image 01d33b7d, Kling 3.0 Pro 5s, 1 take approved, about 8.75 credits. Job 608d4277. Take 3 (57b8bf0f, 8s) also finished.
+- Look 2 (body wave) take 1: start image 90e013d5, Kling 3.0 Pro 8s, 1 take, about 14 credits. Job 42360312. New rule in the prompt: she always faces the camera and never turns her back or side (every back-print came from a turn); the camera only arcs 20 degrees or less in front of her. The user's rule: if 8s isn't liked, all future clips are 5s.
+- Look 4 take 4 (5s, 608d4277) finished.
