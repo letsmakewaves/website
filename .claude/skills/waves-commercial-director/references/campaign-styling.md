@@ -82,6 +82,7 @@ Change only the PRODUCT and POSE lines between frames.
   - **Walk toward the camera:** a confident runway walk from mid-ground to the camera, the hair bouncing with each step.
   - **Full hair flip or turn-and-look-back:** whole-body rotation with the hair whipping round.
   - **Fabric or hair in a breeze:** a wind machine with flowing movement, for a hero shot.
+- **The reference's collection camera language (studied from her wig campaign):** each look is about 2 seconds, cut fast to music. Most shots **open chest-up on the face and the camera glides back to reveal the full length of the hair and the full body**; others orbit to profile, tilt down the length of the hair, or push in slowly. The model moves slowly and with control like a fashion model: eyes down then up to the lens, fingertips lifting or running down the hair, a slow turn to profile and a look back over the shoulder, hand on hip, a light breeze. The energy comes from the cutting, not big actions. Build these with Kling's **start image (the approved close-up) and end image (the full-body frame in a calm, finished pose)**, generate 5 seconds and trim to the best 2.5–3.5 seconds.
 - **A full-body start frame needs the full outfit.** Lock the bottoms too (e.g. black fitted leggings or wide-leg trousers, bare feet or simple heels), so the outfit matches across clips.
 - **Test one clip before running the set,** and compare it against the reference creator's motion and framing, not just against our own stills.
 
