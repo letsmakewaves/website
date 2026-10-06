@@ -227,3 +227,15 @@ Edit Image 1. Keep everything exactly identical: the same woman, face, expressio
 **If her back is to the camera:** *"Edit Image 1. Keep everything identical. ONLY make sure the back of her black tee is plain black with no print or text. The logo from Image 2 is on the front only."*
 
 **Check each result:** "CROWN & CO." spelled right · the crown is there · big and centred · nothing else changed (face, wig, pose). If the spelling breaks, reply: *"Same image; ONLY fix the logo text to read exactly CROWN & CO. as in Image 2."*
+
+### REBRAND EDIT v2 (replaces the version above; v1 pasted the logo flat on top of the hair)
+
+**Attach:** Image 1 = the image to edit · Image 2 = the logo file
+
+```
+Edit Image 1. Replace the old logo on her black tee with the logo design from Image 2, as if it were screen-printed on the shirt. Centre it on the front of the chest, just below the neckline, sized to fit inside the visible black fabric between the hair so no part of it reaches under or over the hair. Use the same design, letters, spelling and pink colour as Image 2. It must look like real ink printed on cotton: slightly matte, with the fabric texture showing through, following the curve of her chest and the folds of the tee, and lit by the same studio light as the rest of the photo (a little darker in the shadows). The hair stays IN FRONT of the tee and the logo; nothing is pasted on top of the hair. Keep everything else exactly the same: her face, expression, pose, hands, hair, wig, backdrop, lighting, framing and vertical 9:16 size.
+```
+
+**Fix for a pasted-looking result:** *"The logo looks pasted on top. Make it smaller so it fits inside the black tee between the hair, put the hair back in front of it, and make it look screen-printed on the fabric with natural shading and folds. Change nothing else."*
+
+Lesson (rose-pink test): "copy exactly, nothing redrawn" plus a fixed large size made Gemini overlay the logo file flat across the hair. Ask for a print on the fabric, sized to the visible tee, with the hair in front.
