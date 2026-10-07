@@ -1,26 +1,79 @@
-CHLOE INTRO - FINAL OMNI FLASH PROMPTS (v3). Attach ONLY the image for each clip. No video, no voice reference.
+CHLOE INTRO - FINAL OMNI FLASH PROMPTS (v4, director's cut). Attach ONLY that clip's image. No video, no voice reference.
 The chloe2 Voice Changer sets her voice afterwards.
 
-CLIP 1 - ATELIER
-Vertical 9:16 video, 1080p, 10 seconds, one continuous shot. The woman in the image talks to the camera, chest-up, exactly as in the image: same face, hair, kaftan, jewellery and fashion atelier. She holds the small DJI microphone steady in one hand. Locked-off camera.
+==================== CLIP 1 - FASHION ATELIER (hook) ====================
+SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
 
-She speaks warmly and confidently in a natural Nigerian (Lagos) English accent, in one smooth, fluent sentence flow:
+SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Shoulder-length glossy black wavy hair with a deep side part. Cream kaftan with gold embroidery down the front and on the sleeves, gold hoop earrings, stacked gold bangles on her left wrist. In her right hand she holds a small black DJI wireless microphone with a fluffy grey windscreen at chest height; that hand stays steady and close to her chest for the whole video. Her appearance does not change at any point.
+
+SETTING AND LIGHT: The same Lagos fashion atelier as the image: rolls of colourful Ankara fabric, a dress form, a cutting table and window blinds, softly blurred behind her. Bright, soft daylight from the window, warm and even on her face.
+
+CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
+
+DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, slightly playful Nigerian (Lagos) English accent, like a creator letting her followers in on a secret. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats:
 This whole video was made with AI. My face, my voice, everything. I'm Chloe, and I'm not real. But my brand ads? Very real.
 
-She leans in slightly at the start, smiles playfully at I'm not real, and raises one brow with a confident smirk at Very real. Her free hand sweeps open once at everything, then rests. Natural blinks, natural lip-sync, her voice only, quiet room.
+PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
+0 to 2.5 s, This whole video was made with AI: she leans in slightly, eyes wide and bright, eyebrows lifted, like she is sharing a secret.
+2.5 to 4.5 s, My face, my voice, everything: a small, proud smile; on everything her free left hand sweeps open gently at chest height, palm up, and settles back down.
+4.5 to 6.5 s, I'm Chloe, and I'm not real: she tilts her head with a playful, knowing smile and a tiny shrug of the shoulders.
+6.5 to 8.5 s, But my brand ads? Very real: she raises one eyebrow, then gives a confident smirk and a single small nod on Very real.
+8.5 to 10 s: silent; she holds the confident smirk and eye contact with the lens.
 
-CLIP 2 - YACHT
-Vertical 9:16 video, 1080p, 10 seconds, one continuous shot. The woman in the image talks to the camera, chest-up, exactly as in the image: same face, hair, outfit, jewellery and yacht deck. Locked-off camera. A light breeze moves her hair.
+HANDS: Only the left hand moves, once, on everything. Natural hands with five relaxed fingers. The microphone hand stays still.
 
-She speaks warmly and confidently in a natural Nigerian (Lagos) English accent, in one smooth, fluent sentence flow:
+SOUND: Only her voice, close and clear like a handheld microphone in a quiet room. Silence after the last word.
+
+FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
+
+
+==================== CLIP 2 - YACHT (what she teaches) ====================
+SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
+
+SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Long chocolate-brown body wave hair with honey highlights and a middle part. Fitted beige ribbed top with a cream cardigan draped over her shoulders, silver diamond drop earrings and a diamond tennis bracelet. She sits facing the camera with her hands lightly clasped at her waist. Her appearance does not change at any point.
+
+SETTING AND LIGHT: The same luxury yacht deck as the image: a cream canopy overhead, white cushioned seating and calm blue sea behind her, softly blurred. Bright, soft coastal daylight, even on her face. A light sea breeze gently lifts a few strands of her hair.
+
+CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
+
+DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, inviting Nigerian (Lagos) English accent, like a mentor welcoming new followers. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats. She pronounces UGC as three letters, you-gee-see:
 Here, I'll teach you to make AI ads, UGC and brand commercials that look like a big-budget shoot. No studio. No crew.
 
-She smiles warmly at the start, lifts her chin at big-budget shoot, and gives a small playful head shake at No studio. No crew. Her hands open gently once at waist height, then rest clasped. Natural blinks, natural lip-sync, her voice only.
+PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
+0 to 2 s, Here, I'll teach you: a warm, welcoming smile and a tiny nod.
+2 to 5 s, to make AI ads, UGC and brand commercials: her right hand lifts from her waist and opens gently at chest height, palm up, as she lists them in one breath, then settles back.
+5 to 7 s, that look like a big-budget shoot: her eyes light up and she lifts her chin with a proud, impressed look.
+7 to 9 s, No studio. No crew.: a small playful shake of the head with a knowing half-smile.
+9 to 10 s: silent; she holds a warm smile to the lens, hands clasped at her waist.
 
-CLIP 3 - MUSIC STUDIO
-Vertical 9:16 video, 1080p, 10 seconds, one continuous shot. The woman in the image talks to the camera, chest-up, exactly as in the image: same face, braided top knot, lace outfit, jewellery and music studio. She holds the small DJI microphone steady in one hand. Locked-off camera.
+HANDS: Only the right hand moves, once, during the list. Natural hands with five relaxed fingers.
 
-She speaks warmly and confidently in a natural Nigerian (Lagos) English accent, in one smooth, fluent sentence flow:
+SOUND: Only her voice, close and clear, with a very soft breeze underneath. Silence after the last word.
+
+FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
+
+
+==================== CLIP 3 - MUSIC STUDIO (brands + follow) ====================
+SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
+
+SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Black braids in a high top knot with soft curly tendrils framing her face. Ivory beaded Nigerian lace outfit, coral-and-gold bead bracelet on her right wrist, gold hoop earrings and a fine gold chain. In her right hand she holds a small black DJI wireless microphone with a fluffy grey windscreen at chest height; that hand stays steady and close to her chest for the whole video. Her appearance does not change at any point.
+
+SETTING AND LIGHT: The same warm music studio as the image: a wall of vinyl records, wood panelling and glowing table lamps, softly blurred behind her. Warm, cosy lamp light with a soft key light on her face.
+
+CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
+
+DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, slightly teasing Nigerian (Lagos) English accent, like a creator dropping a hint about what's next. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats:
 Brands, if you need content like this, I'm taking clients. Follow me, and next I'll show you how I was made.
 
-She tilts her head knowingly at the start, nods at I'm taking clients, and leans in with a teasing smile at how I was made. Her free hand points back at herself once at how I was made, then rests. Natural blinks, natural lip-sync, her voice only, quiet room.
+PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
+0 to 3 s, Brands, if you need content like this: she tilts her head slightly with a knowing, confident look.
+3 to 4.5 s, I'm taking clients: one firm, confident nod with a small smile.
+4.5 to 6 s, Follow me: a bright, warm smile straight into the lens.
+6 to 8.5 s, and next I'll show you how I was made: she leans in slightly with a teasing smile and one raised eyebrow; on how I was made her free left hand lifts and her thumb points back at herself, then settles.
+8.5 to 10 s: silent; she holds the teasing smile and eye contact with the lens.
+
+HANDS: Only the left hand moves, once, on how I was made. Natural hands with five relaxed fingers. The microphone hand stays still.
+
+SOUND: Only her voice, close and clear like a handheld microphone in a quiet room. Silence after the last word.
+
+FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
