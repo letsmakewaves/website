@@ -38,6 +38,7 @@ Use the library for each column. Then apply the **density rules**:
 - **Hands:** each gesture lands on the line's **keyword**, the word you'd highlight in the captions. About 1–2 per 10 seconds for calm or conversational, up to about 2–3 for upbeat; a line with no keyword gets no gesture. Each gesture starts from rest, peaks on the word, and returns to rest. The rest of the time the hand is relaxed and out of the way.
 - **Lists:** when the line lists items, count them on the fingers accurately: exactly one finger on the first item, two on the second, and so on (see the library). The count replaces other gestures during the list.
 - **Body:** one lean or posture shift per clip is plenty.
+- **Gestures never pause the speech (lesson: Chloe intro, Omni Flash).** Four gestures, three of them on back-to-back short phrases ("My face / my voice / this room"), made the model stop to perform each one. The speech stuttered and the end got crammed. A short list said in one breath gets **one** gesture, not one per item. Write "moves while she keeps talking, never pausing her speech" and ask for "one smooth, fluent delivery, no stammering, no repeated words, no long pauses". Keep 10-second lines to about 20–22 words, and don't pin the last word to a fixed second.
 - **Stillness is part of the performance.** But never write "stays still" as a blanket rule: models then drop the gestures entirely. Write *when* the hand moves and *that it rests otherwise*.
 
 Show the beat map to the user and let them change any beat before you write the prompt.
