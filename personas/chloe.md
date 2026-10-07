@@ -10,7 +10,12 @@ The AI face of the page: shows AI ads and how they're made. Openly AI, built by 
 - **Makeup rule:** always soft natural glam. Never heavy contour or dramatic lashes, which make her look intense or "scary".
 - **Default background:** soft grey seamless studio, or a white marble desk with a grey wall.
 
-## Voice (locked)
+## Voice (locked, updated Oct 2026)
+- **Current voice: ElevenLabs clone `chloe2` (voice_id `PdIclR2uI4cufRKYnmbu`, tagged en-nigerian)**, cloned from the first Omni Flash living-room video (campaigns/chloe-tests/chloe-omni-voice-sample.wav). The user prefers this voice.
+- **Approved method: the Voice Changer (ElevenLabs Speech to Speech, `eleven_multilingual_sts_v2`).** Generate the talking video in Omni Flash, extract its audio, run it through the Voice Changer with chloe2, and put the result back on the video at 0:00. It keeps Omni's exact timing, pacing and accent, so the lip-sync stays perfect, and only the voice changes. About 167 credits per 10 s. First result: campaigns/chloe-tests/library-chloe2-voicechanger-preview.mp4 (user: "very, very close").
+- Text to speech with chloe2 plus a [Nigerian accent] tag (eleven_v3) came out higher-pitched and won't sync with an existing video; use it only for voiceovers with no on-screen lips.
+
+## Voice (older)
 - **Primary: ElevenLabs cloned voice `Chloe`** (voice_id `p8gH0uEJdvz76yHY6Qfp`, Nigerian English accent), in the user's own ElevenLabs account, generated through the ElevenLabs connector.
 - **Model:** Multilingual v2 (approved take A1). v3 is the more expressive alternative.
 - **Cost:** about 171 ElevenLabs credits for a 9-second line (about $0.03).
