@@ -17,4 +17,6 @@ Production: generate each clip in Omni Flash (10 s, 9:16, image + first living-r
 - About 20–22 words per 10 s line; "one smooth, fluent, confident delivery... no stammering, no repeated words, no long pauses".
 - At most 2 gestures, made "while she keeps talking, never pausing her speech"; no finger counting in a one-breath list.
 - 1080p; no fixed finish second; "after the last word she holds a smile until the end".
-- Final lines: 1) This whole video was made with AI. My face, my voice, everything. I'm Chloe, and I'm not real. But my brand ads? Very real. 2) Here, I'll teach you to make AI ads, UGC and brand commercials that look like a big-budget shoot. No studio. No crew. 3) Brands, if you need content like this, I'm taking clients. Follow me, and next I'll show you how I was made.
+- Final lines: 1) This whole video was made with AI. My face, my voice, everything. I'm Chloe, and I'm not real. But my brand ads? Very real. 2) Here, I'll teach you to make AI ads, UGC and brand commercials that look like a big-budget shoot. No studio. No crew. 3) Brands, if you need content like this, I'm taking clients. Follow me, I'll be dropping new ad videos right here.
+
+- Clip 3 ending changed: no "how I was made" (saved for later, once she has followers). New ending: Follow me, I'll be dropping new ad videos right here.
