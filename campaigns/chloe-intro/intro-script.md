@@ -1,3 +1,5 @@
+> **SUPERSEDED: use intro-prompts-FINAL.txt.** The prompt notes below are history only.
+
 # Chloe intro video (30 s = 3 Omni Flash clips of 10 s)
 
 Goal: first post on the page. Hook in the first 2 seconds, say clearly what she does (teaches AI ads / UGC / polished commercials, and works with brands), end on a reason to follow.
