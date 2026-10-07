@@ -95,3 +95,74 @@ for i,(name,bg,light) in enumerate(BG):
     out.append(p); out.append("")
 open(OUT,'w').write("\n".join(out))
 print(len(BG), sum(1 for l in out if l.endswith('[MIC]')), sum(1 for l in out if l.endswith('[NO MIC]')))
+
+# ---------- Lagos edition: braids + Lagos attire, mixed with the luxury looks ----------
+BRAIDS=["waist-length black knotless box braids, neat square parts, middle part",
+"Fulani braids: two cornrows framing the face into long braids, small gold braid cuffs and a few cowrie accents",
+"long black goddess knotless braids with soft curly ends, middle part",
+"bob-length black knotless braids, sleek and blunt at the chin",
+"long boho knotless braids with loose curly strands throughout",
+"neat black cornrows (all-back Ghana weaving) flowing into long braids",
+"long black stitch braids with crisp straight-back parts",
+"long honey-brown and black French curl braids",
+"long black Senegalese twists, sleek and glossy",
+"knotless braids swept into a high, elegant top knot with face-framing tendrils",
+"long burgundy knotless box braids, middle part",
+"long black passion twists, soft and full"]
+BRAID_HAIR=("{b}; neat, uniform, tension-free braids with clean parts, smooth edges with softly laid baby hairs, "
+"healthy glossy finish, no frizz or flyaways")
+LAGOS_TOPS=["an off-shoulder top in vibrant Ankara wax-print fabric (orange, teal and gold pattern), tailored and fitted",
+"a fitted aso-oke blouse in rich champagne-gold handwoven fabric with a structured off-shoulder neckline",
+"an indigo adire tie-dye blouse with a soft square neckline",
+"an ivory Nigerian lace blouse with delicate beading and scalloped edges",
+"an emerald-green embroidered bubu kaftan with gold detailing at the neckline",
+"a fitted Ankara corset top in a bold geometric print (mustard, black and white)",
+"a coral-pink aso-oke off-shoulder blouse with puffed sleeves",
+"a royal-blue adire two-piece top with a wide square neckline",
+"a white Nigerian lace off-shoulder top with sequinned detailing",
+"a burnt-orange and cream Ankara wrap top tied at the waist",
+"a deep plum aso-oke fitted blouse with a sculpted sweetheart neckline",
+"a soft cream embroidered kaftan with gold thread work"]
+LAGOS_JEW=["coral bead statement necklace and gold drop earrings","layered gold necklaces with a small cowrie pendant and gold hoops",
+"chunky gold statement earrings shaped like a fan, no necklace","coral and gold bead bracelet and small gold studs",
+"gold collar necklace and gold teardrop earrings","brass cuff earrings and a stack of thin gold bangles"]
+LAGOS_BG=[("Lekki penthouse","a Lekki penthouse living room with cream sofas, African contemporary art and floor-to-ceiling windows over the Lagos skyline","warm late-afternoon light"),
+("Ikoyi living room","an elegant Ikoyi living room with carved wooden accents, woven Aso-oke cushions and potted palms","soft natural daylight"),
+("Victoria Island rooftop","a Victoria Island rooftop terrace at sunset with the city lights coming on","warm golden sunset light"),
+("Lagos beach club","a luxury Lagos beach club cabana with cream drapes and the Atlantic softly blurred behind","bright soft coastal light"),
+("Textile art gallery","a Lagos art gallery with large adire and Ankara textile artworks on white walls","clean, soft gallery light"),
+("Fashion atelier","a Lagos fashion designer's atelier with rolls of Ankara and aso-oke fabric, a dress form and a cutting table","bright, warm studio light"),
+("Lagos cafe","a stylish Lagos cafe with rattan chairs, green plants and terrazzo tables","soft warm daylight"),
+("Ikoyi garden","a lush Ikoyi garden with bougainvillea, palms and a cream garden bench","soft dappled afternoon light"),
+("Lagoon view","a modern apartment with a large window overlooking the Lagos lagoon at dusk","warm dusk light with soft city glow"),
+("Afrobeats studio","a music studio lounge with warm wood panels, a vinyl wall and soft lamps","warm, moody studio light"),
+("Eko Atlantic skyline","a glass-walled high-rise lounge with the Eko Atlantic skyline behind","bright, clean daylight"),
+("Owambe lounge","an elegant event lounge with gold chairs, white florals and soft fairy lights","warm, festive ambient light"),
+("Hotel suite Lagos","a five-star Lagos hotel suite with cream linens and a city view","soft warm window light"),
+("Boutique concept store","a Lagos concept store with curated African designer pieces on rails and woven baskets","bright, warm boutique light")]
+start=len(BG)
+lagos=[]
+k=0
+for i in range(40):
+    mode = ["braids+lagos","braids+modern","wig+lagos"][i%3]
+    name,bg,light = LAGOS_BG[i%len(LAGOS_BG)] if i<len(LAGOS_BG) else (BG[(i*7)%len(BG)])
+    if mode.startswith("braids"):
+        hair = BRAID_HAIR.format(b=BRAIDS[(i*5)%len(BRAIDS)])
+    else:
+        hair = WIGS[(i*3)%len(WIGS)] + "; luxury raw human hair, full density, invisible HD lace with a natural hairline and soft baby hairs, glossy healthy shine, clean silhouette, no frizz or flyaways"
+    if mode.endswith("lagos"):
+        top = LAGOS_TOPS[(i*7)%len(LAGOS_TOPS)]; jew = LAGOS_JEW[i%len(LAGOS_JEW)]
+    else:
+        top = TOPS[(i*11)%len(TOPS)] + ", fitted and simple"; jew = JEW[(i*5)%len(JEW)]
+    mic = (i%2==1)
+    hands = MIC if mic else NOMIC[i%len(NOMIC)]
+    p=(TPL.replace("HAIR: {wig}; luxury raw human hair, full density, invisible HD lace with a natural hairline and soft baby hairs, glossy healthy shine, clean silhouette, no frizz or flyaways. ","HAIR: {wig}. ")
+         .replace("OUTFIT: {top}, fitted and simple.","OUTFIT: {top}.")
+         .format(pose=POSES[i%len(POSES)],wig=hair,top=top,jew=jew,hands=hands,bg=bg,light=light))
+    assert not risky.search(p),(i,risky.search(p)); assert len(p)<2100,len(p)
+    key=(hair,top,bg); assert key not in seen,(i,key); seen.add(key)
+    lagos.append(f"{start+i+1}. {name}  [{'MIC' if mic else 'NO MIC'}]  ({mode.replace('+',' + ')})")
+    lagos.append(p); lagos.append("")
+txt=open(OUT).read().rstrip()+"\n\n=== LAGOS EDITION: braids, Lagos attire and the mix ===\n\n"+"\n".join(lagos)
+open(OUT,'w').write(txt)
+print("lagos", len(lagos)//3)
