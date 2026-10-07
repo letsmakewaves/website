@@ -48,3 +48,9 @@ The AI face of the page: shows AI ads and how they're made. Openly AI, built by 
 4. Prompt core: "talks directly to camera, lip-syncing exactly to the attached voiceover... free hand stays relaxed and still... moves only once, if natural... expression carries the delivery: warm, confident, easy smile, soft small nods, natural blinks. Camera static, framing exactly as in the start image, background softly blurred, soft studio light, no ring light."
 5. Result: job `c378e57e-938b-4a72-9478-cec4c30008f3`.
 
+
+## Gemini Omni Flash talking video (user: "even better than Seedance")
+- Tool: Gemini app (Google AI Pro), Gemini Omni Flash, with the living-room DJI-mic still attached as the reference. Omni makes its own voice and lip-sync, so no ElevenLabs step is needed.
+- Result: 1080x1920 (9:16), 24 fps, exactly 10.0 s, voice included. Saved as campaigns/chloe-tests/omni-flash-intro-10s.mp4.
+- Prompt structure that worked: written as crew direction. Frame and camera (waist-up, locked-off), then look (blurred beige/blush living room, warm window light), then action (the line in quotes plus the Lagos accent, and expression cues anchored to words), then sound (voice only, close mic, room tone, no music), then text (no captions or on-screen text). "Duration: 10 seconds" plus "finishes speaking at about 9 s and holds a smile" fitted a 26-word line.
+- Edit in the same chat to change one thing at a time (pace, accent, push-in).
