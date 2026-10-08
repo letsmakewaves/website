@@ -1,8 +1,8 @@
-CHLOE TUTORIAL - HOW I MADE THE CROWN & CO. HAIR AD: OMNI FLASH PROMPTS
-Attach ONLY the atelier image of Chloe (same image for all 6 clips). No video, no voice reference.
-Then run each clip (or the joined video) through the chloe2 Voice Changer in ElevenLabs.
+CHLOE TUTORIAL v2 (styled on the reference video) - OMNI FLASH PROMPTS
+Attach ONLY the atelier image of Chloe (same image for all 4 clips). No video, no voice reference.
+Then run the clips (or the joined 40s) through the chloe2 Voice Changer in ElevenLabs.
 
-==================== CLIP 1 - HOOK ====================
+==================== CLIP 1 - HOOK (full screen) ====================
 SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
 
 SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Shoulder-length glossy black wavy hair with a deep side part. Cream kaftan with gold embroidery down the front and on the sleeves, gold hoop earrings, stacked gold bangles on her left wrist. In her right hand she holds a small black DJI wireless microphone with a fluffy grey windscreen at chest height; that hand stays steady and close to her chest for the whole video. Her appearance does not change at any point.
@@ -12,21 +12,22 @@ SETTING AND LIGHT: The same Lagos fashion atelier as the image: rolls of colourf
 CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
 
 DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, friendly Nigerian (Lagos) English accent, like a creator teaching her followers something easy. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats:
-This hair ad took me one afternoon. No model, no studio, no photographer. Let me show you exactly how I made it.
+Brands pay thousands for a hair campaign like this. I made this one with AI in one afternoon. Let me show you how.
 
 PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
-0 to 3 s, This hair ad took me one afternoon: eyes bright, eyebrows lifted, a proud little smile.
-3 to 6 s, No model, no studio, no photographer: a small playful shake of the head.
-6 to 8.5 s, Let me show you exactly how I made it: she leans in slightly; on show you her free left hand opens gently at chest height, palm up, then settles.
+0 to 3.5 s, Brands pay thousands for a hair campaign like this: eyebrows lifted, eyes wide, like she is sharing a secret.
+3.5 to 6.5 s, I made this one with AI in one afternoon: a proud, playful smile and a small head tilt.
+6.5 to 8.5 s, Let me show you how: she leans in slightly; on show you her free left hand opens gently at chest height, palm up, then settles.
 8.5 to 10 s: silent; she holds a warm smile and eye contact with the lens.
 
-HANDS: Only the left hand moves, once, on show you. The microphone hand stays still.
+HANDS: Only the left hand moves, once, on show you. Natural hands with five relaxed fingers. The microphone hand stays still.
+
 SOUND: Only her voice, close and clear like a handheld microphone in a quiet room. Silence after the last word.
 
 FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
 
 
-==================== CLIP 2 - STEP ONE (Claude plans) ====================
+==================== CLIP 2 - NO MODEL, NO STUDIO (screen recording starts) ====================
 SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
 
 SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Shoulder-length glossy black wavy hair with a deep side part. Cream kaftan with gold embroidery down the front and on the sleeves, gold hoop earrings, stacked gold bangles on her left wrist. In her right hand she holds a small black DJI wireless microphone with a fluffy grey windscreen at chest height; that hand stays steady and close to her chest for the whole video. Her appearance does not change at any point.
@@ -36,21 +37,45 @@ SETTING AND LIGHT: The same Lagos fashion atelier as the image: rolls of colourf
 CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
 
 DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, friendly Nigerian (Lagos) English accent, like a creator teaching her followers something easy. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats:
-Step one. Open Claude, tell it about the brand, the wigs and the vibe you want. It plans every single shot for you.
+You don't need a model, a studio or a photographer. I just tell Claude the brand, the wigs and the look I want.
 
 PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
-0 to 1.5 s, Step one: her free left hand lifts and shows one finger at chest height, then lowers.
-1.5 to 5.5 s, Open Claude, tell it about the brand, the wigs and the vibe you want: relaxed, explaining look, small natural nods.
-5.5 to 8.5 s, It plans every single shot for you: eyebrows lift, impressed smile.
+0 to 4 s, You don't need a model, a studio or a photographer: a small, playful shake of the head.
+4 to 8.5 s, I just tell Claude the brand, the wigs and the look I want: relaxed explaining look, small natural nods; on the look I want her free left hand turns open at chest height, then settles.
+8.5 to 10 s: silent; she holds a friendly smile and eye contact with the lens.
+
+HANDS: Only the left hand moves, once, on the look I want. Natural hands with five relaxed fingers. The microphone hand stays still.
+
+SOUND: Only her voice, close and clear like a handheld microphone in a quiet room. Silence after the last word.
+
+FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
+
+
+==================== CLIP 3 - THE PROCESS (over screen recording) ====================
+SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
+
+SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Shoulder-length glossy black wavy hair with a deep side part. Cream kaftan with gold embroidery down the front and on the sleeves, gold hoop earrings, stacked gold bangles on her left wrist. In her right hand she holds a small black DJI wireless microphone with a fluffy grey windscreen at chest height; that hand stays steady and close to her chest for the whole video. Her appearance does not change at any point.
+
+SETTING AND LIGHT: The same Lagos fashion atelier as the image: rolls of colourful Ankara fabric, a dress form, a cutting table and window blinds, softly blurred behind her. Bright, soft daylight from the window, warm and even on her face.
+
+CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
+
+DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, friendly Nigerian (Lagos) English accent, like a creator teaching her followers something easy. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats:
+Claude plans every shot and writes all my prompts. I create the images in Gemini, then bring each one to life in Kling.
+
+PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
+0 to 4 s, Claude plans every shot and writes all my prompts: eyebrows lift, impressed smile.
+4 to 8.5 s, I create the images in Gemini, then bring each one to life in Kling: calm, clear explaining look with small nods; on bring each one to life her free left hand lifts gently, fingers opening, then settles.
 8.5 to 10 s: silent; she holds the smile and eye contact with the lens.
 
-HANDS: Only the left hand moves, once, on Step one. Natural hands with five fingers. The microphone hand stays still.
+HANDS: Only the left hand moves, once, on bring each one to life. Natural hands with five relaxed fingers. The microphone hand stays still.
+
 SOUND: Only her voice, close and clear like a handheld microphone in a quiet room. Silence after the last word.
 
 FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
 
 
-==================== CLIP 3 - STEP TWO (images) ====================
+==================== CLIP 4 - THE REVEAL (then the Reel plays) ====================
 SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
 
 SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Shoulder-length glossy black wavy hair with a deep side part. Cream kaftan with gold embroidery down the front and on the sleeves, gold hoop earrings, stacked gold bangles on her left wrist. In her right hand she holds a small black DJI wireless microphone with a fluffy grey windscreen at chest height; that hand stays steady and close to her chest for the whole video. Her appearance does not change at any point.
@@ -60,87 +85,16 @@ SETTING AND LIGHT: The same Lagos fashion atelier as the image: rolls of colourf
 CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
 
 DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, friendly Nigerian (Lagos) English accent, like a creator teaching her followers something easy. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats:
-Step two. Take each shot to Gemini and create your model wearing every wig, with the brand logo on her tee.
+Then Claude cuts everything to the beat and adds the flyer. And this is the final ad. Follow me for more.
 
 PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
-0 to 1.5 s, Step two: her free left hand lifts and shows two fingers at chest height, then lowers.
-1.5 to 5 s, Take each shot to Gemini and create your model wearing every wig: calm, clear explaining look, a slight head tilt.
-5 to 8 s, with the brand logo on her tee: a small knowing smile and one nod.
-8 to 10 s: silent; she holds the smile and eye contact with the lens.
-
-HANDS: Only the left hand moves, once, on Step two. Natural hands with five fingers. The microphone hand stays still.
-SOUND: Only her voice, close and clear like a handheld microphone in a quiet room. Silence after the last word.
-
-FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
-
-
-==================== CLIP 4 - STEP THREE (Kling) ====================
-SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
-
-SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Shoulder-length glossy black wavy hair with a deep side part. Cream kaftan with gold embroidery down the front and on the sleeves, gold hoop earrings, stacked gold bangles on her left wrist. In her right hand she holds a small black DJI wireless microphone with a fluffy grey windscreen at chest height; that hand stays steady and close to her chest for the whole video. Her appearance does not change at any point.
-
-SETTING AND LIGHT: The same Lagos fashion atelier as the image: rolls of colourful Ankara fabric, a dress form, a cutting table and window blinds, softly blurred behind her. Bright, soft daylight from the window, warm and even on her face.
-
-CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
-
-DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, friendly Nigerian (Lagos) English accent, like a creator teaching her followers something easy. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats:
-Step three. Upload each image to Kling on Higgsfield, paste the motion prompt from Claude, and keep every clip five seconds.
-
-PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
-0 to 1.5 s, Step three: her free left hand lifts and shows three fingers at chest height, then lowers.
-1.5 to 6 s, Upload each image to Kling on Higgsfield, paste the motion prompt from Claude: focused, explaining look, small natural nods.
-6 to 8.5 s, and keep every clip five seconds: she raises one eyebrow with a serious, this-is-important look, then a small smile.
-8.5 to 10 s: silent; she holds the look and eye contact with the lens.
-
-HANDS: Only the left hand moves, once, on Step three. Natural hands with five fingers. The microphone hand stays still.
-SOUND: Only her voice, close and clear like a handheld microphone in a quiet room. Silence after the last word.
-
-FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
-
-
-==================== CLIP 5 - STEP FOUR (edit) ====================
-SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
-
-SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Shoulder-length glossy black wavy hair with a deep side part. Cream kaftan with gold embroidery down the front and on the sleeves, gold hoop earrings, stacked gold bangles on her left wrist. In her right hand she holds a small black DJI wireless microphone with a fluffy grey windscreen at chest height; that hand stays steady and close to her chest for the whole video. Her appearance does not change at any point.
-
-SETTING AND LIGHT: The same Lagos fashion atelier as the image: rolls of colourful Ankara fabric, a dress form, a cutting table and window blinds, softly blurred behind her. Bright, soft daylight from the window, warm and even on her face.
-
-CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
-
-DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, friendly Nigerian (Lagos) English accent, like a creator teaching her followers something easy. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats:
-Step four. Ask Claude to cut all the clips to the beat of a song, and end the video on your flyer.
-
-PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
-0 to 1.5 s, Step four: her free left hand lifts and shows four fingers at chest height, then lowers.
-1.5 to 6 s, Ask Claude to cut all the clips to the beat of a song: a light, rhythmic head bob, enjoying it.
-6 to 8 s, and end the video on your flyer: a satisfied smile and one nod.
-8 to 10 s: silent; she holds the smile and eye contact with the lens.
-
-HANDS: Only the left hand moves, once, on Step four. Natural hands with five fingers. The microphone hand stays still.
-SOUND: Only her voice, close and clear like a handheld microphone in a quiet room. Silence after the last word.
-
-FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
-
-
-==================== CLIP 6 - CLOSE (CTA) ====================
-SHOT: Vertical 9:16 creator video, 1080p, exactly 10 seconds, one continuous take. Real-creator style: it looks like a premium phone video filmed on a tripod.
-
-SUBJECT (match the image exactly): Chloe, the woman in the image. Same face, same features and skin, same soft natural glam makeup and glossy nude-brown lips. Shoulder-length glossy black wavy hair with a deep side part. Cream kaftan with gold embroidery down the front and on the sleeves, gold hoop earrings, stacked gold bangles on her left wrist. In her right hand she holds a small black DJI wireless microphone with a fluffy grey windscreen at chest height; that hand stays steady and close to her chest for the whole video. Her appearance does not change at any point.
-
-SETTING AND LIGHT: The same Lagos fashion atelier as the image: rolls of colourful Ankara fabric, a dress form, a cutting table and window blinds, softly blurred behind her. Bright, soft daylight from the window, warm and even on her face.
-
-CAMERA: Locked-off on a tripod at eye level, chest-up framing exactly as in the image. No zoom, no pan, no cuts.
-
-DIALOGUE AND DELIVERY: She speaks directly to the lens in a warm, confident, friendly Nigerian (Lagos) English accent, like a creator teaching her followers something easy. One smooth, fluent flow at a natural conversational pace, every word clear, no stumbles, no repeats:
-That's it. Four steps, one afternoon, and a hair ad that looks expensive. Follow me for the next breakdown.
-
-PERFORMANCE TIMELINE (her face does the acting; the words never pause for the movement):
-0 to 1.5 s, That's it: a bright, confident smile.
-1.5 to 6 s, Four steps, one afternoon, and a hair ad that looks expensive: she tilts her head with a proud, playful look; on expensive a small shoulder shrug.
-6 to 8.5 s, Follow me for the next breakdown: she leans in slightly; her free left hand gives a small wave at chest height, then settles.
+0 to 4 s, Then Claude cuts everything to the beat and adds the flyer: a light, rhythmic head bob, enjoying it.
+4 to 6.5 s, And this is the final ad: eyes bright with excitement, a big proud smile.
+6.5 to 8.5 s, Follow me for more: she leans in slightly; her free left hand gives a small wave at chest height, then settles.
 8.5 to 10 s: silent; she holds a warm smile and eye contact with the lens.
 
 HANDS: Only the left hand moves, once, on Follow me. Natural hands with five relaxed fingers. The microphone hand stays still.
+
 SOUND: Only her voice, close and clear like a handheld microphone in a quiet room. Silence after the last word.
 
 FINISH: Natural blinks, small natural head movements, accurate lip-sync, realistic skin texture, the clean look of a raw creator video.
