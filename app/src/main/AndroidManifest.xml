@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- ============================================================= -->
+    <!-- PERMISSIONS                                                   -->
+    <!-- This build posts through official platform APIs, so it needs -->
+    <!-- network + the OS primitives for reliable background firing.  -->
+    <!-- It deliberately does NOT request BIND_ACCESSIBILITY_SERVICE   -->
+    <!-- or BIND_NOTIFICATION_LISTENER_SERVICE: no other app's UI is   -->
+    <!-- driven and no notifications are scraped.                      -->
+    <!-- ============================================================= -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Direct SMS channel (SmsManager). Declared but requested at runtime,
+         and only when the user actually enables the SMS channel. -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <!-- Exact-time delivery of scheduled tasks. -->
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.USE_EXACT_ALARM" />
+
+    <!-- Re-arm pending alarms after reboot/app-update. -->
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <!-- Foreground service while a batch of scheduled sends is executing. -->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+
+    <!-- Post the "scheduled / sent / ask-before-send" notifications. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <!-- Survive OEM Doze/battery killing. Requested via the Setup Wizard. -->
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!-- Optional: let the user pick recipients from the device address book. -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:name=".WavesSchedulerApp"
+        android:allowBackup="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.WavesScheduler"
+        tools:targetApi="34">
+
+        <activity
+            android:name=".ui.MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.WavesScheduler">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Fires at a task's exact scheduled time; hands off to WorkManager. -->
+        <receiver
+            android:name=".scheduler.alarm.TaskAlarmReceiver"
+            android:exported="false" />
+
+        <!-- Re-arms all PENDING tasks after device reboot. -->
+        <receiver
+            android:name=".scheduler.alarm.BootCompletedReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+            </intent-filter>
+        </receiver>
+
+        <!-- Action buttons on the "Ask before sending" notification. -->
+        <receiver
+            android:name=".scheduler.alarm.AskBeforeSendReceiver"
+            android:exported="false" />
+
+        <!-- Foreground service that runs a scheduled batch to completion. -->
+        <service
+            android:name=".scheduler.ExecutionService"
+            android:exported="false"
+            android:foregroundServiceType="dataSync" />
+
+        <!-- Disable the default WorkManager initializer; Hilt provides it. -->
+        <provider
+            android:name="androidx.startup.InitializationProvider"
+            android:authorities="${applicationId}.androidx-startup"
+            android:exported="false"
+            tools:node="merge">
+            <meta-data
+                android:name="androidx.work.WorkManagerInitializer"
+                android:value="androidx.startup"
+                tools:node="remove" />
+        </provider>
+    </application>
+</manifest>
