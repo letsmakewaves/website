@@ -137,5 +137,60 @@ print("kova style: size", k_size, "tracking", round(k_track, 2))
 patch_band(1636, 1684, 700, 1460, range(-48, -30), [(560, 700), (1460, 1600)])
 draw_text(k_runs, k_size, 600, k_track * 0.97, W / 2, 1648, glow=6)
 
+# ===== 3. GRAND OPENING (bolder strokes, same size) =====
+def shift(x, dy, dx):
+    return np.roll(np.roll(x, dy, 0), dx, 1)
+
+
+def embolden(y0, y1, x0, x1, rx, ry, lo=75, hi=150, core_in=2, rim=0.92):
+    """Thicken the silver lettering.
+    shape: letter mask grown by an ellipse (rx, ry) with an anti-aliased edge.
+    colour: taken from the letter interiors (core) and spread outward, so the old dark
+    outline does not stay inside the thicker stroke; a light rim shade is re-applied."""
+    reg = A[y0:y1, x0:x1]
+    lum = reg.mean(2)
+    alpha = np.clip((lum - lo) / (hi - lo), 0, 1)
+
+    # --- grown shape ---
+    new_a = alpha.copy()
+    R = int(np.ceil(max(rx, ry)))
+    for dy in range(-R, R + 1):
+        for dx in range(-R, R + 1):
+            d = (dx / rx) ** 2 + (dy / ry) ** 2
+            if d > 1 or (dx == 0 and dy == 0):
+                continue
+            k = min(1.0, (1 - d) * 3 + 0.35)
+            new_a = np.maximum(new_a, shift(alpha, dy, dx) * k)
+
+    # --- colour field from the core ---
+    core = alpha >= 0.99
+    for _ in range(core_in):  # erode
+        core = core & shift(core, 1, 0) & shift(core, -1, 0) & shift(core, 0, 1) & shift(core, 0, -1)
+    field = np.where(core[..., None], reg, 0.0)
+    known = core.copy()
+    depth = np.where(core, 0, -1)
+    need = new_a > 0
+    step = 0
+    while (need & ~known).any() and step < 20:
+        step += 1
+        acc = np.zeros_like(field); cnt = np.zeros(alpha.shape)
+        for dy, dx in ((1, 0), (-1, 0), (0, 1), (0, -1), (1, 1), (1, -1), (-1, 1), (-1, -1)):
+            kn = shift(known, dy, dx)
+            acc += shift(field, dy, dx) * kn[..., None]; cnt += kn
+        fill = ~known & (cnt > 0)
+        field[fill] = acc[fill] / cnt[fill][:, None]
+        depth[fill] = step
+        known |= fill
+    # subtle darker rim like the original lettering (outermost ~2px)
+    shade = np.where(depth >= 0, 1 - (1 - rim) * np.clip((depth - core_in - rx + 2) / 2, 0, 1), 1)
+    field *= shade[..., None]
+
+    a3 = new_a[..., None]
+    reg[:] = np.where(need[..., None], reg * (1 - a3) + field * a3, reg)
+    print(f"emboldened GRAND OPENING rx={rx} ry={ry}")
+
+
+embolden(1700, 1880, 150, 2020, rx=3.2, ry=1.6)
+
 Image.fromarray(np.clip(A, 0, 255).astype(np.uint8)).save(OUT, optimize=True)
 print("saved", OUT)
